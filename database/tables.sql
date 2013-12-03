@@ -18,8 +18,8 @@ DROP TABLE IF EXISTS User;
 
 
 CREATE TABLE User (
-	UserID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'The internal key in the database',
-	IsAdmin int(1) NOT NULL default '0' COMMENT 'boolean',
+	UserID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	IsAdmin int(1) NOT NULL default '0',
 	Name varchar(20) NOT NULL,
 	Password varchar(20) NOT NULL,
 	Description varchar(200),
@@ -27,13 +27,13 @@ CREATE TABLE User (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE GeoCodes (
-	GID int(8) NOT NULL AUTO_INCREMENT primary key COMMENT 'The internal key in the database',
-	longLocation decimal(18,14) DEFAULT NULL COMMENT 'Longitude',
-	latLocation decimal(18,14) DEFAULT NULL COMMENT 'Latitude'
+	GID int(8) NOT NULL AUTO_INCREMENT primary key,
+	longLocation decimal(18,14) DEFAULT NULL,
+	latLocation decimal(18,14) DEFAULT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8; 
 
 CREATE TABLE Channel (
-	ChannelID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'The internal key in the database',
+	ChannelID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	Coordinates int(8) default NULL,
 	Description varchar(200),
 	Time_stp timestamp default current_timestamp,
