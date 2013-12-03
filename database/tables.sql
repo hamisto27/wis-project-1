@@ -1,6 +1,6 @@
 /* This script creates the tables for the WIS YouCourse DB used in
 Web Information System - Project 2013
-Jorge Garcia Ximenez - Aurélien Plisnier - Mohammed Chajii
+Jorge Garcia Ximenez - Aurï¿½lien Plisnier - Mohammed Chajii
 ---------------------------------------------------------
 */
 
@@ -45,17 +45,17 @@ CREATE TABLE Subscription (
 	UserID int(8) NOT NULL,
 	ChannelID int(8) NOT NULL,
 	Time_stp timestamp default current_timestamp,
-	PRIMARY KEY (UserID,ChannelID) COMMENT 'The internal key in the database',
+	PRIMARY KEY (UserID,ChannelID),
     FOREIGN KEY (UserID) REFERENCES User(UserID),
     FOREIGN KEY (ChannelID) REFERENCES Channel(ChannelID)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE Video (
-	VidID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'The internal key in the database',
-	Content varchar(50) NOT NULL COMMENT 'String containing a link to the video',
+	VidID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Content varchar(50) NOT NULL COMMENT,
 	Description varchar(200),
-	Name varchar(30) NOT NULL COMMENT 'The title of the video',
-	Views int(8) NOT NULL default '0' COMMENT 'The number of views',
+	Name varchar(30) NOT NULL,
+	Views int(8) NOT NULL default '0',
 	Coordinates int(8) default NULL,
 	ChannelID int(8) NOT NULL,
 	Time_stp timestamp default current_timestamp,
@@ -66,7 +66,7 @@ CREATE TABLE Video (
 CREATE TABLE Comment (
 	VidID int(8) NOT NULL,
 	UserID int(8) NOT NULL,
-	CommentID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'The internal key in the database',
+	CommentID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	Text varchar(300) NOT NULL,
 	Time_stp timestamp default current_timestamp,
 	FOREIGN KEY (VidID) REFERENCES Video(VidID),
@@ -78,7 +78,7 @@ CREATE TABLE AbuseVid (
 	UserID int(8) NOT NULL,
 	Message varchar(300),
 	Time_stp timestamp default current_timestamp,
-	PRIMARY KEY (VidID,UserID) COMMENT 'The internal key in the database',
+	PRIMARY KEY (VidID,UserID),
     FOREIGN KEY (UserID) REFERENCES User(UserID),
     FOREIGN KEY (VidID) REFERENCES Video(VidID)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -88,7 +88,7 @@ CREATE TABLE AbuseComment (
 	CommentID int(8) NOT NULL,
 	Message varchar(300),
 	Time_stp timestamp default current_timestamp,
-	PRIMARY KEY (UserID,CommentID) COMMENT 'The internal key in the database',
+	PRIMARY KEY (UserID,CommentID),
     FOREIGN KEY (UserID) REFERENCES User(UserID),
     FOREIGN KEY (CommentID) REFERENCES Comment(CommentID)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -96,9 +96,9 @@ CREATE TABLE AbuseComment (
 CREATE TABLE Likes (
 	VidID int(8) NOT NULL,
 	UserID int(8) NOT NULL,
-	LikeDislike int(1) NOT NULL COMMENT '1 if like, 0 if dislike',
+	LikeDislike int(1) NOT NULL,
 	Time_stp timestamp default current_timestamp,
-	PRIMARY KEY (VidID,UserID) COMMENT 'The internal key in the database',
+	PRIMARY KEY (VidID,UserID),
 	FOREIGN KEY (VidID) REFERENCES Video(VidID),
 	FOREIGN KEY (UserID) REFERENCES User(UserID)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
