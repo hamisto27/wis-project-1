@@ -24,17 +24,17 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'root',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
-        'gii' => array(
+
+        /*'gii' => array(
             'generatorPaths' => array('bootstrap.gii'),
-        ),
+        ), */
 	),
 
 	// application components
@@ -62,13 +62,13 @@ return array(
 		),
 		// uncomment the following to use a MySQL database
 		*/
-		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=wis_project',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
-			'charset' => 'utf8',
-		),
+        'db'=>array(
+            'connectionString' => 'mysql:host=db4free.net;dbname=youcours',
+            'emulatePrepare' => true,
+            'username' => 'youcoursadmin',
+            'password' => 'youcourswisproject',
+            'charset' => 'utf8',
+        ),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
