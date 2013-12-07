@@ -21,7 +21,7 @@ class UserIdentity extends CUserIdentity
     public function authenticate()
     {
 
-        //$file = 'c:\Users\Pantoufle\Documents\mohamed.txt';
+        $file = 'c:\Users\Pantoufle\Documents\mohamed.txt';
         //file_put_contents($file, 'username:'.$username .'_password:'. $this->password);
 
         $username=strtolower($this->username);
@@ -35,6 +35,9 @@ class UserIdentity extends CUserIdentity
             $this->_id=$user->UserID;
             $this->username=$user->Name;
             $this->errorCode=self::ERROR_NONE;
+            if($user->isAdmin()){
+                file_put_contents($file,'is an Admin');
+            }
         }
         return $this->errorCode==self::ERROR_NONE;
     }

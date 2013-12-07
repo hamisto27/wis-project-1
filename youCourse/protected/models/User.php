@@ -22,9 +22,17 @@
 class User extends CActiveRecord
 {
 
+    public function isAdmin(){
+        return $this->IsAdmin == 1;
+    }
+
     public function validatePassword($Password)
     {
-        return ($Password == $this->Password);
+
+        //$file = 'c:\Users\Pantoufle\Documents\mohamed.txt';
+        //file_put_contents($file, $this->hashPassword($Password));
+        //return ($Password == $this->Password);
+        return ($this->Password === crypt($Password, $this->Password));
         //return CPasswordHelper::verifyPassword($Password,$this->Password);
     }
 
@@ -110,12 +118,12 @@ class User extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		//$criteria->compare('UserID',$this->UserID);
-		//$criteria->compare('IsAdmin',$this->IsAdmin);
+		$criteria->compare('UserID',$this->UserID);
+		$criteria->compare('IsAdmin',$this->IsAdmin);
 		$criteria->compare('Name',$this->Name,true);
 		$criteria->compare('Password',$this->Password,true);
-		//$criteria->compare('Description',$this->Description,true);
-		//$criteria->compare('Time_stp',$this->Time_stp,true);
+		$criteria->compare('Description',$this->Description,true);
+		$criteria->compare('Time_stp',$this->Time_stp,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
