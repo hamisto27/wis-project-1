@@ -20,7 +20,13 @@
  * @property Channel[] $channels
  */
 class User extends CActiveRecord
+
 {
+
+    public function getName()
+    {
+        return $this->Name;
+    }
 
     public function isAdmin(){
         return $this->IsAdmin == 1;

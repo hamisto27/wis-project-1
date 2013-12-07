@@ -37,13 +37,27 @@ class UserController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'expression'=>array('UserController', 'allowOnlyAdmin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
 		);
 	}
+
+    /**
+     * Allow only the admin to do the action
+     * @return boolean whether or not the user is the owner
+     */
+    public function allowOnlyAdmin(){
+        if(Yii::app()->WebUser->isAdmin()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 
 	/**
 	 * Displays a particular model.
