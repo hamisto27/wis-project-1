@@ -7,12 +7,26 @@
  */
 
 class WebUser extends CWebUser
-{   public function isAdmin(){
-            $_user = User::model()->find('LOWER(Name)=?',array(Yii::app()->user->name));
+{
+    private $_userTable = array
+    (
+        0=>'Normal',
+        1=>'Admin'
+    );
 
-            $file = 'c:\Users\Pantoufle\Documents\mohamed.txt';
-            file_put_contents($file, Yii::app()->user->name);
-            return true;
 
+    protected $_model;
+
+    function isAdmin()
+    {
+        //Access this via Yii::app()->user->isAdmin()
+
+        return (Yii::app()->user->isGuest) ? FALSE : $this->level == 1;
+    }
+    public function getUserLevelsList()
+    {
+        //Access this via Yii::app()->user->getUserLevelList()
+
+        return $this->_userTable;
     }
 }

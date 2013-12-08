@@ -35,10 +35,10 @@ class UserController extends Controller
 				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'expression'=>array('UserController', 'allowOnlyAdmin'),
-			),
+            array('allow', // allow admin user to perform 'admin' and 'delete' actions
+                'actions'=>array('admin','delete'),
+                'expression'=>'$user->isAdmin()', // check if the user is Admin or not.
+            ),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),

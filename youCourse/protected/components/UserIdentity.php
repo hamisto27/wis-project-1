@@ -35,7 +35,9 @@ class UserIdentity extends CUserIdentity
             $this->_id=$user->UserID;
             $this->username=$user->Name;
             $this->errorCode=self::ERROR_NONE;
-            Yii::app()->user->isAdmin();
+
+            //user level
+            $this->setState('level', $user->IsAdmin);
         }
         return $this->errorCode==self::ERROR_NONE;
     }

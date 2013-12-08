@@ -39,11 +39,11 @@ return array(
 
 	// application components
 	'components'=>array(
-		'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-            'class'=>'WebUser',
-		),
+        'user'=>array(
+            // enable cookie-based authentication
+            'allowAutoLogin'=>true,
+            'class'=>'application.components.WebUser',
+        ),
         'bootstrap' => array(
             'class' => 'bootstrap.components.TbApi',
         ),

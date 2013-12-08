@@ -37,7 +37,6 @@ class User extends CActiveRecord
 
         //$file = 'c:\Users\Pantoufle\Documents\mohamed.txt';
         //file_put_contents($file, $this->hashPassword($Password));
-        //return ($Password == $this->Password);
         return ($this->Password === crypt($Password, $this->Password));
         //return CPasswordHelper::verifyPassword($Password,$this->Password);
     }
