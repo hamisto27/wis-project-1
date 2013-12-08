@@ -6,43 +6,55 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
-	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+    'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
+    'name'=>'My Web Application',
 
     'aliases' => array(
         'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), // change this if necessary
     ),
-	// preloading 'log' component
-	'preload'=>array('log'),
+    // preloading 'log' component
+    'preload'=>array('log'),
 
-	// autoloading model and component classes
-	'import'=>array(
-		'application.models.*',
-		'application.components.*',
-        'bootstrap.helpers.TbHtml'
-	),
+    // autoloading model and component classes
+    'import'=>array(
+        'application.models.*',
+        'application.components.*',
+        'bootstrap.helpers.TbHtml',
+        //user extension
+        'application.modules.user.models.*',
+        'application.modules.user.components.*'
+    ),
 
-	'modules'=>array(
-		// uncomment the following to enable the Gii tool
+    'modules'=>array(
+        // uncomment the following to enable the Gii tool
 
-		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
-			'password'=>'root',
-			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
-		),
+        'gii'=>array(
+            'class'=>'system.gii.GiiModule',
+            'password'=>'root',
+            // If removed, Gii defaults to localhost only. Edit carefully to taste.
+            'ipFilters'=>array('127.0.0.1','::1'),
+        ),
+
+        //user extension
+        'user'=>array(
+            'tableUsers' => 'User',
+            'tableProfiles' => 'tbl_profiles',
+            'tableProfileFields' => 'tbl_profiles_fields',
+        ),
+
 
         /*'gii' => array(
             'generatorPaths' => array('bootstrap.gii'),
         ), */
-	),
+    ),
 
-	// application components
-	'components'=>array(
+    // application components
+    'components'=>array(
         'user'=>array(
             // enable cookie-based authentication
             'allowAutoLogin'=>true,
             'class'=>'application.components.WebUser',
+            'loginUrl'=>array('/user/login'),
         ),
         'bootstrap' => array(
             'class' => 'bootstrap.components.TbApi',

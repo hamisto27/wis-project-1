@@ -88,6 +88,13 @@ body
     text-shadow:#FFFFFF 0 1px 0;
 }
 
+#mainmenu a.brand > img
+{
+    width:120px;
+    margin-top:-10px;
+}
+
+
 #mainmenu ul li.active a,#mainmenu ul li.active a:hover
 {
     color:#555555;

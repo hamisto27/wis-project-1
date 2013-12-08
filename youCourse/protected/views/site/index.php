@@ -21,22 +21,11 @@ $this->pageTitle=Yii::app()->name;
     ?>
 </div>
 <div class="right">
-    <h1>Welcome to the <i>YouCours</i> webpage!</h1>
+    <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-    <p>In this page you can learn and teach posting your own videos and tutorials</p>
+    <p>Congratulations! You have successfully created your Yii application.</p>
 
-
-    <div class="container">
-        <div class="row">
-            <div class="span8">
-                <div class="flex-video widescreen" style="margin: 0 auto;text-align:left;">
-                    <iframe width="640" height="360" src="//www.youtube.com/embed/5voVN_RuAjk?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <p>In this page you can learn and teach posting your own videos and tutorials</p>
+    <p>You may change the content of this page by modifying the following two files:</p>
     <ul>
         <li>View file: <code><?php echo __FILE__; ?></code></li>
         <li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
