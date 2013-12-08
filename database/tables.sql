@@ -52,7 +52,7 @@ CREATE TABLE Subscription (
 
 CREATE TABLE Video (
 	VidID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	Content varchar(50) NOT NULL COMMENT,
+	Content varchar(50) NOT NULL,
 	Description varchar(200),
 	Name varchar(30) NOT NULL,
 	Views int(8) NOT NULL default '0',
