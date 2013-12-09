@@ -42,6 +42,10 @@ return array(
             'tableProfileFields' => 'tbl_profiles_fields',
         ),
 
+        'cal' => array(
+            'debug' => true // For first run only!
+        ),
+
 
         /*'gii' => array(
             'generatorPaths' => array('bootstrap.gii'),
