@@ -41,7 +41,7 @@ $this->pageTitle=Yii::app()->name;
         'height'=>480,
         'bgcolor'=>'#000'
     ));
-
+    //http://zenverse.net/php-oembed-embed-videos/
      $videourl = 'http://fr.slideshare.net/signer/html5-and-the-open-web-platform';
 
     $json = @file_get_contents('http://www.slideshare.net/api/oembed/2?url='.urlencode($videourl).'&format=json');
