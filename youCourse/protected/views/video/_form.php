@@ -33,7 +33,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Description'); ?>
-		<?php echo $form->textField($model,'Description',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->textArea($model,'Description',array('size'=>100,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Description'); ?>
 	</div>
 
@@ -43,11 +43,11 @@
 		<?php echo $form->error($model,'Name'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Views'); ?>
-		<?php echo $form->textField($model,'Views'); ?>
-		<?php echo $form->error($model,'Views'); ?>
-	</div>
+	<!-- <div class="row">
+		<?php //echo $form->labelEx($model,'Views'); ?>
+		<?php //echo $form->textField($model,'Views'); ?>
+		<?php //echo $form->error($model,'Views'); ?>
+	</div> -->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Coordinates'); ?>
@@ -55,17 +55,17 @@
 		<?php echo $form->error($model,'Coordinates'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'ChannelID'); ?>
-		<?php echo $form->textField($model,'ChannelID'); ?>
-		<?php echo $form->error($model,'ChannelID'); ?>
-	</div>
+    <!-- <div class="row">
+		<?php //echo $form->labelEx($model,'ChannelID'); ?>
+		<?php //echo $form->textField($model,'ChannelID'); ?>
+		<?php //echo $form->error($model,'ChannelID'); ?>
+	</div> -->
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Time_stp'); ?>
-		<?php echo $form->textField($model,'Time_stp'); ?>
-		<?php echo $form->error($model,'Time_stp'); ?>
-	</div>
+    <!-- <div class="row">
+		<?php //echo $form->labelEx($model,'Time_stp'); ?>
+		<?php //echo $form->textField($model,'Time_stp'); ?>
+		<?php //echo $form->error($model,'Time_stp'); ?>
+	</div> -->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

@@ -101,15 +101,15 @@ class Video extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('VidID',$this->VidID);
+		// $criteria->compare('VidID',$this->VidID);
 		$criteria->compare('slideshare',$this->slideshare,true);
 		$criteria->compare('Content',$this->Content,true);
 		$criteria->compare('Description',$this->Description,true);
 		$criteria->compare('Name',$this->Name,true);
-		$criteria->compare('Views',$this->Views);
+		// $criteria->compare('Views',$this->Views);
 		$criteria->compare('Coordinates',$this->Coordinates);
-		$criteria->compare('ChannelID',$this->ChannelID);
-		$criteria->compare('Time_stp',$this->Time_stp,true);
+		// $criteria->compare('ChannelID',$this->ChannelID);
+		// $criteria->compare('Time_stp',$this->Time_stp,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
