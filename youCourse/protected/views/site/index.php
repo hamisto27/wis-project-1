@@ -27,7 +27,7 @@ $this->pageTitle=Yii::app()->name;
         'address' => array(
             'address' => '1600 Amphitheatre Pky',//address of the place
             'city' => 'Mountain View', //city
-            'state' => 'CA',//state
+            //'state' => 'CA',//state
             //'country' => 'USA'  - country
             //'zip' => 'XXXXX' - zip or postal code
         )
@@ -41,6 +41,19 @@ $this->pageTitle=Yii::app()->name;
         'height'=>480,
         'bgcolor'=>'#000'
     ));
+    $videourl = 'http://www.slideshare.net/haraldf/business-quotes-for-2011';
+
+    $json = @file_get_contents('http://www.slideshare.net/api/oembed/2?url='.urlencode($videourl).'&format=json');
+    $decode = json_decode($json, true);
+    //http://www.slideshare.net/api/oembed/2?url=http://www.slideshare.net/haraldf/business-quotes-for-2011&format=json
+    if ($decode == null || !$decode) {
+        $error = true;
+        //error control here
+    } else {
+        $thumb = $decode['thumbnail'];
+        $html = $decode['html'];
+        echo $html;
+    }
     ?>
 
 
