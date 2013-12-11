@@ -41,7 +41,8 @@ $this->pageTitle=Yii::app()->name;
         'height'=>480,
         'bgcolor'=>'#000'
     ));
-    $videourl = 'http://www.slideshare.net/haraldf/business-quotes-for-2011';
+
+     $videourl = 'http://fr.slideshare.net/signer/html5-and-the-open-web-platform';
 
     $json = @file_get_contents('http://www.slideshare.net/api/oembed/2?url='.urlencode($videourl).'&format=json');
     $decode = json_decode($json, true);
@@ -54,6 +55,7 @@ $this->pageTitle=Yii::app()->name;
         $html = $decode['html'];
         echo $html;
     }
+
     ?>
     <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
