@@ -2,18 +2,6 @@
 /* @var $this SiteController */
 
 $this->pageTitle=Yii::app()->name;
-$this->widget('application.extensions.gmap.GMap', array(
-    'id' => 'gmap',//id of the <div> container created
-    'key' => 'AIzaSyDQZz8Dkue5YeD8CTt5V63_gGevsduHJ2E', //goole API key, should be obtained for each site,it's free
-    'label' => 'place', //text written in the text bubble
-    'address' => array(
-        'address' => '1600 Amphitheatre Pky',//address of the place
-        'city' => 'Mountain View', //city
-        'state' => 'CA',//state
-        //'country' => 'USA'  - country
-        //'zip' => 'XXXXX' - zip or postal code
-    )
-));
 ?>
     <?php /*$this->widget('bootstrap.widgets.TbNav', array(
         'type' => TbHtml::NAV_TYPE_LIST,
@@ -32,6 +20,19 @@ $this->widget('application.extensions.gmap.GMap', array(
     ?>
 
     <?php
+    $this->widget('application.extensions.gmap.GMap', array(
+        'id' => 'gmap',//id of the <div> container created
+        'key' => 'AIzaSyDQZz8Dkue5YeD8CTt5V63_gGevsduHJ2E', //goole API key, should be obtained for each site,it's free
+        'label' => 'place', //text written in the text bubble
+        'address' => array(
+            'address' => '1600 Amphitheatre Pky',//address of the place
+            'city' => 'Mountain View', //city
+            'state' => 'CA',//state
+            //'country' => 'USA'  - country
+            //'zip' => 'XXXXX' - zip or postal code
+        )
+    ));
+
 
     $this->widget('ext.Yiippod.Yiippod', array(
         'video'=>"http://www.youtube.com/watch?v=qD2olIdUGd8",
