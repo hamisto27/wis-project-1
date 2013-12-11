@@ -17,6 +17,11 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'slideshare'); ?>
+		<?php echo $form->textField($model,'slideshare',array('size'=>50,'maxlength'=>50)); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'Content'); ?>
 		<?php echo $form->textField($model,'Content',array('size'=>50,'maxlength'=>50)); ?>
 	</div>

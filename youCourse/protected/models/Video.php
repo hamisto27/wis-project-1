@@ -5,6 +5,7 @@
  *
  * The followings are the available columns in table 'Video':
  * @property integer $VidID
+ * @property string $slideshare
  * @property string $Content
  * @property string $Description
  * @property string $Name
@@ -39,13 +40,13 @@ class Video extends CActiveRecord
 		return array(
 			array('Content, Name, ChannelID', 'required'),
 			array('Views, Coordinates, ChannelID', 'numerical', 'integerOnly'=>true),
-			array('Content', 'length', 'max'=>50),
+			array('slideshare, Content', 'length', 'max'=>50),
 			array('Description', 'length', 'max'=>200),
 			array('Name', 'length', 'max'=>30),
 			array('Time_stp', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('VidID, Content, Description, Name, Views, Coordinates, ChannelID, Time_stp', 'safe', 'on'=>'search'),
+			array('VidID, slideshare, Content, Description, Name, Views, Coordinates, ChannelID, Time_stp', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -71,6 +72,7 @@ class Video extends CActiveRecord
 	{
 		return array(
 			'VidID' => 'Vid',
+			'slideshare' => 'Slideshare',
 			'Content' => 'Content',
 			'Description' => 'Description',
 			'Name' => 'Name',
@@ -100,6 +102,7 @@ class Video extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('VidID',$this->VidID);
+		$criteria->compare('slideshare',$this->slideshare,true);
 		$criteria->compare('Content',$this->Content,true);
 		$criteria->compare('Description',$this->Description,true);
 		$criteria->compare('Name',$this->Name,true);

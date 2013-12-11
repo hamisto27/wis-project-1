@@ -43,7 +43,7 @@ return array(
         ),
 
         'cal' => array(
-            'debug' => true // For first run only!
+            //'debug' => true // For first run only!
         ),
 
 

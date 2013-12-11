@@ -9,6 +9,10 @@
 	<?php echo CHtml::link(CHtml::encode($data->VidID), array('view', 'id'=>$data->VidID)); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('slideshare')); ?>:</b>
+	<?php echo CHtml::encode($data->slideshare); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Content')); ?>:</b>
 	<?php echo CHtml::encode($data->Content); ?>
 	<br />
@@ -29,11 +33,11 @@
 	<?php echo CHtml::encode($data->Coordinates); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ChannelID')); ?>:</b>
 	<?php echo CHtml::encode($data->ChannelID); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Time_stp')); ?>:</b>
 	<?php echo CHtml::encode($data->Time_stp); ?>
 	<br />

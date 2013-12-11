@@ -20,6 +20,12 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'slideshare'); ?>
+		<?php echo $form->textField($model,'slideshare',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'slideshare'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'Content'); ?>
 		<?php echo $form->textField($model,'Content',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'Content'); ?>

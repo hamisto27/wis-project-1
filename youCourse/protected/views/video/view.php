@@ -22,6 +22,7 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'VidID',
+		'slideshare',
 		'Content',
 		'Description',
 		'Name',
