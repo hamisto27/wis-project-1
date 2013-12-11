@@ -3,8 +3,7 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-<div class="left">
-    <?php $this->widget('bootstrap.widgets.TbNav', array(
+    <?php /*$this->widget('bootstrap.widgets.TbNav', array(
         'type' => TbHtml::NAV_TYPE_LIST,
         'items' => array(
             array('label' => 'List header'),
@@ -17,10 +16,19 @@ $this->pageTitle=Yii::app()->name;
             TbHtml::menuDivider(),
             array('label' => 'Help', 'url' => '#'),
         )
+    ));*/
+    ?>
+
+    <?php
+
+    $this->widget('ext.Yiippod.Yiippod', array(
+        'video'=>"http://www.youtube.com/watch?v=qD2olIdUGd8",
+        'id' => 'yiippodplayer',
+        'width'=>640,
+        'height'=>480,
+        'bgcolor'=>'#000'
     ));
     ?>
-</div>
-<div class="right">
     <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
     <p>Congratulations! You have successfully created your Yii application.</p>
@@ -35,4 +43,3 @@ $this->pageTitle=Yii::app()->name;
     the <a href="http://www.yiiframework.com/doc/">documentation</a>.
     Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
     should you have any questions.</p>
-</div>
