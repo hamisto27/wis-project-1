@@ -79,19 +79,13 @@ INSERT INTO `tbl_profiles_fields` (`id`, `varname`, `title`, `field_type`, `fiel
 (2, 'firstname', 'First Name', 'VARCHAR', 50, 3, 1, '', '', 'Incorrect First Name (length between 3 and 50 characters).', '', '', '', '', 0, 3),
 (3, 'birthday', 'Birthday', 'DATE', 0, 0, 2, '', '', '', '', '0000-00-00', 'UWjuidate', '{"ui-theme":"redmond"}', 3, 2);
 
-CREATE TABLE GeoCodes (
-	GID int(8) NOT NULL AUTO_INCREMENT primary key,
-	longLocation decimal(18,14) DEFAULT NULL,
-	latLocation decimal(18,14) DEFAULT NULL
-)ENGINE=InnoDB DEFAULT CHARSET=utf8; 
-
 CREATE TABLE Channel (
 	ChannelID int(8) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	Coordinates int(8) default NULL,
 	Description varchar(200),
+	longLocation decimal(18,14) DEFAULT NULL,
+	latLocation decimal(18,14) DEFAULT NULL,
 	Time_stp timestamp default current_timestamp,
-	FOREIGN KEY (ChannelID) REFERENCES User(id),
-	FOREIGN KEY (Coordinates) REFERENCES GeoCodes(GID)
+	FOREIGN KEY (ChannelID) REFERENCES User(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE Subscription (
@@ -109,11 +103,11 @@ CREATE TABLE Video (
 	Description varchar(200),
 	Name varchar(30) NOT NULL,
 	Views int(8) NOT NULL default '0',
-	Coordinates int(8) default NULL,
 	ChannelID int(8) NOT NULL,
+	longLocation decimal(18,14) DEFAULT NULL,
+	latLocation decimal(18,14) DEFAULT NULL,
 	Time_stp timestamp default current_timestamp,
-	FOREIGN KEY (ChannelID) REFERENCES Channel(ChannelID),
-	FOREIGN KEY (Coordinates) REFERENCES GeoCodes(GID)
+	FOREIGN KEY (ChannelID) REFERENCES Channel(ChannelID)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE Comment (
