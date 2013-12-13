@@ -728,3 +728,35 @@ Stack trace:
 REQUEST_URI=/wis-project-1/youCourse/index.php?r=site/calendar&view=calendar
 HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php?r=site/calendar&view=calendar
 ---
+2013/12/13 14:56:56 [error] [php] Undefined variable: form (C:\wamp\www\wis-project-1\youCourse\protected\views\site\pages\calendar.php:30)
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\wis-project-1\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#3 C:\wamp\www\wis-project-1\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#4 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#5 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=site/page&view=calendar
+in C:\wamp\www\wis-project-1\youCourse\protected\views\site\pages\calendar.php (30)
+in C:\wamp\www\wis-project-1\youCourse\index.php (20)
+2013/12/13 15:06:52 [error] [php] Undefined variable: form (C:\wamp\www\wis-project-1\youCourse\protected\views\site\pages\calendar.php:30)
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\wis-project-1\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#3 C:\wamp\www\wis-project-1\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#4 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#5 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=site/page&view=calendar
+in C:\wamp\www\wis-project-1\youCourse\protected\views\site\pages\calendar.php (30)
+in C:\wamp\www\wis-project-1\youCourse\index.php (20)
