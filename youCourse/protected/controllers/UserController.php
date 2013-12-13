@@ -53,9 +53,6 @@ class UserController extends Controller
             array('allow', 'actions'=>array('REST.GET', 'REST.PUT', 'REST.POST', 'REST.DELETE'),
                 'users'=>array('*'),
             ),
-            array('deny',  // deny all users
-                'users'=>array('*'),
-            ),
 		);
 	}
 
@@ -202,7 +199,7 @@ class UserController extends Controller
     /**This method is for the configuration of the RESTful
      *
      */
-    public function actions()
+    public function actionRest()
     {
         return array(
             'REST.'=>'ext.starship.RestfullYii.actions.ERestActionProvider',
