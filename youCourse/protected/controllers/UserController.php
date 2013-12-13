@@ -16,6 +16,13 @@ class UserController extends Controller
 		return array(
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
+            //nextlines are for the rest controller:
+            'accessControl', // perform access control for CRUD operations
+            array(
+                'ext.starship.RestfullYii.filters.ERestFilter +
+                REST.GET, REST.PUT, REST.POST, REST.DELETE'
+            ),
+
 		);
 	}
 
@@ -42,6 +49,13 @@ class UserController extends Controller
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
+            //the 2 following ones are for the configuration of the RESTful service
+            array('allow', 'actions'=>array('REST.GET', 'REST.PUT', 'REST.POST', 'REST.DELETE'),
+                'users'=>array('*'),
+            ),
+            array('deny',  // deny all users
+                'users'=>array('*'),
+            ),
 		);
 	}
 
@@ -184,4 +198,14 @@ class UserController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    /**This method is for the configuration of the RESTful
+     *
+     */
+    public function actions()
+    {
+        return array(
+            'REST.'=>'ext.starship.RestfullYii.actions.ERestActionProvider',
+        );
+    }
 }
