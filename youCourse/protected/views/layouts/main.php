@@ -3,19 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 
-<script>
-    $(document).ready(function() {
-
-        // page is now ready, initialize the calendar...
-
-        $('#calendar').fullCalendar({
-            // put your options and callbacks here
-        })
-
-    });
-</script>
-
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="en" />
@@ -31,17 +18,27 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
     <!-- calendar -->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/fullcalendar.css"/>
-    <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.10.2.js'></script>
-    <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.js'></script>
-    <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/fullcalendar.js'></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/youCourse/css/fullcalendar.css"/>
+    <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/youCourse/js/jquery-1.10.2.js'></script>
+    <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/youCourse/js/fullcalendar.js'></script>
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
+    <script>
+        $(document).ready(function() {
+            // page is now ready, initialize the calendar...
+            $('#calendar').fullCalendar({
+                // put your options and callbacks here
+            })
+
+        });
+    </script>
+
 </head>
 
 <body>
 
-<div id='calendar'></div>
+
 
 <div class="container" id="page">
 
@@ -70,6 +67,8 @@
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
     <?php endif?>
+
+    <div id='calendar'></div>
 
     <?php echo $content; ?>
 
