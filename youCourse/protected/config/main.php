@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-    'name'=>'My Web Application',
+    'name'=>'Youcourse',
 
     'aliases' => array(
         'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), // change this if necessary
@@ -53,7 +53,13 @@ return array(
         ),
 
         //calendar module
-        'wdcalendar'    => array( 'embed' => true )
+        'wdcalendar'    => array(
+            'embed' => true,
+            'wd_options' => array(
+                'readonly' => 'JS:true' // execute JS
+            )
+
+        )
 
         /*'gii' => array(
             'generatorPaths' => array('bootstrap.gii'),
