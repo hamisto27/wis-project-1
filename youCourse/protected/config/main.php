@@ -11,7 +11,6 @@ return array(
 
     'aliases' => array(
         'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), // change this if necessary
-        //'RestfullYii' =>realpath(__DIR__ . '/../extensions/starship/RestfullYii'),
     ),
     // preloading 'log' component
     'preload'=>array('log'),
@@ -44,16 +43,9 @@ return array(
         ),
 
         'cal' => array(
-            //'debug' => true // For first run only!
+            'debug' => true // For first run only!
         ),
 
-        //rest api module
-        'api' =>array(
-           //api Rest
-        ),
-
-        //calendar module
-        'wdcalendar'    => array( 'embed' => true )
 
         /*'gii' => array(
             'generatorPaths' => array('bootstrap.gii'),
@@ -62,14 +54,6 @@ return array(
 
     // application components
     'components'=>array(
-
-        'urlManager'=>array(
-            'urlFormat'=>'path',
-            /*'rules'=>require(
-                    dirname(__FILE__).'/../extensions/starship/restfullyii/config/routes.php'
-                ),*/
-        ),
-
         'user'=>array(
             // enable cookie-based authentication
             'allowAutoLogin'=>true,
@@ -102,6 +86,13 @@ return array(
             'password' => 'youcourswisproject',
             'charset' => 'utf8',
         ),
+        /*'db'=>array(
+            'connectionString' => 'mysql:host=localhost;dbname=wis_project',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+        ),*/
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -130,5 +121,4 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
-
 );

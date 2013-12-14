@@ -1,5 +1,6 @@
 <?php
 
+Yii::import('application.controllers.ChannelController');
 
 class VideoController extends Controller
 {
@@ -29,15 +30,15 @@ class VideoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','ajax'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','ajax'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','ajax'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -61,35 +62,38 @@ class VideoController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate($ChannelID, $longLocation, $latLocation)
+	public function actionCreate()
 	{
 		$model=new Video;
-        $my_file = '/Users/mohamedchajii/VIDEODELCAZZO.txt';
-        $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //implicitly creates file
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-        // $model->attributes=$_POST['Video'];
-        $model->ChannelID = $ChannelID;
-        $model->longLocation = $longLocation;
-        $model->latLocation = $latLocation;
-        fwrite($handle, $model->Content);
-        $model->save();
-
 		if(isset($_POST['Video']))
 		{
 			$model->attributes=$_POST['Video'];
-            $model->ChannelID = $ChannelID;
-            $model->longLocation = $longLocation;
-            $model->latLocation = $latLocation;
-			$model->save();
-				//$this->redirect(array('view','id'=>$model->VidID));
+			if($model->save());
+				$this->redirect(array('view','id'=>$model->VidID));
 		}
 
-		/*$this->render('create',array(
+		$this->render('create',array(
 			'model'=>$model,
-		));*/
+		));
 	}
+    public function actionAjax()
+    {
+        $model=new Video;
+        $controller_channel = new ChannelController("Channel");
+        $model_channel = $controller_channel->loadModelmyChannel(Yii::app()->user->id);
+        if(isset($_POST['Video']))
+            {
+                $model->attributes=$_POST['Video'];
+                $model->ChannelID = $model_channel->ChannelID;
+                $model->longLocation = $model_channel -> longLocation;
+                $model->latLocation = $model_channel -> latLocation;
+                $model->save(false);
+            }
 
+        /*$this->render('create',array(
+            'model'=>$model,
+        ));*/
+    }
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.

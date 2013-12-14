@@ -20,18 +20,19 @@ $this->pageTitle=Yii::app()->name;
     ?>
 
     <?php
-    $this->widget('application.extensions.gmap.GMap', array(
+    /*->widget('application.extensions.gmap.GMap', array(
         'id' => 'gmap',//id of the <div> container created
         'key' => 'AIzaSyDQZz8Dkue5YeD8CTt5V63_gGevsduHJ2E', //goole API key, should be obtained for each site,it's free
         'label' => 'place', //text written in the text bubble
         'address' => array(
             'address' => '1600 Amphitheatre Pky',//address of the place
             'city' => 'Mountain View', //city
-            //'state' => 'CA',//state
+            'state' => 'CA',//state
             //'country' => 'USA'  - country
             //'zip' => 'XXXXX' - zip or postal code
         )
-    ));
+    ));*/
+
 
 
     $this->widget('ext.Yiippod.Yiippod', array(
@@ -41,24 +42,7 @@ $this->pageTitle=Yii::app()->name;
         'height'=>480,
         'bgcolor'=>'#000'
     ));
-    //http://zenverse.net/php-oembed-embed-videos/
-     $videourl = 'http://fr.slideshare.net/signer/html5-and-the-open-web-platform';
-
-    $json = @file_get_contents('http://www.slideshare.net/api/oembed/2?url='.urlencode($videourl).'&format=json');
-    $decode = json_decode($json, true);
-    //http://www.slideshare.net/api/oembed/2?url=http://www.slideshare.net/haraldf/business-quotes-for-2011&format=json
-    if ($decode == null || !$decode) {
-        $error = true;
-        //error control here
-    } else {
-        $thumb = $decode['thumbnail'];
-        $html = $decode['html'];
-        echo $html;
-    }
-
     ?>
-
-
     <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
     <p>Congratulations! You have successfully created your Yii application.</p>
@@ -73,7 +57,4 @@ $this->pageTitle=Yii::app()->name;
     the <a href="http://www.yiiframework.com/doc/">documentation</a>.
     Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
     should you have any questions.</p>
-
-
-
 
