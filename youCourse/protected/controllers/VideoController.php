@@ -30,7 +30,7 @@ class VideoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','ajax'),
+				'actions'=>array('index','view','ajax', 'SearchBar'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -185,4 +185,20 @@ class VideoController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionSearchBar(){
+        $ourFileName = "testFile.txt";
+        $ourFileHandle = fopen($ourFileName, 'w') or die("can't open file");
+
+        $pieces = explode(" ", $_POST['Video']['Name']);
+
+        foreach($pieces as $piece)
+            file_put_contents($ourFileName, $piece);
+        fclose($ourFileHandle);
+
+        /*$this->render('view',array(
+            'model'=>$this->loadModel($id),
+        ));*/
+    }
+
 }
