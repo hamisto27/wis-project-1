@@ -34,6 +34,7 @@ return array(
             'password'=>'root',
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters'=>array('127.0.0.1','::1'),
+            //'ipFilters'=>array($_SERVER['REMOTE_ADDR']),
         ),
 
         //user extension
@@ -125,7 +126,7 @@ return array(
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				//*/
 			),
 		),
 	),
