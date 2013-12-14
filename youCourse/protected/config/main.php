@@ -49,7 +49,7 @@ return array(
 
         //rest api module
         'api' =>array(
-            //'RestfullYii' =>realpath(__DIR__ . '/../extensions/starship/RestfullYii'),
+           //api Rest
         )
         /*'gii' => array(
             'generatorPaths' => array('bootstrap.gii'),
@@ -61,9 +61,9 @@ return array(
 
         'urlManager'=>array(
             'urlFormat'=>'path',
-            /*'rules'=>require(
+            'rules'=>require(
                     dirname(__FILE__).'/../extensions/starship/restfullyii/config/routes.php'
-                ),*/
+                ),
         ),
 
         'user'=>array(

@@ -20,7 +20,7 @@
 
         $("#btnSubmit").click(function(){
             $.ajax({
-                url:'/api/user/1',
+                url:'index.php/api/user/1',
                 type:"GET",
                 success:function(data) {
                     console.log(data);

@@ -1077,3 +1077,262 @@ Stack trace:
 REQUEST_URI=/wis-project/youCourse/index.php/api/default/images/logo.jpg
 HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/default/test
 ---
+2013/12/14 10:51:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/default/ima...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/default/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/default/test
+---
+2013/12/14 10:52:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "images" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/testJson
+---
+2013/12/14 11:18:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "images" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/testJson
+---
+2013/12/14 11:18:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index.php" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index.php')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/index.php/api/user/1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/testJson
+---
+2013/12/14 11:18:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "images" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/testJson
+---
+2013/12/14 11:18:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "images" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/testJson
+---
+2013/12/14 11:18:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index.php" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index.php')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/index.php/api/user/1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/testJson
+---
+2013/12/14 11:18:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index.php" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index.php')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/index.php/api/user/1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/testJson
+---
+2013/12/14 11:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user/1
+---
+2013/12/14 11:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/images...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/user/1
+---
+2013/12/14 11:25:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user/1
+---
+2013/12/14 11:25:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/images...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/user/1
+---
+2013/12/14 11:25:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/images...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/user/1
+---
+2013/12/14 11:25:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user/1
+---
+2013/12/14 11:25:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/images...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/user/1
+---
+2013/12/14 11:25:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/images...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/user/1
+---
+2013/12/14 11:26:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user
+---
+2013/12/14 11:26:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/user
+---
+2013/12/14 11:26:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/user
+---
+2013/12/14 11:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/user
+---
+2013/12/14 11:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/user
+---
+2013/12/14 11:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/api/user
+---
+2013/12/14 11:27:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 11:27:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
