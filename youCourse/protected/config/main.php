@@ -11,7 +11,7 @@ return array(
 
     'aliases' => array(
         'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), // change this if necessary
-        'RestfullYii' =>realpath(__DIR__ . '/../extensions/starship/RestfullYii'),
+        //'RestfullYii' =>realpath(__DIR__ . '/../extensions/starship/RestfullYii'),
     ),
     // preloading 'log' component
     'preload'=>array('log'),
@@ -47,7 +47,10 @@ return array(
             //'debug' => true // For first run only!
         ),
 
-
+        //rest api module
+        'api' =>array(
+            //'RestfullYii' =>realpath(__DIR__ . '/../extensions/starship/RestfullYii'),
+        )
         /*'gii' => array(
             'generatorPaths' => array('bootstrap.gii'),
         ), */
@@ -58,9 +61,9 @@ return array(
 
         'urlManager'=>array(
             'urlFormat'=>'path',
-            'rules'=>require(
+            /*'rules'=>require(
                     dirname(__FILE__).'/../extensions/starship/restfullyii/config/routes.php'
-                ),
+                ),*/
         ),
 
         'user'=>array(
