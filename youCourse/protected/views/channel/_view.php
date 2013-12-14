@@ -9,12 +9,16 @@
 	<?php echo CHtml::link(CHtml::encode($data->ChannelID), array('view', 'id'=>$data->ChannelID)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Coordinates')); ?>:</b>
-	<?php echo CHtml::encode($data->Coordinates); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Description')); ?>:</b>
 	<?php echo CHtml::encode($data->Description); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('longLocation')); ?>:</b>
+	<?php echo CHtml::encode($data->longLocation); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('latLocation')); ?>:</b>
+	<?php echo CHtml::encode($data->latLocation); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Time_stp')); ?>:</b>

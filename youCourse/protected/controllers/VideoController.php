@@ -1,12 +1,13 @@
 <?php
 
+
 class VideoController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	//public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -37,7 +38,7 @@ class VideoController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -60,23 +61,33 @@ class VideoController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionCreate($ChannelID, $longLocation, $latLocation)
 	{
 		$model=new Video;
-
+        $my_file = '/Users/mohamedchajii/VIDEODELCAZZO.txt';
+        $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //implicitly creates file
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+        // $model->attributes=$_POST['Video'];
+        $model->ChannelID = $ChannelID;
+        $model->longLocation = $longLocation;
+        $model->latLocation = $latLocation;
+        fwrite($handle, $model->Content);
+        $model->save();
 
 		if(isset($_POST['Video']))
 		{
 			$model->attributes=$_POST['Video'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->VidID));
+            $model->ChannelID = $ChannelID;
+            $model->longLocation = $longLocation;
+            $model->latLocation = $latLocation;
+			$model->save();
+				//$this->redirect(array('view','id'=>$model->VidID));
 		}
 
-		$this->render('create',array(
+		/*$this->render('create',array(
 			'model'=>$model,
-		));
+		));*/
 	}
 
 	/**

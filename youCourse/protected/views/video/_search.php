@@ -11,14 +11,9 @@
 	'method'=>'get',
 )); ?>
 
-	<!-- <div class="row">
-		<?php //echo $form->label($model,'VidID'); ?>
-		<?php //echo $form->textField($model,'VidID'); ?>
-	</div> -->
-
 	<div class="row">
-		<?php echo $form->label($model,'slideshare'); ?>
-		<?php echo $form->textField($model,'slideshare',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->label($model,'VidID'); ?>
+		<?php echo $form->textField($model,'VidID'); ?>
 	</div>
 
 	<div class="row">
@@ -36,25 +31,30 @@
 		<?php echo $form->textField($model,'Name',array('size'=>30,'maxlength'=>30)); ?>
 	</div>
 
-	<!-- <div class="row">
-		<?php //echo $form->label($model,'Views'); ?>
-		<?php //echo $form->textField($model,'Views'); ?>
-	</div> -->
-
 	<div class="row">
-		<?php echo $form->label($model,'Coordinates'); ?>
-		<?php echo $form->textField($model,'Coordinates'); ?>
+		<?php echo $form->label($model,'Views'); ?>
+		<?php echo $form->textField($model,'Views'); ?>
 	</div>
 
-    <!--<div class="row">
-		<?php //echo $form->label($model,'ChannelID'); ?>
-		<?php //echo $form->textField($model,'ChannelID'); ?>
-	</div> -->
+	<div class="row">
+		<?php echo $form->label($model,'ChannelID'); ?>
+		<?php echo $form->textField($model,'ChannelID'); ?>
+	</div>
 
-    <!--<div class="row">
-		<?php //echo $form->label($model,'Time_stp'); ?>
-		<?php //echo $form->textField($model,'Time_stp'); ?>
-	</div> -->
+	<div class="row">
+		<?php echo $form->label($model,'longLocation'); ?>
+		<?php echo $form->textField($model,'longLocation',array('size'=>18,'maxlength'=>18)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'latLocation'); ?>
+		<?php echo $form->textField($model,'latLocation',array('size'=>18,'maxlength'=>18)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'Time_stp'); ?>
+		<?php echo $form->textField($model,'Time_stp'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>

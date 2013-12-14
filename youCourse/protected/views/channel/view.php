@@ -22,8 +22,9 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'ChannelID',
-		'Coordinates',
 		'Description',
+		'longLocation',
+		'latLocation',
 		'Time_stp',
 	),
 )); ?>
