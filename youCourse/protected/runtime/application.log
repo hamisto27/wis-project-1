@@ -760,3 +760,736 @@ Stack trace:
 REQUEST_URI=/wis-project-1/youCourse/index.php?r=site/page&view=calendar
 in C:\wamp\www\wis-project-1\youCourse\protected\views\site\pages\calendar.php (30)
 in C:\wamp\www\wis-project-1\youCourse\index.php (20)
+2013/12/13 17:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/profile
+---
+2013/12/13 17:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/login
+---
+2013/12/13 17:06:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/login
+---
+2013/12/13 17:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/profile
+---
+2013/12/13 17:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/profile
+---
+2013/12/13 17:11:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/login
+---
+2013/12/13 17:11:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/profile
+---
+2013/12/13 17:12:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/login
+---
+2013/12/13 17:12:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/profile
+---
+2013/12/13 17:13:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 17:13:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 17:21:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/contact
+---
+2013/12/13 17:23:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rest".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/rest/user')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/rest/user
+---
+2013/12/13 17:23:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rest".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('rest')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('rest')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/rest/image...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/rest/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/rest/user
+---
+2013/12/13 17:32:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/index
+---
+2013/12/13 17:34:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/index
+---
+2013/12/13 17:34:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:35:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:35:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=calendar
+---
+2013/12/13 17:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:35:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/index
+---
+2013/12/13 17:35:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:35:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/index
+---
+2013/12/13 17:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:37:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:38:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=calendar
+---
+2013/12/13 17:38:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:39:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:39:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:39:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:39:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:41:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 17:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 17:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 17:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/profile
+---
+2013/12/13 17:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/user/profile
+---
+2013/12/13 17:50:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:50:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:50:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:50:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:53:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:53:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:53:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 17:53:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 18:02:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 18:02:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 18:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/index
+---
+2013/12/13 18:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/index
+---
+2013/12/13 18:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 18:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/13 18:03:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api
+---
+2013/12/13 18:03:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo.jpg')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api
+---
+2013/12/13 18:03:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo.jpg')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api
+---
+2013/12/13 18:03:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 18:03:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 18:03:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 18:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 18:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/13 18:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/14 09:16:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 09:17:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 09:17:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 09:20:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/14 09:20:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/14 09:20:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user
+---
+2013/12/14 09:29:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('controller/REST...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/controller
+---
+2013/12/14 09:29:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/controller
+---
+2013/12/14 09:29:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo.jpg".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo.jpg
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/controller
+---
