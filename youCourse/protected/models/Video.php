@@ -5,20 +5,19 @@
  *
  * The followings are the available columns in table 'Video':
  * @property integer $VidID
- * @property string $slideshare
  * @property string $Content
  * @property string $Description
  * @property string $Name
  * @property integer $Views
- * @property integer $Coordinates
  * @property integer $ChannelID
+ * @property string $longLocation
+ * @property string $latLocation
  * @property string $Time_stp
  *
  * The followings are the available model relations:
  * @property User[] $users
  * @property Comment[] $comments
  * @property Channel $channel
- * @property GeoCodes $coordinates
  */
 class Video extends CActiveRecord
 {
@@ -38,15 +37,15 @@ class Video extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Content, Name, ChannelID', 'required'),
-			array('Views, Coordinates, ChannelID', 'numerical', 'integerOnly'=>true),
-			array('slideshare, Content', 'length', 'max'=>50),
+			array('Content, Name, ChannelID, Time_stp', 'required'),
+			array('Views, ChannelID', 'numerical', 'integerOnly'=>true),
+			array('Content', 'length', 'max'=>50),
 			array('Description', 'length', 'max'=>200),
 			array('Name', 'length', 'max'=>30),
-			array('Time_stp', 'safe'),
+			array('longLocation, latLocation', 'length', 'max'=>18),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('VidID, slideshare, Content, Description, Name, Views, Coordinates, ChannelID, Time_stp', 'safe', 'on'=>'search'),
+			array('VidID, Content, Description, Name, Views, ChannelID, longLocation, latLocation, Time_stp', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,7 +60,6 @@ class Video extends CActiveRecord
 			'users' => array(self::MANY_MANY, 'User', 'Likes(VidID, id)'),
 			'comments' => array(self::HAS_MANY, 'Comment', 'VidID'),
 			'channel' => array(self::BELONGS_TO, 'Channel', 'ChannelID'),
-			'coordinates' => array(self::BELONGS_TO, 'GeoCodes', 'Coordinates'),
 		);
 	}
 
@@ -72,13 +70,13 @@ class Video extends CActiveRecord
 	{
 		return array(
 			'VidID' => 'Vid',
-			'slideshare' => 'Slideshare',
 			'Content' => 'Content',
 			'Description' => 'Description',
 			'Name' => 'Name',
 			'Views' => 'Views',
-			'Coordinates' => 'Coordinates',
 			'ChannelID' => 'Channel',
+			'longLocation' => 'Long Location',
+			'latLocation' => 'Lat Location',
 			'Time_stp' => 'Time Stp',
 		);
 	}
@@ -101,15 +99,15 @@ class Video extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		// $criteria->compare('VidID',$this->VidID);
-		$criteria->compare('slideshare',$this->slideshare,true);
+		$criteria->compare('VidID',$this->VidID);
 		$criteria->compare('Content',$this->Content,true);
 		$criteria->compare('Description',$this->Description,true);
 		$criteria->compare('Name',$this->Name,true);
-		// $criteria->compare('Views',$this->Views);
-		$criteria->compare('Coordinates',$this->Coordinates);
-		// $criteria->compare('ChannelID',$this->ChannelID);
-		// $criteria->compare('Time_stp',$this->Time_stp,true);
+		$criteria->compare('Views',$this->Views);
+		$criteria->compare('ChannelID',$this->ChannelID);
+		$criteria->compare('longLocation',$this->longLocation,true);
+		$criteria->compare('latLocation',$this->latLocation,true);
+		$criteria->compare('Time_stp',$this->Time_stp,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

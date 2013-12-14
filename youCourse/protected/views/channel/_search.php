@@ -17,13 +17,18 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'Coordinates'); ?>
-		<?php echo $form->textField($model,'Coordinates'); ?>
+		<?php echo $form->label($model,'Description'); ?>
+		<?php echo $form->textField($model,'Description',array('size'=>60,'maxlength'=>200)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'Description'); ?>
-		<?php echo $form->textField($model,'Description',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->label($model,'longLocation'); ?>
+		<?php echo $form->textField($model,'longLocation',array('size'=>18,'maxlength'=>18)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'latLocation'); ?>
+		<?php echo $form->textField($model,'latLocation',array('size'=>18,'maxlength'=>18)); ?>
 	</div>
 
 	<div class="row">

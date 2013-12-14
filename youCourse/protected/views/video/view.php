@@ -22,13 +22,13 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'VidID',
-		'slideshare',
 		'Content',
 		'Description',
 		'Name',
 		'Views',
-		'Coordinates',
 		'ChannelID',
+		'longLocation',
+		'latLocation',
 		'Time_stp',
 	),
 )); ?>

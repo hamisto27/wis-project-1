@@ -1,16 +1,21 @@
 <?php
 
+Yii::import('application.controllers.VideoController');
+
+Yii::app()->getClientScript()->registerCoreScript('yii');
+
 class ChannelController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/column1';
 
 	/**
 	 * @return array action filters
 	 */
+
 	public function filters()
 	{
 		return array(
@@ -31,6 +36,10 @@ class ChannelController extends Controller
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
+            array('allow',  // allow all users to perform 'index' and 'view' actions
+                'actions'=>array('index','view'),
+                'users'=>array('*'),
+            ),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
 				'users'=>array('@'),
@@ -39,39 +48,78 @@ class ChannelController extends Controller
 				'actions'=>array('admin','delete'),
 				'users'=>array('admin'),
 			),
+            array('allow', // allow admin user to perform 'admin' and 'delete' actions
+                'actions'=>array('myChannel'),
+                'users'=>array('@'),
+            ),
+            array('allow', // allow admin user to perform 'admin' and 'delete' actions
+                'actions'=>array('uploadFromYoutube'),
+                'users'=>array('@'),
+            ),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
 		);
 	}
 
-	/**
-	 * Displays a particular model.
-	 * @param integer $id the ID of the model to be displayed
-	 */
-	public function actionView($id)
-	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
-	}
+/**
+ * Displays a particular model.
+ * @param integer $id the ID of the model to be displayed
+ */
+    public function actionView($id)
+    {
+        $this->render('view',array(
+            'model'=>$this->loadModel($id),
+        ));
+    }
+
+    public function actionMyChannel($id)
+    {
+        $model = $this->loadModelmyChannel($id);
+        if($model == null){
+            $this->actionCreate();
+        }
+        else{
+            $this->render('myChannel',array(
+                'model'=>$model,
+            ));
+        }
+    }
+
+    // action for save video from youtube.
+
+    public function actionUploadFromYoutube()
+    {
+        $model = $this->loadModelmyChannel(Yii::app()->user->id);
+        $controller_video = new VideoController("Video");
+        $a = $_POST['ajaxData'];
+        $controller_video->actionCreate($model->ChannelID, $model->longLocation,  $model->latLocation);
+
+        $this->render('myChannel',array(
+            'model'=>$model,
+        ));
+    }
 
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
+
 	public function actionCreate()
 	{
 		$model=new Channel;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Channel']))
 		{
 			$model->attributes=$_POST['Channel'];
+            //set id channel
+            $model->ChannelID = Yii::app()->user->id;
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ChannelID));
+				//$this->redirect(array('view','id'=>$model->ChannelID));
+                $this->redirect(array('myChannel','id'=>$model->ChannelID));
 		}
 
 		$this->render('create',array(
@@ -84,6 +132,7 @@ class ChannelController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
+
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
@@ -95,7 +144,7 @@ class ChannelController extends Controller
 		{
 			$model->attributes=$_POST['Channel'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ChannelID));
+		       $this->redirect(array('view','id'=>$model->ChannelID));
 		}
 
 		$this->render('update',array(
@@ -108,6 +157,7 @@ class ChannelController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
+
 	public function actionDelete($id)
 	{
 		$this->loadModel($id)->delete();
@@ -120,6 +170,7 @@ class ChannelController extends Controller
 	/**
 	 * Lists all models.
 	 */
+
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Channel');
@@ -131,6 +182,7 @@ class ChannelController extends Controller
 	/**
 	 * Manages all models.
 	 */
+
 	public function actionAdmin()
 	{
 		$model=new Channel('search');
@@ -157,6 +209,12 @@ class ChannelController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
+
+    //load my channel or return null
+    public function loadModelmyChannel($id){
+        $model=Channel::model()->findByPk($id);
+        return $model;
+    }
 
 	/**
 	 * Performs the AJAX validation.

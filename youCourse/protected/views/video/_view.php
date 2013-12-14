@@ -9,10 +9,6 @@
 	<?php echo CHtml::link(CHtml::encode($data->VidID), array('view', 'id'=>$data->VidID)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('slideshare')); ?>:</b>
-	<?php echo CHtml::encode($data->slideshare); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Content')); ?>:</b>
 	<?php echo CHtml::encode($data->Content); ?>
 	<br />
@@ -29,13 +25,17 @@
 	<?php echo CHtml::encode($data->Views); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Coordinates')); ?>:</b>
-	<?php echo CHtml::encode($data->Coordinates); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('ChannelID')); ?>:</b>
+	<?php echo CHtml::encode($data->ChannelID); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('longLocation')); ?>:</b>
+	<?php echo CHtml::encode($data->longLocation); ?>
 	<br />
 
 	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('ChannelID')); ?>:</b>
-	<?php echo CHtml::encode($data->ChannelID); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('latLocation')); ?>:</b>
+	<?php echo CHtml::encode($data->latLocation); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Time_stp')); ?>:</b>

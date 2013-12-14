@@ -5,13 +5,13 @@
  *
  * The followings are the available columns in table 'Channel':
  * @property integer $ChannelID
- * @property integer $Coordinates
  * @property string $Description
+ * @property string $longLocation
+ * @property string $latLocation
  * @property string $Time_stp
  *
  * The followings are the available model relations:
  * @property User $channel
- * @property GeoCodes $coordinates
  * @property User[] $users
  * @property Video[] $videos
  */
@@ -33,12 +33,14 @@ class Channel extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Coordinates', 'numerical', 'integerOnly'=>true),
+			// time stamp not required array('Time_stp', 'required'),
+            array('longLocation', 'required'),
+            array('latLocation', 'required'),
 			array('Description', 'length', 'max'=>200),
-			array('Time_stp', 'safe'),
+			array('longLocation, latLocation', 'length', 'max'=>18),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ChannelID, Coordinates, Description, Time_stp', 'safe', 'on'=>'search'),
+			array('ChannelID, Description, longLocation, latLocation, Time_stp', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -51,7 +53,6 @@ class Channel extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'channel' => array(self::BELONGS_TO, 'User', 'ChannelID'),
-			'coordinates' => array(self::BELONGS_TO, 'GeoCodes', 'Coordinates'),
 			'users' => array(self::MANY_MANY, 'User', 'Subscription(ChannelID, id)'),
 			'videos' => array(self::HAS_MANY, 'Video', 'ChannelID'),
 		);
@@ -64,8 +65,9 @@ class Channel extends CActiveRecord
 	{
 		return array(
 			'ChannelID' => 'Channel',
-			'Coordinates' => 'Coordinates',
 			'Description' => 'Description',
+			'longLocation' => 'Long Location',
+			'latLocation' => 'Lat Location',
 			'Time_stp' => 'Time Stp',
 		);
 	}
@@ -89,9 +91,10 @@ class Channel extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ChannelID',$this->ChannelID);
-		$criteria->compare('Coordinates',$this->Coordinates);
 		$criteria->compare('Description',$this->Description,true);
-		$criteria->compare('Time_stp',$this->Time_stp,true);
+		$criteria->compare('longLocation',$this->longLocation,true);
+		$criteria->compare('latLocation',$this->latLocation,true);
+		//$criteria->compare('Time_stp',$this->Time_stp,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
