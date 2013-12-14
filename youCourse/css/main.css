@@ -9,7 +9,6 @@ body
 
 #page
 {
-    margin-top: 100px;
     margin-bottom: 5px;
     background: white;
     width:100%;
@@ -45,8 +44,7 @@ body
 	padding: 10px 20px;
 	font-size: 200%;
 }
-
-#mainmenu
+/*#mainmenu
 {
     position:fixed;
     top:0px;
@@ -120,7 +118,7 @@ body
 #mainmenu a.brand:hover
 {
     color:#0066cc;
-}
+}*/
 ul.nav-list{
 
 }
