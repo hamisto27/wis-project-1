@@ -47,7 +47,12 @@ return array(
             'debug' => true // For first run only!
         ),
 
-
+        'wdcalendar'    => array(
+            'embed' => true,
+            'wd_options' => array(
+                'readonly' => 'JS:true' // execute JS
+            )
+        ),
         /*'gii' => array(
             'generatorPaths' => array('bootstrap.gii'),
         ), */

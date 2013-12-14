@@ -4029,3 +4029,48 @@ Stack trace:
 REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
 HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
 ---
+2013/12/14 18:03:24 [error] [exception.CException] exception 'CException' with message 'Property "WdcalendarModule.readonly" is not defined.' in C:\xampp\htdocs\wis-project\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(513): CComponent->__set('readonly', 'JS:true')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(86): CModule->configure(Array)
+#2 C:\xampp\htdocs\wis-project\yii\framework\YiiBase.php(206): CModule->__construct('wdcalendar', NULL, Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(282): YiiBase::createComponent('wdcalendar.Wdca...', 'wdcalendar', NULL, Array)
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(337): CModule->getModule('wdcalendar')
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('wdcalendar')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('wdcalendar')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=wdcalendar
+---
+2013/12/14 18:04:07 [error] [exception.CException] exception 'CException' with message 'Property "WdcalendarModule.readonly" is not defined.' in C:\xampp\htdocs\wis-project\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(513): CComponent->__set('readonly', 'JS:true')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(86): CModule->configure(Array)
+#2 C:\xampp\htdocs\wis-project\yii\framework\YiiBase.php(206): CModule->__construct('wdcalendar', NULL, Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(282): YiiBase::createComponent('wdcalendar.Wdca...', 'wdcalendar', NULL, Array)
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(337): CModule->getModule('wdcalendar')
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('wdcalendar')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('wdcalendar')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=wdcalendar
+---
+2013/12/14 18:04:49 [error] [php] mysql_connect():  (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\dbconfig.php:32)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(125): listCalendarByRange()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#2 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php?r=wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\dbconfig.php (32)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (71)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
