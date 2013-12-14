@@ -90,14 +90,14 @@ class ChannelController extends Controller
 
     public function actionUploadFromYoutube()
     {
-        $model = $this->loadModelmyChannel(Yii::app()->user->id);
+       /* $model = $this->loadModelmyChannel(Yii::app()->user->id);
         $controller_video = new VideoController("Video");
         $a = $_POST['ajaxData'];
         $controller_video->actionCreate($model->ChannelID, $model->longLocation,  $model->latLocation);
 
         $this->render('myChannel',array(
             'model'=>$model,
-        ));
+        ));*/
     }
 
 	/**

@@ -13,10 +13,10 @@
     <![endif]-->
     <?php Yii::app()->bootstrap->register(); ?>
     <?php // Include the client scripts
-    $baseUrl = Yii::app()->baseUrl;
+        $baseUrl = Yii::app()->baseUrl;
 
-    $cs = Yii::app()->getClientScript();
-    $cs->registerScriptFile($baseUrl.'/js/ajaxScript.js');
+        $cs = Yii::app()->getClientScript();
+        $cs->registerScriptFile($baseUrl.'/js/ajaxScript.js');
     ?>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
@@ -45,9 +45,9 @@
             )
         ));*/ ?>
         <?php $this->widget('bootstrap.widgets.TbNavBar', array(
-            'brandLabel'=> CHtml::image("images/logo_mohamed.png", "YouCourse"),
-            'display'=>null,
-            'items'=>array(
+                'brandLabel'=> CHtml::image("images/logo_mohamed.png", "YouCourse"),
+                'display'=>null,
+                'items'=>array(
                 array(
                     'class'=>'bootstrap.widgets.TbNav',
                     'items'=>array(
@@ -58,7 +58,7 @@
                             'post', array('inputOptions' => array('name' => 'Video[Name]',
                             'class' => 'search-query span2',  'placeholder' =>Yii::t('app','Search')))),
                         TbHtml::button('Search', array(
-                            'icon'=>TbHtml::ICON_SEARCH))
+                                'icon'=>TbHtml::ICON_SEARCH))
                     ),
                 ),
                 array(

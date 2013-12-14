@@ -1107,7 +1107,3 @@
     overflow: visible !important;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-/* the CSS styling below will only be picked up by Safari and Chrome */
-
-}
