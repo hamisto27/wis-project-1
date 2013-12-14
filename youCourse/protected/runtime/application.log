@@ -1639,3 +1639,644 @@ Stack trace:
 REQUEST_URI=/wis-project-1/youCourse/index.php/site/page/view/images/logo.jpg
 HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/site/page/view/testJson
 ---
+2013/12/14 11:33:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "images" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/testJson
+---
+2013/12/14 11:33:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "images" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/testJson
+---
+2013/12/14 11:53:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 11:53:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 11:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 11:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 11:59:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/vi...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/view
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php
+---
+2013/12/14 11:59:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 11:59:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 11:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/14 11:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/14 11:59:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=calendar
+---
+2013/12/14 11:59:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=calendar
+---
+2013/12/14 11:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 11:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 11:59:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/vi...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/view
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 11:59:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 11:59:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 11:59:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=about
+---
+2013/12/14 12:00:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=about
+---
+2013/12/14 12:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/contact
+---
+2013/12/14 12:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/contact
+---
+2013/12/14 12:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 12:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 12:00:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/registration
+---
+2013/12/14 12:00:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 12:00:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 12:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 12:01:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo.jpg".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 12:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=about
+---
+2013/12/14 12:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=about
+---
+2013/12/14 12:01:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/vi...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/view
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=about
+---
+2013/12/14 12:01:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 12:01:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 12:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/14 12:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/14 12:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=calendar
+---
+2013/12/14 12:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=calendar
+---
+2013/12/14 12:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 12:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 12:01:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/vi...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/view
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 12:01:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 12:01:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 12:13:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/vi...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/view
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php
+---
+2013/12/14 12:13:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 12:13:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('channel/view/im...')
+#10 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/channel/view/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/channel/view/view
+---
+2013/12/14 12:13:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 12:13:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 12:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
+2013/12/14 12:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo.jpg
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page?view=testJson
+---
