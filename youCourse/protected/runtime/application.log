@@ -3695,3 +3695,273 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/youcourse_git/index.php?r=video/creeate
 ---
+2013/12/14 14:52:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:52:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:56:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 14:56:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 14:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "calendar".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('calendar')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/calendar
+---
+2013/12/14 14:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/calendar
+---
+2013/12/14 14:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:56:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 15:01:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 15:01:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:11:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/14 15:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:14:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:46:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:46:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:57:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 15:57:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "calendar".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('calendar')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/calendar
+---
+2013/12/14 15:57:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/calendar
+---
+2013/12/14 15:57:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---

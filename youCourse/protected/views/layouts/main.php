@@ -54,7 +54,9 @@
                         array('label'=>'Home', 'icon'=>TbHtml::ICON_HOME, 'url'=>array('/site/index')),
                         array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
                         array('label'=>'Contact', 'url'=>array('/site/contact')),
-                        TbHtml::navbarSearchForm('#'),
+                        TbHtml::navbarSearchForm(Yii::app()->createUrl('/video/SearchBar'),
+                            'post', array('inputOptions' => array('name' => 'Video[Name]',
+                            'class' => 'search-query span2',  'placeholder' =>Yii::t('app','Search')))),
                         TbHtml::button('Search', array(
                                 'icon'=>TbHtml::ICON_SEARCH))
                     ),
