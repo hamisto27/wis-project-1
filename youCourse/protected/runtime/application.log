@@ -2226,3 +2226,679 @@ REQUEST_URI=/wis-project-1/youCourse/index.php/api?model=user&key=cGFzczE=&id=1
 in C:\wamp\www\wis-project-1\youCourse\protected\modules\api\controllers\DefaultController.php (113)
 in C:\wamp\www\wis-project-1\youCourse\protected\modules\api\controllers\DefaultController.php (15)
 in C:\wamp\www\wis-project-1\youCourse\index.php (20)
+2013/12/14 13:36:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/api".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/api')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/index.php/api?model=user&key=cGFzczE=&id=1
+---
+2013/12/14 13:36:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/image...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/index.php/api?model=user&key=cGFzczE=&id=1
+---
+2013/12/14 13:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/api".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/api')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/index.php/api?model=user&key=cGFzczE=&id=1
+---
+2013/12/14 13:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/image...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/index.php/api?model=user&key=cGFzczE=&id=1
+---
+2013/12/14 13:36:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:36:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1040] Too many connections' in C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#9 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): User->notsafe()
+#10 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#11 C:\xampp\htdocs\wis-project\yii\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#13 C:\xampp\htdocs\wis-project\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#14 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\LoginController.php(19): CModel->validate()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#16 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#21 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#23 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/login
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:37:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:37:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1040] Too many connections' in C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\UserModule.php(226): CActiveRecord->__call('active', Array)
+#9 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\UserModule.php(226): User->active()
+#10 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\ProfileController.php(98): UserModule::user()
+#11 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\ProfileController.php(16): ProfileController->loadUser()
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#18 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#20 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/profile
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:37:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 13:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/api".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/api')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/index.php/api?model=user&key=cGFzczE=&id=1
+---
+2013/12/14 13:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/image...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/index.php/api?model=user&key=cGFzczE=&id=1
+---
+2013/12/14 13:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/api".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/api')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/index.php/api?model=user&key=cGFzczE=&id=1
+---
+2013/12/14 13:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/image...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/index.php/api?model=user&key=cGFzczE=&id=1
+---
+2013/12/14 13:37:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:37:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[08004] [1040] Too many connections' in C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#9 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): User->notsafe()
+#10 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#11 C:\xampp\htdocs\wis-project\yii\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#13 C:\xampp\htdocs\wis-project\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#14 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\LoginController.php(19): CModel->validate()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#16 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#21 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#23 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/login
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:37:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:37:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[08004] [1040] Too many connections' in C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#9 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): User->notsafe()
+#10 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#11 C:\xampp\htdocs\wis-project\yii\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#13 C:\xampp\htdocs\wis-project\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#14 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\LoginController.php(19): CModel->validate()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#16 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#21 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#23 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/login
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:37:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:38:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1040] Too many connections' in C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#9 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): User->notsafe()
+#10 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#11 C:\xampp\htdocs\wis-project\yii\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#13 C:\xampp\htdocs\wis-project\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#14 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\LoginController.php(19): CModel->validate()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#16 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#21 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#23 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/login
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:38:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:38:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1040] Too many connections' in C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\UserModule.php(226): CActiveRecord->__call('active', Array)
+#9 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\UserModule.php(226): User->active()
+#10 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\ProfileController.php(98): UserModule::user()
+#11 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\ProfileController.php(16): ProfileController->loadUser()
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#18 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#20 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/profile
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:38:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[08004] [1040] Too many connections' in C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#9 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): User->notsafe()
+#10 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#11 C:\xampp\htdocs\wis-project\yii\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#13 C:\xampp\htdocs\wis-project\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#14 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\LoginController.php(19): CModel->validate()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#16 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#21 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#23 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/login
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:40:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:40:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[08004] [1040] Too many connections' in C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#9 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): User->notsafe()
+#10 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#11 C:\xampp\htdocs\wis-project\yii\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#13 C:\xampp\htdocs\wis-project\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#14 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\LoginController.php(19): CModel->validate()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#16 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#21 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#23 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/login
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:40:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:40:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1040] Too many connections' in C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\wis-project\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\htdocs\wis-project\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#9 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\components\UserIdentity.php(27): User->notsafe()
+#10 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#11 C:\xampp\htdocs\wis-project\yii\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#13 C:\xampp\htdocs\wis-project\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#14 C:\xampp\htdocs\wis-project\youCourse\protected\modules\user\controllers\LoginController.php(19): CModel->validate()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#16 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#21 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#23 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/login
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:46:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:46:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 13:47:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 13:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 13:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 13:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 13:58:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/contact
+---
+2013/12/14 13:58:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "images" was not found.' in C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/view/...')
+#7 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/page/view/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/page/view/about
+---
+2013/12/14 13:58:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/contact
+---
+2013/12/14 14:01:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/14 14:20:27 [error] [exception.CException] exception 'CException' with message 'Alias "wdcalendar.WdcalendarModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\wis-project\yii\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\YiiBase.php(196): YiiBase::import('wdcalendar.Wdca...', true)
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(282): YiiBase::createComponent('wdcalendar.Wdca...', 'wdcalendar', NULL, Array)
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(337): CModule->getModule('wdcalendar')
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('wdcalendar')
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('wdcalendar')
+#5 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:22:25 [error] [exception.CException] exception 'CException' with message 'Alias "wdcalendar.WdcalendarModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\wis-project\yii\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\YiiBase.php(196): YiiBase::import('wdcalendar.Wdca...', true)
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(282): YiiBase::createComponent('wdcalendar.Wdca...', 'wdcalendar', NULL, Array)
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(337): CModule->getModule('wdcalendar')
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('wdcalendar')
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('wdcalendar')
+#5 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/login
+---
+2013/12/14 14:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/images/log...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/user/profile
+---
+2013/12/14 14:24:18 [error] [exception.CException] exception 'CException' with message 'Alias "wdcalendar.WdcalendarModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\wis-project\yii\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\YiiBase.php(196): YiiBase::import('wdcalendar.Wdca...', true)
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CModule.php(282): YiiBase::createComponent('wdcalendar.Wdca...', 'wdcalendar', NULL, Array)
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(337): CModule->getModule('wdcalendar')
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('wdcalendar')
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('wdcalendar')
+#5 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:25:06 [error] [php] mysql_fetch_object(): supplied argument is not a valid MySQL result resource (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
+2013/12/14 14:25:32 [error] [php] mysql_fetch_object(): supplied argument is not a valid MySQL result resource (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
+2013/12/14 14:25:38 [error] [php] mysql_fetch_object(): supplied argument is not a valid MySQL result resource (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
+2013/12/14 14:25:57 [error] [php] mysql_fetch_object(): supplied argument is not a valid MySQL result resource (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
+2013/12/14 14:25:59 [error] [php] mysql_fetch_object(): supplied argument is not a valid MySQL result resource (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
