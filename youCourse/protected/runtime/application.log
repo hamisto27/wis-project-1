@@ -2902,3 +2902,133 @@ REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/
 in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
 in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
 in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
+2013/12/14 14:31:17 [error] [php] mysql_fetch_object(): supplied argument is not a valid MySQL result resource (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
+2013/12/14 14:31:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:31:32 [error] [php] mysql_fetch_object(): supplied argument is not a valid MySQL result resource (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
+2013/12/14 14:31:55 [error] [php] mysql_fetch_object(): supplied argument is not a valid MySQL result resource (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
+2013/12/14 14:33:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/14 14:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wcalendar".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('wcalendar')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/wcalendar
+---
+2013/12/14 14:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wcalendar
+---
+2013/12/14 14:34:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/14 14:34:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/14 14:34:08 [error] [php] mysql_fetch_object(): supplied argument is not a valid MySQL result resource (C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php(211): listCalendar()
+#1 C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\controllers\DefaultController.php(32): require_once()
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionDatafeed()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php/wdcalendar/default/datafeed/method/list
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (76)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (125)
+in C:\xampp\htdocs\wis-project\youCourse\protected\modules\wdcalendar\components\datafeed.php (211)
+2013/12/14 14:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
