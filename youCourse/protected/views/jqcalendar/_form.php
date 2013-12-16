@@ -94,7 +94,7 @@
 		<?php echo $form->labelEx($model,'Color'); ?>
 		<?php //echo $form->textField($model,'Color',array('size'=>60,'maxlength'=>200)); ?>
 		<?php //echo $form->error($model,'Color'); ?>
-        <?php echo $form->dropDownList($model,'Color',array('blue' => 'Blue', 'Red' => 'Red'),
+        <?php echo $form->dropDownList($model,'Color',array('6' => 'Blue', '1' => 'Red','9' => 'Green','13' => 'Orange','0' => 'Grey','21' => 'Brown'),
             array('empty' => '(Select a color)'));?>
 
         <?php //echo CHtml::dropDownList('Color', $model,
