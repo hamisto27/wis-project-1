@@ -66,7 +66,7 @@ class JqcalendarController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+        $model->user_id=Yii::app()->User->id;
 		if(isset($_POST['Jqcalendar']))
 		{
 			$model->attributes=$_POST['Jqcalendar'];
