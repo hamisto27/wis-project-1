@@ -196,6 +196,22 @@ class VideoController extends Controller
             file_put_contents($ourFileName, $piece);
         fclose($ourFileHandle);
 
+        $result = array();
+
+        foreach($pieces as $piece){
+            $videos = Yii::app()->db->createCommand()
+                ->select(array('Name'))
+                ->from('Video v')
+                ->where('Name like ":Name%"', array(':Name'=>$piece))
+                ->queryAll();
+            foreach($videos as $video){
+                file_add_contents($ourFileName, $video());
+                $result.add($video);
+            }
+        }
+
+        //file_put_contents($ourFileName, $result.first());
+
         /*$this->render('view',array(
             'model'=>$this->loadModel($id),
         ));*/
