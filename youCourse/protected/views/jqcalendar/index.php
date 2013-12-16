@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Jqcalendar', 'url'=>array('create')),
-	array('label'=>'Manage Jqcalendar', 'url'=>array('admin')),
+	array('label'=>'Create Event', 'url'=>array('create')),
+	array('label'=>'Manage Events', 'url'=>array('admin')),
 );
 ?>
 

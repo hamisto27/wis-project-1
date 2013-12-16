@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Jqcalendar', 'url'=>array('index')),
-	array('label'=>'Manage Jqcalendar', 'url'=>array('admin')),
+	array('label'=>'List Events', 'url'=>array('index')),
+	array('label'=>'Manage Events', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Jqcalendar</h1>
+<h1>Create an Event</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
