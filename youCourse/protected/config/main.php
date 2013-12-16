@@ -54,7 +54,7 @@ return array(
         'wdcalendar'    => array(
             'embed' => true,
             'wd_options' => array(
-                //'readonly' => 'JS:true' // execute JS
+                'readonly' => 'JS:true' // execute JS
             )
         ),
         /*'gii' => array(
