@@ -35,7 +35,10 @@ return array(
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters'=>array('127.0.0.1','::1'),
             //'ipFilters'=>array($_SERVER['REMOTE_ADDR']),
+
         ),
+
+        'api'=>array( ),
 
         //user extension
         'user'=>array(
@@ -51,7 +54,7 @@ return array(
         'wdcalendar'    => array(
             'embed' => true,
             'wd_options' => array(
-                'readonly' => 'JS:true' // execute JS
+                //'readonly' => 'JS:true' // execute JS
             )
         ),
         /*'gii' => array(
@@ -94,7 +97,7 @@ return array(
             'charset' => 'utf8',
         ),
         /*'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=wis_project',
+            'connectionString' => 'mysql:host=localhost;dbname=youcours',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => '',
