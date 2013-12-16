@@ -1,8 +1,8 @@
-TEST 
+TEST
 
 
 <div id="div1">
-    
+
 </div>
 
 <button value='Test'>TEST NOW THE API</button>
@@ -14,7 +14,7 @@ TEST
         //var data = {"name":"my api success"}; // for PUT method
         //var data = {"id":"1"}; // For DELETE method
         $.ajax({
-            url:"<?php echo Yii::app()->request->baseUrl; ?>/index.php/api?model=inline&key=cGFzczE=", // key is used to authenticate every request which is checked under _authenticate() in controller
+            url:"<?php echo Yii::app()->request->baseUrl; ?>/index.php/api?model=user&key=D3das==", // key is used to authenticate every request which is checked under _authenticate() in controller
             data:data, //No need to add for GET and DELETE methods
             datType:'json',
             type: 'GET',

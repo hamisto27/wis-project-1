@@ -12,12 +12,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
     <![endif]-->
     <?php Yii::app()->bootstrap->register(); ?>
-    <?php // Include the client scripts
-    $baseUrl = Yii::app()->baseUrl;
-
-    $cs = Yii::app()->getClientScript();
-    $cs->registerScriptFile($baseUrl.'/js/ajaxScript.js');
-    ?>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 

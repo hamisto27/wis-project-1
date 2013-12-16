@@ -5110,3 +5110,177 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/wis-project-1/youCourse/index.php/?r=api/model=user&key=cGFzczE=&id=2
 ---
+2013/12/16 17:09:53 [error] [php] Undefined index: city (C:\xampp\htdocs\wis-project\youCourse\protected\extensions\gmap\GMap.php:69)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(172): JqcalendarController->createWidget()
+#2 C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\_view.php(44): JqcalendarController->widget()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(130): require()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(95): JqcalendarController->renderInternal()
+#5 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CListView.php(291): JqcalendarController->renderFile()
+#6 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#7 unknown(0): CListView->renderSection()
+#8 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#9 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#10 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(173): CListView->run()
+#11 C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\index.php(20): JqcalendarController->widget()
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(95): JqcalendarController->renderInternal()
+#14 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(869): JqcalendarController->renderFile()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(782): JqcalendarController->renderPartial()
+#16 C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php(128): JqcalendarController->render()
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): JqcalendarController->actionIndex()
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): JqcalendarController->runAction()
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): JqcalendarController->filterAccessControl()
+#23 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): JqcalendarController->runActionWithFilters()
+#26 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): JqcalendarController->run()
+#27 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php?r=jqcalendar
+in C:\xampp\htdocs\wis-project\youCourse\protected\extensions\gmap\GMap.php (69)
+in C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\_view.php (44)
+in C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\index.php (20)
+2013/12/16 17:10:27 [error] [php] Undefined index: city (C:\xampp\htdocs\wis-project\youCourse\protected\extensions\gmap\GMap.php:69)
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(172): JqcalendarController->createWidget()
+#2 C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\_view.php(44): JqcalendarController->widget()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(130): require()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(95): JqcalendarController->renderInternal()
+#5 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CListView.php(291): JqcalendarController->renderFile()
+#6 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#7 unknown(0): CListView->renderSection()
+#8 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#9 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#10 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(173): CListView->run()
+#11 C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\index.php(20): JqcalendarController->widget()
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(95): JqcalendarController->renderInternal()
+#14 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(869): JqcalendarController->renderFile()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(782): JqcalendarController->renderPartial()
+#16 C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php(128): JqcalendarController->render()
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): JqcalendarController->actionIndex()
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): JqcalendarController->runAction()
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): JqcalendarController->filterAccessControl()
+#23 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): JqcalendarController->runActionWithFilters()
+#26 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): JqcalendarController->run()
+#27 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php?r=jqcalendar
+in C:\xampp\htdocs\wis-project\youCourse\protected\extensions\gmap\GMap.php (69)
+in C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\_view.php (44)
+in C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\index.php (20)
+2013/12/16 17:21:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 17:21:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 17:21:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 17:21:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 17:22:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 17:22:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 17:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 17:31:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 17:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 17:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
+---
+2013/12/16 18:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczE=&id=1
+---
+2013/12/16 18:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczE=&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczE=&id=1
+---

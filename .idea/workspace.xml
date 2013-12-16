@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="15989da7-2090-446c-8588-c5bf79e25d3c" name="Default" comment="&#10;he">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/youCourse/protected/views/jqcalendar/_view.php" afterPath="$PROJECT_DIR$/youCourse/protected/views/jqcalendar/_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/youCourse/protected/runtime/application.log" afterPath="$PROJECT_DIR$/youCourse/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/youCourse/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/youCourse/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/youCourse/protected/modules/api/views/default/test.php" afterPath="$PROJECT_DIR$/youCourse/protected/modules/api/views/default/test.php" />
+    </list>
+    <ignored path="wis-project.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="wis-project" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/youCourse/protected/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="49" selection-start="3373" selection-end="3380" vertical-scroll-proportion="0.33333334" vertical-offset="846" max-vertical-offset="1768">
+              <folding>
+                <element signature="e#1374#2338#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/youCourse/protected/modules/api/controllers/DefaultController.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/modules/wdcalendar/assets/js/jquery.ifrmdailog.js" />
+        <option value="$PROJECT_DIR$/youCourse/protected/modules/wdcalendar/views/default/create.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/video/_view.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/controllers/JqcalendarController.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/jqcalendar/_form.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/video/listChannelVideos.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/jqcalendar/view.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/jqcalendar/create.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/jqcalendar/admin.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/jqcalendar/index.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/jqcalendar/_view.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/modules/api/views/default/test.php" />
+        <option value="$PROJECT_DIR$/youCourse/protected/views/layouts/main.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php_from_XAMPP" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wis-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="options.lastSelected" value="web.server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="00e4106d-97d7-4c09-9b10-36cade1b9587">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15989da7-2090-446c-8588-c5bf79e25d3c" name="Default" comment="" />
+      <created>1386497094117</created>
+      <updated>1386497094117</updated>
+    </task>
+    <task id="LOCAL-00001" summary="welcome">
+      <created>1386497701638</created>
+      <updated>1386497701638</updated>
+    </task>
+    <task id="LOCAL-00002" summary="video on the welcome page">
+      <created>1386500216214</created>
+      <updated>1386500216214</updated>
+    </task>
+    <task id="LOCAL-00003" summary="New extension for maps --&gt;gmaps">
+      <created>1386776328649</created>
+      <updated>1386776328649</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Google maps works ;)">
+      <created>1386778516277</created>
+      <updated>1386778516277</updated>
+    </task>
+    <task id="LOCAL-00005" summary="hello">
+      <created>1386779023403</created>
+      <updated>1386779023403</updated>
+    </task>
+    <task id="LOCAL-00006" summary="slideshare works">
+      <created>1386790692792</created>
+      <updated>1386790692792</updated>
+    </task>
+    <task id="LOCAL-00007" summary="hello">
+      <created>1386791336414</created>
+      <updated>1386791336414</updated>
+    </task>
+    <task id="LOCAL-00008" summary="just a link">
+      <created>1386805610942</created>
+      <updated>1386805610942</updated>
+    </task>
+    <task id="LOCAL-00009" summary="comit before merge&#10;">
+      <created>1386946041295</created>
+      <updated>1386946041295</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1386950370665</created>
+      <updated>1386950370665</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1386950461241</created>
+      <updated>1386950461241</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1386954648817</created>
+      <updated>1386954648817</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1387013606802</created>
+      <updated>1387013606802</updated>
+    </task>
+    <task id="LOCAL-00014" summary="new api">
+      <created>1387013847985</created>
+      <updated>1387013847985</updated>
+    </task>
+    <task id="LOCAL-00015" summary="no changes">
+      <created>1387017084279</created>
+      <updated>1387017084279</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;&#9;youCourse/protected/views/site/pages/testJson.php&#10;">
+      <created>1387019803479</created>
+      <updated>1387019803480</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;&#9;youCourse/protected/views/site/pages/testJson.php&#10;">
+      <created>1387019874224</created>
+      <updated>1387019874224</updated>
+    </task>
+    <task id="LOCAL-00018" summary="he">
+      <created>1387019951286</created>
+      <updated>1387019951286</updated>
+    </task>
+    <task id="LOCAL-00019" summary="nothing">
+      <created>1387024042383</created>
+      <updated>1387024042383</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1387027779322</created>
+      <updated>1387027779322</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1387027847186</created>
+      <updated>1387027847186</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1387028947113</created>
+      <updated>1387028947113</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fuck it">
+      <created>1387032607470</created>
+      <updated>1387032607470</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fuck it">
+      <created>1387033596417</created>
+      <updated>1387033596417</updated>
+    </task>
+    <task id="LOCAL-00025" summary="commit before merge&#10;">
+      <created>1387039887901</created>
+      <updated>1387039887901</updated>
+    </task>
+    <task id="LOCAL-00026" summary="jqcalendar works&#10;&#10;">
+      <created>1387041490232</created>
+      <updated>1387041490232</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fg,kfdgkjlfg">
+      <created>1387186355785</created>
+      <updated>1387186355785</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1387186418917</created>
+      <updated>1387186418917</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1387189885221</created>
+      <updated>1387189885221</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;">
+      <created>1387190569385</created>
+      <updated>1387190569385</updated>
+    </task>
+    <task id="LOCAL-00031" summary="aheraqh">
+      <created>1387195535460</created>
+      <updated>1387195535460</updated>
+    </task>
+    <task id="LOCAL-00032" summary="aheraqh">
+      <created>1387196235775</created>
+      <updated>1387196235775</updated>
+    </task>
+    <task id="LOCAL-00033" summary="regtzr">
+      <created>1387199253997</created>
+      <updated>1387199253997</updated>
+    </task>
+    <task id="LOCAL-00034" summary="regtzr">
+      <created>1387200926273</created>
+      <updated>1387200926273</updated>
+    </task>
+    <task id="LOCAL-00035" summary="hello mdf">
+      <created>1387209281268</created>
+      <updated>1387209281268</updated>
+    </task>
+    <task id="LOCAL-00036" summary="hello titi">
+      <created>1387210030101</created>
+      <updated>1387210030101</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18636996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20723227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23873875" sideWeight="0.7802504" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22114047" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21974966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22114047" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22114047" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18636996" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23552124" sideWeight="0.77885956" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="New extension for maps --&gt;gmaps" />
+    <MESSAGE value="Google maps works ;)" />
+    <MESSAGE value="slideshare works" />
+    <MESSAGE value="hello" />
+    <MESSAGE value="just a link" />
+    <MESSAGE value="comit before merge&#10;" />
+    <MESSAGE value="new api" />
+    <MESSAGE value="no changes" />
+    <MESSAGE value="Merge branch&#10;&#10;" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;&#9;youCourse/protected/views/site/pages/testJson.php&#10;" />
+    <MESSAGE value="he" />
+    <MESSAGE value="nothing" />
+    <MESSAGE value="fuck it" />
+    <MESSAGE value="commit before merge&#10;" />
+    <MESSAGE value="jqcalendar works&#10;&#10;" />
+    <MESSAGE value="fg,kfdgkjlfg" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/hamisto27/wis-project-1&#10;&#10;Conflicts:&#10;&#9;youCourse/protected/runtime/application.log&#10;" />
+    <MESSAGE value="aheraqh" />
+    <MESSAGE value="regtzr" />
+    <MESSAGE value="hetyjetj" />
+    <MESSAGE value="hetyjetjtrzzrthhr" />
+    <MESSAGE value="hello mdf" />
+    <MESSAGE value="hello titi" />
+    <MESSAGE value="&#10;" />
+    <MESSAGE value="&#10;he" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;he" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/jqcalendar/._create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/jqcalendar/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="8" selection-start="757" selection-end="757" vertical-scroll-proportion="0.39405942" vertical-offset="192" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/jqcalendar/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="2" selection-start="274" selection-end="274" vertical-scroll-proportion="0.3938224" vertical-offset="0" max-vertical-offset="518">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/jqcalendar/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="251" selection-end="251" vertical-scroll-proportion="0.36100388" vertical-offset="0" max-vertical-offset="518">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/jqcalendar/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="20" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.5907336" vertical-offset="340" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/jqcalendar/.__form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/jqcalendar/_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.49227798" vertical-offset="0" max-vertical-offset="969">
+          <folding>
+            <element signature="e#105#412#0" expanded="true" />
+            <element signature="e#1088#1504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/jqcalendar/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="10" selection-start="1412" selection-end="1905" vertical-scroll-proportion="0.62355214" vertical-offset="493" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/modules/api/views/default/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="90" selection-start="502" selection-end="502" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/channel/myChannel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="131" selection-end="131" vertical-scroll-proportion="0.13465346" vertical-offset="0" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/video/listChannelVideos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.871287" vertical-offset="1450" max-vertical-offset="1955">
+          <folding>
+            <marker date="1387204584242" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1387204584242" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="24" selection-start="1301" selection-end="1317" vertical-scroll-proportion="0.9189189" vertical-offset="204" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/modules/api/controllers/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="61" selection-start="465" selection-end="465" vertical-scroll-proportion="0.4827586" vertical-offset="0" max-vertical-offset="3332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/modules/api/ApiModule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/modules/api/components/Metadata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7065637" vertical-offset="884" max-vertical-offset="3740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youCourse/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="49" selection-start="3373" selection-end="3380" vertical-scroll-proportion="0.33333334" vertical-offset="846" max-vertical-offset="1768">
+          <folding>
+            <element signature="e#1374#2338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
