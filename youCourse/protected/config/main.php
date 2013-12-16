@@ -12,6 +12,7 @@ return array(
     'aliases' => array(
         'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), // change this if necessary
         'timepicker' => realpath(__DIR__ . '/../extensions/timepicker'),
+        'RestfullYii' =>realpath(__DIR__ . '/../extensions/starship/RestfullYii'),
     ),
     // preloading 'log' component
     'preload'=>array('log'),
@@ -64,6 +65,14 @@ return array(
 
     // application components
     'components'=>array(
+
+        'urlManager'=>array(
+            'urlFormat'=>'path',
+            'rules'=>require(
+                    dirname(__FILE__).'/../extensions/starship/restfullyii/config/routes.php'
+                ),
+        ),
+
         'user'=>array(
             // enable cookie-based authentication
             'allowAutoLogin'=>true,

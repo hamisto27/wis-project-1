@@ -13,13 +13,31 @@ class VideoController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	public function filters()
+	/*public function filters()
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
 		);
-	}
+	}*/
+
+    public function filters()
+    {
+        return array(
+            'accessControl', // perform access control for CRUD operations
+            array(
+                'ext.starship.RestfullYii.filters.ERestFilter +
+                REST.GET, REST.PUT, REST.POST, REST.DELETE'
+            ),
+        );
+    }
+
+    public function actions()
+    {
+        return array(
+            'REST.'=>'ext.starship.RestfullYii.actions.ERestActionProvider',
+        );
+    }
 
 	/**
 	 * Specifies the access control rules.
@@ -33,6 +51,9 @@ class VideoController extends Controller
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
+            array('allow', 'actions'=>array('REST.GET', 'REST.PUT', 'REST.POST', 'REST.DELETE'),
+                'users'=>array('*'),
+            ),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update','ajax','deleteAjax'),
 				'users'=>array('@'),
@@ -240,4 +261,6 @@ class VideoController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+
 }
