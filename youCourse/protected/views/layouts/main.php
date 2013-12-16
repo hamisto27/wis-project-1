@@ -73,6 +73,8 @@
                             TbHtml::menuDivider(),
                             array('label' => 'My Subscriptions', 'url' => '#','visible'=>!Yii::app()->user->isGuest),
                             array('label' => 'History', 'url' => '#', 'visible'=>!Yii::app()->user->isGuest)),
+                            
+
                         ),
                         array('label'=>'Logout ('.Yii::app()->user->name.')','icon'=>TbHtml::ICON_USER, 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::app()->getModule('user')->t("Login"), 'icon'=>TbHtml::ICON_USER, 'url'=>Yii::app()->getModule('user')->loginUrl, 'visible'=>Yii::app()->user->isGuest),
