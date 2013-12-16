@@ -5,7 +5,7 @@
 ?>
 
 <div class="form">
-
+<!--<script type="text/javascript" src="../../../js/datepicker.js"></script>-->
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'jqcalendar-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
@@ -86,6 +86,7 @@
 		<?php echo $form->error($model,'RecurringRule'); ?>
 	</div>
 
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
@@ -102,4 +103,6 @@
         m.show();
        // alert("hello");
     });
+
 </script>
+

@@ -11,6 +11,7 @@ return array(
 
     'aliases' => array(
         'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), // change this if necessary
+        'timepicker' => realpath(__DIR__ . '/../extensions/timepicker'),
     ),
     // preloading 'log' component
     'preload'=>array('log'),
