@@ -8,7 +8,7 @@ TEST
 <button value='Test'>TEST NOW THE API</button>
 
 <script>
-    $("button").click(function(){
+    /* $("button").click(function(){
         //var data = {"name":"api1","phone":"234343","message":"sample message 4"}; // for POST method
         var data = {"id":"3"}; // for GET Method
         //var data = {"name":"my api success"}; // for PUT method
@@ -21,5 +21,17 @@ TEST
             success:function(result){
                 $("#div1").html(result);
             }});
-    });
+    }); */
+
+   $.ajax({
+       url:"<?php echo Yii::app()->request->baseUrl; ?>/index.php/api/video",
+       type:"GET",
+       success:function(data) {
+           console.log(data);
+       },
+       error:function (xhr, ajaxOptions, thrownError){
+           console.log(xhr.responseText);
+       }
+   });
+
 </script>
