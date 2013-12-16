@@ -29,7 +29,11 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+        $models = Video::model()->findAll(array(
+            "order" => "Time_stp DESC",
+            "limit" => 20,
+        ));
+		$this->render('index',array('models' => $models));
 	}
 
 	/**
