@@ -26,7 +26,7 @@ $this->pageTitle=Yii::app()->name;
         'video'=>"http://vimeo.com/62075663",
         'id' => 'yiippodplayer',
         'width'=>640,
-        'height'=>480,
+        'height'=>482,
         'bgcolor'=>'#000'
     ));*/
 
