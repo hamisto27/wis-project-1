@@ -20,9 +20,9 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'user_id'); ?>
-		<?php echo $form->textField($model,'user_id'); ?>
-		<?php echo $form->error($model,'user_id'); ?>
+		<?php //echo $form->labelEx($model,'user_id'); ?>
+		<?php //echo $form->textField($model,'user_id'); ?>
+		<?php //echo $form->error($model,'user_id'); ?>
 	</div>
 
 	<div class="row">
@@ -34,7 +34,20 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'Location'); ?>
 		<?php echo $form->textField($model,'Location',array('size'=>60,'maxlength'=>200)); ?>
+        <input id="clickMe" type="button" value="clickme"; />
 		<?php echo $form->error($model,'Location'); ?>
+        <?php
+        $this->widget('application.extensions.gmap.GMap', array(
+            'id' => 'gmap',//id of the <div> container created
+            'key' => 'AIzaSyALxT1YDH6ZWyI3oqWxCLDIhWTqMTUgsaQ', //goole API key, should be obtained for each site,it's free
+            //'label' => 'ULB', //text written in the text bubble
+            'address' => array(
+                'address' => 'ULB',//address of the place
+                'city' => 'Bruxelles', //city
+            )
+        ));
+        ?>
+
 	</div>
 
 	<div class="row">
@@ -80,3 +93,13 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<script>
+    $('#clickMe').click(function(){
+        var m = new GMap("gmap", $('#Jqcalendar_Location').val());
+       // m.setAddress($('#Jqcalendar_Location').val());
+        //m.setLabel('hehezr');
+        m.show();
+       // alert("hello");
+    });
+</script>

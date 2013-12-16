@@ -5,6 +5,7 @@
 
 <div class="view">
 
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('VidID')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->VidID), array('view', 'id'=>$data->VidID)); ?>
 	<br />
