@@ -13,7 +13,7 @@
 if(Yii::app()->user->id == $model->ChannelID){
     echo TbHtml::breadcrumbs(array(
         'Home'=> Yii::app()->baseUrl.'/index.php',
-        'Channel'=> Yii::app()->baseUrl.'/index.php?r=channel/myChannel&id='.Yii::app()->user->id,
+        'Channel'=> Yii::app()->baseUrl.'/index.php/channel/channel/id='.Yii::app()->user->id,
         'Update',
     ));
     $this->widget('bootstrap.widgets.TbModal', array(
@@ -26,7 +26,7 @@ if(Yii::app()->user->id == $model->ChannelID){
         ),
     ));
     echo  TbHtml::pageHeader('My Own Channel', 'on YouCourse'),TbHtml::pills(array(
-        array('label'=>'My Channel', 'url'=> array('channel/myChannel','id'=>Yii::app()->user->id)),
+        array('label'=>'My Channel', 'url'=> array('channel/channel','id'=>Yii::app()->user->id)),
         array('label'=>'Update Channel', 'url'=>array('update','id'=>Yii::app()->user->id), 'active' => true),
         array('label'=>'Delete Channel', 'url'=>'#', 'data-toggle' => 'modal', 'data-target' => '#deleteFromUpdateModal')));
 
@@ -38,7 +38,7 @@ else{
 
     echo TbHtml::breadcrumbs(array(
         'Home'=> Yii::app()->baseUrl.'/index.php',
-        'Manage Channels'=> Yii::app()->baseUrl.'/index.php?r=channel/admin',
+        'Manage Channels'=> Yii::app()->baseUrl.'/index.php/channel/admin',
         'Update',
     ));
     echo  TbHtml::pageHeader('Update Channel', '#'.$model->ChannelID);

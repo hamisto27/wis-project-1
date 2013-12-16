@@ -2,27 +2,40 @@
 /**
  * Created by PhpStorm.
  * User: mohamed chajii
- * Date: 12/12/13
- * Time: 22:31
+ * Date: 16/12/13
+ * Time: 17:35
  */
-
-/* @var $this ChannelController */
-
 Yii::import('application.controllers.VideoController');
 $controller_video = new VideoController("Video");
+echo TbHtml::breadcrumbs(array(
+    'Home'=> Yii::app()->baseUrl.'/index.php',
+    'Channel',
+));
 
+if($model->ChannelID != Yii::app()->user->id){
+    $id_user;
+    foreach($owner_channel->getData() as $owner){
+        echo TbHtml::pageHeader($owner->username."'s", 'YouCourse Channel');
+        $id_user = $owner->id;
+
+    }
+    ?>
+    <div class="my-channel-videos" style="margin-top:20px;">
+        <?php
+        $controller_video -> actionIndexByChannel($id_user);
+        ?>
+    </div>
+<?php
+}
+else{
     $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
         'layout' => TbHtml::FORM_LAYOUT_HORIZONTAL,
         'enableAjaxValidation'=>true,
     ));
-    echo TbHtml::breadcrumbs(array(
-        'Home'=> Yii::app()->baseUrl.'/index.php',
-        'Channel',
-    ));
     $htmlHTML = $controller_video -> renderPartial('_form',array('model'=>Video::model()), true);
 
     // modal for delete channel
-     $this->widget('bootstrap.widgets.TbModal', array(
+    $this->widget('bootstrap.widgets.TbModal', array(
         'id' => 'deleteModal',
         'header' => 'Delete Channel',
         'content' => '<p>Are you sure you want to delete this Channel?</p>',
@@ -68,19 +81,20 @@ $controller_video = new VideoController("Video");
 
     // page title
     echo  TbHtml::pageHeader('My Own Channel', 'on YouCourse'), TbHtml::pills(array(
-            array('label'=>'My Channel', 'url'=> array('channel/myChannel','id'=>Yii::app()->user->id), 'active' => true),
-            array('label'=>'Update Channel', 'url'=>array('update','id'=>Yii::app()->user->id)),
-            array('label'=>'Delete Channel', 'url'=>'#', 'data-toggle' => 'modal', 'data-target' => '#deleteModal'),
-          )/*array('span' => 4)*/),TbHtml::buttonDropdown('Upload', array(
-                    array('label' => 'YouTube', 'url'=>'#', 'data-toggle' => 'modal', 'data-target' => '#uploadModal'),)
-                    ,array('icon' => 'align-left'));
+        array('label'=>'My Channel', 'url'=> array('channel/channel','id'=>Yii::app()->user->id), 'active' => true),
+        array('label'=>'Update Channel', 'url'=>array('update','id'=>Yii::app()->user->id)),
+        array('label'=>'Delete Channel', 'url'=>'#', 'data-toggle' => 'modal', 'data-target' => '#deleteModal'),
+    )/*array('span' => 4)*/),TbHtml::buttonDropdown('Upload', array(
+            array('label' => 'YouTube', 'url'=>'#', 'data-toggle' => 'modal', 'data-target' => '#uploadModal'),)
+        ,array('icon' => 'align-left'));
 
     ?>
     <div class="my-channel-videos" style="margin-top:20px;">
-    <?php
+        <?php
         $controller_video -> actionIndexByChannel(Yii::app()->user->id);
-    ?>
+        ?>
     </div>
-<?php
+    <?php
     //end widget
-   $this->endWidget();
+    $this->endWidget();
+}

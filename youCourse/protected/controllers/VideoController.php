@@ -13,31 +13,13 @@ class VideoController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	/*public function filters()
+	public function filters()
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
 		);
-	}*/
-
-    public function filters()
-    {
-        return array(
-            'accessControl', // perform access control for CRUD operations
-            array(
-                'ext.starship.RestfullYii.filters.ERestFilter +
-                REST.GET, REST.PUT, REST.POST, REST.DELETE'
-            ),
-        );
-    }
-
-    public function actions()
-    {
-        return array(
-            'REST.'=>'ext.starship.RestfullYii.actions.ERestActionProvider',
-        );
-    }
+	}
 
 	/**
 	 * Specifies the access control rules.
@@ -51,9 +33,6 @@ class VideoController extends Controller
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
-            array('allow', 'actions'=>array('REST.GET', 'REST.PUT', 'REST.POST', 'REST.DELETE'),
-                'users'=>array('*'),
-            ),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update','ajax','deleteAjax'),
 				'users'=>array('@'),
@@ -74,9 +53,33 @@ class VideoController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
+
+        //load video model
+
+        $model = $this->loadModel($id);
+
+        //search video of the same channel
+
+        $criteria = new CDbCriteria;
+
+        $criteria->condition = "ChannelID=:col_val AND VidID!=:col_val2";
+        $criteria->params = array(':col_val' => $model->ChannelID, ':col_val2' => $id);
+        $criteria->limit = 6;
+
+        $dataProvider =new CActiveDataProvider('Video', array(
+                'criteria'=>$criteria,
+            )
+        );
+        $dataProvider->setPagination(false);
+
+        $item_count = Video::model()->count($criteria);
+
+        $this->render('view',array(
 			'model'=>$this->loadModel($id),
+            'videos_channel' =>  $dataProvider,
+            'number_videos' => $item_count
 		));
+
 	}
 
     /**
@@ -213,6 +216,7 @@ class VideoController extends Controller
 
         $this->renderPartial('listChannelVideos',array(
             'dataProvider'=>$dataProvider,
+            'id_channel'=>$id,
             'item_count'=>$item_count,
             'page_size'=>Yii::app()->params['listPerPage'],
             'items_count'=>$item_count,
@@ -261,6 +265,4 @@ class VideoController extends Controller
 			Yii::app()->end();
 		}
 	}
-
-
 }
