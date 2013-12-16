@@ -10,8 +10,6 @@
  * @property string $Name
  * @property integer $Views
  * @property integer $ChannelID
- * @property string $longLocation
- * @property string $latLocation
  * @property string $Time_stp
  *
  * The followings are the available model relations:
@@ -40,12 +38,11 @@ class Video extends CActiveRecord
 			array('Content, Name, ChannelID, Time_stp', 'required'),
 			array('Views, ChannelID', 'numerical', 'integerOnly'=>true),
 			array('Content', 'length', 'max'=>50),
-			array('Description', 'length', 'max'=>200),
-			array('Name', 'length', 'max'=>30),
-			array('longLocation, latLocation', 'length', 'max'=>18),
+			array('Description', 'length', 'max'=>1000),
+			array('Name', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('VidID, Content, Description, Name, Views, ChannelID, longLocation, latLocation, Time_stp', 'safe', 'on'=>'search'),
+			array('VidID, Content, Description, Name, Views, ChannelID, Time_stp', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -75,8 +72,6 @@ class Video extends CActiveRecord
 			'Name' => 'Name',
 			'Views' => 'Views',
 			'ChannelID' => 'Channel',
-			'longLocation' => 'Long Location',
-			'latLocation' => 'Lat Location',
 			'Time_stp' => 'Time Stp',
 		);
 	}
@@ -105,9 +100,9 @@ class Video extends CActiveRecord
 		$criteria->compare('Name',$this->Name,true);
 		$criteria->compare('Views',$this->Views);
 		$criteria->compare('ChannelID',$this->ChannelID);
-		$criteria->compare('longLocation',$this->longLocation,true);
-		$criteria->compare('latLocation',$this->latLocation,true);
-		$criteria->compare('Time_stp',$this->Time_stp,true);
+		//$criteria->compare('longLocation',$this->longLocation,true);
+		//$criteria->compare('latLocation',$this->latLocation,true);
+		//$criteria->compare('Time_stp',$this->Time_stp,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

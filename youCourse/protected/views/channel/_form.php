@@ -30,27 +30,13 @@
             <?php // echo $form->error($model,'Description'); ?>
         </div>
         <?php echo $form->textArea($model,"Description", array("span" => 5, "rows" => 5)); ?>
-        <div class="row">
-            <?php echo $form->labelEx($model,'longLocation'); ?>
-            <?php //echo TbHtml::textField($model,'longLocation', array('size' => TbHtml::INPUT_SIZE_XLARGE)); ?>
-            <?php //echo $form->error($model,'longLocation'); ?>
-        </div>
-        <?php echo $form->textField($model,"longLocation", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
 
         <div class="row">
-            <?php echo $form->labelEx($model,"latLocation"); ?>
+            <?php echo $form->labelEx($model,"Location"); ?>
             <?php //echo $form->textField($model,'latLocation', array('size'=>50,'maxlength'=>50)); ?>
             <?php //echo $form->error($model,'latLocation'); ?>
         </div>
-        <?php echo $form->textField($model,"latLocation", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
-
-        <!--<div class="row">
-            <?php // echo $form->labelEx($model,'Time_stp'); ?>
-            <?php // echo $form->textField($model,'Time_stp'); ?>
-            <?php // echo $form->error($model,'Time_stp'); ?>
-        </div>-->
-
-        <?php //$model->ChannelID = Yii::app()->user->id ?>
+        <?php echo $form->textField($model,"Location", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
 
         <!--<div class="row buttons">
             <?php //echo TbHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

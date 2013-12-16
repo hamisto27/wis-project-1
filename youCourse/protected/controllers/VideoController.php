@@ -30,15 +30,15 @@ class VideoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','ajax', 'SearchBar'),
+				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','ajax'),
+				'actions'=>array('create','update','ajax','deleteAjax'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','ajax'),
+				'actions'=>array('admin','delete','ajax','deleteAjax'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -57,6 +57,18 @@ class VideoController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+
+    /**
+     * Displays a particular model in modal dialog.
+     * @param integer $id the ID of the model to be displayed
+     */
+
+    public function actionViewVideoModal($id)
+    {
+        $this->render('single_video',array(
+            'model'=>$this->loadModel($id),
+        ));
+    }
 
 	/**
 	 * Creates a new model.
@@ -85,11 +97,8 @@ class VideoController extends Controller
             {
                 $model->attributes=$_POST['Video'];
                 $model->ChannelID = $model_channel->ChannelID;
-                $model->longLocation = $model_channel -> longLocation;
-                $model->latLocation = $model_channel -> latLocation;
                 $model->save(false);
             }
-
         /*$this->render('create',array(
             'model'=>$model,
         ));*/
@@ -125,14 +134,31 @@ class VideoController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
 
+        $this->loadModel($id)->delete();
+
+        //delete by id from ajax jquery call.
+        if(isset($_GET['VidID']))
+            $this->actionIndexByChannel(Yii::app()->user->id);
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
-	/**
+    /**
+     * DELETE video by Post method sended by ajax call
+     */
+    public function actionDeleteAjax()
+    {
+
+        //delete by id from ajax jquery call.
+        if(isset($_POST['VidID'])){
+            $this->loadModel($_POST['VidID'])->delete();
+            $this->actionIndexByChannel(Yii::app()->user->id);
+        }
+    }
+
+    /**
 	 * Lists all models.
 	 */
 	public function actionIndex()
@@ -142,6 +168,36 @@ class VideoController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+
+    /**
+     * Lists all models for a single channel.
+     */
+    public function actionIndexByChannel($id){
+
+        $criteria = new CDbCriteria(array(
+            'condition'=>'ChannelID='.$id,
+        ));
+        $dataProvider =new CActiveDataProvider('Video', array(
+            'criteria'=>$criteria,
+            )
+        );
+
+        $item_count = Video::model()->count($criteria);
+
+        $pages = new CPagination($item_count);
+        $pages->setPageSize(Yii::app()->params['listPerPage']);
+        $pages->applyLimit($criteria);  // the trick is here!
+
+        $dataProvider->setPagination(false);
+
+        $this->renderPartial('listChannelVideos',array(
+            'dataProvider'=>$dataProvider,
+            'item_count'=>$item_count,
+            'page_size'=>Yii::app()->params['listPerPage'],
+            'items_count'=>$item_count,
+            'pages'=>$pages,
+        ));
+    }
 
 	/**
 	 * Manages all models.
@@ -172,7 +228,6 @@ class VideoController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
-
 	/**
 	 * Performs the AJAX validation.
 	 * @param Video $model the model to be validated
@@ -185,36 +240,4 @@ class VideoController extends Controller
 			Yii::app()->end();
 		}
 	}
-
-    public function actionSearchBar(){
-        $ourFileName = "testFile.txt";
-        $ourFileHandle = fopen($ourFileName, 'w') or die("can't open file");
-
-        $pieces = explode(" ", $_POST['Video']['Name']);
-
-        foreach($pieces as $piece)
-            file_put_contents($ourFileName, $piece);
-        fclose($ourFileHandle);
-
-        $result = array();
-
-        foreach($pieces as $piece){
-            $videos = Yii::app()->db->createCommand()
-                ->select(array('Name'))
-                ->from('Video v')
-                ->where('Name like ":Name%"', array(':Name'=>$piece))
-                ->queryAll();
-            foreach($videos as $video){
-                file_add_contents($ourFileName, $video());
-                $result.add($video);
-            }
-        }
-
-        //file_put_contents($ourFileName, $result.first());
-
-        /*$this->render('view',array(
-            'model'=>$this->loadModel($id),
-        ));*/
-    }
-
 }

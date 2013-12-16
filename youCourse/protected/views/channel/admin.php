@@ -2,10 +2,10 @@
 /* @var $this ChannelController */
 /* @var $model Channel */
 
-$this->breadcrumbs=array(
-	'Channels'=>array('index'),
-	'Manage',
-);
+echo TbHtml::breadcrumbs(array(
+    'Home'=> Yii::app()->baseUrl.'/index.php',
+	'Manage Channels',
+));
 
 $this->menu=array(
 	array('label'=>'List Channel', 'url'=>array('index')),
@@ -24,9 +24,8 @@ $('.search-form form').submit(function(){
 	return false;
 });
 ");
+echo  TbHtml::pageHeader('Manage Channels', 'on YouCourse')
 ?>
-
-<h1>Manage Channels</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -40,18 +39,19 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
 	'id'=>'channel-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+    'type' => TbHtml::GRID_TYPE_BORDERED,
 	'columns'=>array(
 		'ChannelID',
 		'Description',
-		'longLocation',
-		'latLocation',
+		'Location',
 		'Time_stp',
-		array(
-			'class'=>'CButtonColumn',
-		),
+        //icon with bootstrap style
+        array(
+            'class'=>'bootstrap.widgets.TbButtonColumn',
+        ),
 	),
 )); ?>

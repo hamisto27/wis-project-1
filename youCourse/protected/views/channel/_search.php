@@ -6,38 +6,26 @@
 
 <div class="wide form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
 )); ?>
 
 	<div class="row">
 		<?php echo $form->label($model,'ChannelID'); ?>
-		<?php echo $form->textField($model,'ChannelID'); ?>
+        <?php echo $form->textField($model,'ChannelID', array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
 	</div>
-
+    <div class="row">
+        <?php echo $form->label($model,'Location'); ?>
+        <?php echo $form->textField($model,"Location", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
+    </div>
 	<div class="row">
 		<?php echo $form->label($model,'Description'); ?>
-		<?php echo $form->textField($model,'Description',array('size'=>60,'maxlength'=>200)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'longLocation'); ?>
-		<?php echo $form->textField($model,'longLocation',array('size'=>18,'maxlength'=>18)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'latLocation'); ?>
-		<?php echo $form->textField($model,'latLocation',array('size'=>18,'maxlength'=>18)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'Time_stp'); ?>
-		<?php echo $form->textField($model,'Time_stp'); ?>
+        <?php echo $form->textArea($model,"Description", array("span" => 5, "rows" => 5)); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo TbHtml::submitButton('Search'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

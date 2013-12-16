@@ -41,11 +41,11 @@ class ChannelController extends Controller
                 'users'=>array('*'),
             ),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','delete','deleteMyOwnChannel'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin'),
 				'users'=>array('admin'),
 			),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -158,14 +158,36 @@ class ChannelController extends Controller
 	 * @param integer $id the ID of the model to be deleted
 	 */
 
-	public function actionDelete($id)
+	public function actionDeleteMyOwnChannel($id)
 	{
+
+        //$controller_video = new VideoController("Video");
+        Video::model()->deleteAllByAttributes(array(
+            'ChannelID'=>$id,
+        ));
 		$this->loadModel($id)->delete();
+        $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('myChannel','id'=> Yii::app()->user->id));
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		if(!isset($_GET['ajax']));
+			//$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
+
+
+    public function actionDelete($id)
+    {
+
+        //$controller_video = new VideoController("Video");
+        Video::model()->deleteAllByAttributes(array(
+            'ChannelID'=>$id,
+        ));
+        $this->loadModel($id)->delete();
+        $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('myChannel','id'=> Yii::app()->user->id));
+
+        // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+        if(!isset($_GET['ajax']));
+        //$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+    }
 
 	/**
 	 * Lists all models.
