@@ -85,16 +85,16 @@
     </div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'IsAllDayEvent'); ?>
-		<?php echo $form->textField($model,'IsAllDayEvent'); ?>
-		<?php echo $form->error($model,'IsAllDayEvent'); ?>
+		<?php echo $form->labelEx($model,'IsAllDayEvent') ;echo $form->checkBox($model,'IsAllDayEvent' ); ?>
+		<?php //echo $form->textField($model,'IsAllDayEvent'); ?>
+		<?php //echo $form->error($model,'IsAllDayEvent'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Color'); ?>
 		<?php //echo $form->textField($model,'Color',array('size'=>60,'maxlength'=>200)); ?>
 		<?php //echo $form->error($model,'Color'); ?>
-        <?php echo $form->dropDownList($model,'Color',array('(0,0,255)' => 'Blue', 'Red' => 'Red'),
+        <?php echo $form->dropDownList($model,'Color',array('blue' => 'Blue', 'Red' => 'Red'),
             array('empty' => '(Select a color)'));?>
 
         <?php //echo CHtml::dropDownList('Color', $model,
