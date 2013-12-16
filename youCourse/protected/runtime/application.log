@@ -4574,3 +4574,152 @@ Stack trace:
 REQUEST_URI=/wis-project/youCourse/index.php?r=channel/myChannel&id=1
 HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=site/index
 ---
+2013/12/16 14:17:09 [error] [php] include(info_video.php): failed to open stream: No such file or directory (C:\wamp\www\wis-project-1\youCourse\protected\views\site\index.php:33)
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\wis-project-1\youCourse\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\www\wis-project-1\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=site/index
+in C:\wamp\www\wis-project-1\youCourse\protected\views\site\index.php (33)
+in C:\wamp\www\wis-project-1\youCourse\protected\views\site\index.php (33)
+in C:\wamp\www\wis-project-1\youCourse\protected\controllers\SiteController.php (32)
+2013/12/16 14:17:23 [error] [php] include(info_video.php): failed to open stream: No such file or directory (C:\wamp\www\wis-project-1\youCourse\protected\views\site\index.php:33)
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\wis-project-1\youCourse\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\www\wis-project-1\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project-1/youCourse/index.php?
+in C:\wamp\www\wis-project-1\youCourse\protected\views\site\index.php (33)
+in C:\wamp\www\wis-project-1\youCourse\protected\views\site\index.php (33)
+in C:\wamp\www\wis-project-1\youCourse\protected\controllers\SiteController.php (32)
+2013/12/16 14:18:58 [error] [php] Undefined variable: models (C:\wamp\www\wis-project-1\youCourse\protected\views\site\index.php:43)
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\wis-project-1\youCourse\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\www\wis-project-1\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project-1/youCourse/index.php?
+in C:\wamp\www\wis-project-1\youCourse\protected\views\site\index.php (43)
+in C:\wamp\www\wis-project-1\youCourse\protected\controllers\SiteController.php (32)
+in C:\wamp\www\wis-project-1\youCourse\index.php (20)
+2013/12/16 14:39:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api?model=user&id=1
+---
+2013/12/16 14:40:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/model=user&id=1
+---
+2013/12/16 14:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/model=user&id=1
+---
+2013/12/16 15:16:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/user/
+---
+2013/12/16 15:18:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model/user/1".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model/user/...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/model/user/1
+---
+2013/12/16 15:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/1".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/1')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/user/1
+---
+2013/12/16 15:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/1".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/1')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/user/1
+---
+2013/12/16 15:21:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model/user/1".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model/user/...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/model/user/1
+---
+2013/12/16 15:21:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model/user/1".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model/user/...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/model/user/1
+---
+2013/12/16 15:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model/user/1".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model/user/...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/model/user/1
+---
+2013/12/16 15:34:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/?r=api/model=user&key=cGFzczE=&id=1
+---
+2013/12/16 15:34:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/?r=api/model=user&key=cGFzczE=&id=2
+---

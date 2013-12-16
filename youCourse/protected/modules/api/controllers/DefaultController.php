@@ -108,18 +108,9 @@ class DefaultController extends Controller {
         $id = Yii::app()->request->getParam('id');
         $ret_data = array('error' => 'In Valid Request or Model not found');
         $status = 404;
-        $model_ = $this->_getModel();
+        $model_ = $this->_getModel(); 
 
-        $keys = array(
-            1 => 'pass2',
-        );
-
-
-        if(in_array(base64_decode(Yii::app()->request->getParam('key')), $keys) && $model_ != 'video'){
-            $ret_data = array('error' => 'You dont have access to that ressource');
-        }
-
-        else if (isset($model_) && !empty($id)) {
+        if (isset($model_) && !empty($id)) {
             $model = new $model_;
             $status = 200;
             $ret_data = array($model_ => CJSON::encode($model->findByPk($id)));
@@ -171,7 +162,6 @@ class DefaultController extends Controller {
         );
 
         if (in_array(base64_decode(Yii::app()->request->getParam('key')), $keys)) {
-
             $session = new CHttpSession;
             $session->setTimeout(120);
             $session['api_auth'] = base64_encode(Yii::app()->request->getParam('key') . $_SERVER['REMOTE_ADDR']);

@@ -35,7 +35,10 @@ return array(
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters'=>array('127.0.0.1','::1'),
             //'ipFilters'=>array($_SERVER['REMOTE_ADDR']),
+
         ),
+
+        'api'=>array( ),
 
         //user extension
         'user'=>array(
