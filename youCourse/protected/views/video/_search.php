@@ -42,16 +42,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'longLocation'); ?>
-		<?php echo $form->textField($model,'longLocation',array('size'=>18,'maxlength'=>18)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'latLocation'); ?>
-		<?php echo $form->textField($model,'latLocation',array('size'=>18,'maxlength'=>18)); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'Time_stp'); ?>
 		<?php echo $form->textField($model,'Time_stp'); ?>
 	</div>

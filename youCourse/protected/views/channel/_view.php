@@ -13,11 +13,7 @@
 	<?php echo CHtml::encode($data->Description); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('longLocation')); ?>:</b>
-	<?php echo CHtml::encode($data->longLocation); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('latLocation')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Location')); ?>:</b>
 	<?php echo CHtml::encode($data->latLocation); ?>
 	<br />
 

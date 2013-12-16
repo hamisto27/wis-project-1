@@ -25,6 +25,7 @@
             <?php echo $form->labelEx($model,"Content"); ?>
         </div>
         <?php echo $form->textField($model,"Content", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
+        <span class="help-inline" style="color:#b94a48; display:none;">Invalid youtube URL format!</span>
 
         <div class="row">
             <?php echo $form->labelEx($model,"Name"); ?>
@@ -48,27 +49,88 @@
 <script type="text/javascript">
     function send()
     {
-        var data=$("#video-form").serialize();
         var content = $('#Video_Content').val();
         var name = $('#Video_Name').val();
         var description = $('#Video_Description').val();
-        var sendInfo = {
-            Content: content,
-            Name: name,
-            Description: description
-        };
-        $.ajax({
-            type: 'POST',
-            url: '<?php echo Yii::app()->createAbsoluteUrl("video/ajax"); ?>',
-            data:{Video: sendInfo},
-            success:function(data){
-            },
-            error: function(data) { // if error occurred
-                alert("Error occurred. please try again!");
-            },
+        var matches = content.match(/watch\?v=([a-zA-Z0-9\-_]+)/);
+        if(content == "" || name == "" || !matches){
+            if(content == "" && name == ""){
+                $('#Video_Name').addClass('error');
+                $("label[for=Video_Name]").addClass('error required');
 
-            dataType:'html'
-        });
+                $('#Video_Content').addClass('error');
+                $("label[for=Video_Content]").addClass('error required');
+            }
+            else if(content == "" ){
+                $('#Video_Content').addClass('error');
+                $("label[for=Video_Content]").addClass('error required');
+
+                $('#Video_Name').removeClass('error');
+                $("label[for=Video_Name]").removeClass('error required');
+            }
+            else{
+
+                if(!matches && name == ""){
+                    $('#Video_Content').addClass('error');
+                    $("label[for=Video_Content]").addClass('error required');
+                    $('.help-inline').fadeIn('200');
+
+                    $('#Video_Name').addClass('error');
+                    $("label[for=Video_Name]").addClass('error required');
+
+
+                }
+                else{
+                    if(!matches){
+                        $('#Video_Content').addClass('error');
+                        $("label[for=Video_Content]").addClass('error required');
+                        $('.help-inline').fadeIn('200');
+
+                        $('#Video_Name').removeClass('error');
+                        $("label[for=Video_Name]").removeClass('error required');
+                    }
+                    else{
+                        $('#Video_Content').removeClass('error');
+                        $("label[for=Video_Content]").removeClass('error required');
+                        $('.help-inline').fadeOut('100');
+
+                        $('#Video_Name').addClass('error');
+                        $("label[for=Video_Name]").addClass('error required');
+
+                    }
+                }
+            }
+        }
+        else{
+            $('#Video_Content').removeClass('error');
+            $("label[for=Video_Content]").removeClass('error required');
+            $('.help-inline').fadeOut('100');
+
+            $('#Video_Name').removeClass('error');
+            $("label[for=Video_Name]").removeClass('error required');
+
+            var sendInfo = {
+                Content: content,
+                Name: name,
+                Description: description
+            };
+
+           $.ajax({
+                type: 'POST',
+                url: '<?php echo Yii::app()->createAbsoluteUrl("video/ajax"); ?>',
+                data:{Video: sendInfo},
+                success:function(){
+                    $('#uploadModal').modal('hide');
+                    location.reload();
+                },
+                error: function() { // if error occurred
+                    alert("Error occurred. please try again!");
+                },
+
+                dataType:'html'
+            });
+
+        }
 
     }
 </script>

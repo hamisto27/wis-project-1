@@ -5,7 +5,20 @@
 
 <div class="view">
 
+    <?php
+        if(strpos($url, "youtube.com")){
+            $this->widget('ext.Yiippod.Yiippod', array(
+            'video'=> $data->Content,
+            'id' => 'video_view_'.$data->VidID,
+            'width'=>640,
+            'height'=>480,
+            'bgcolor'=>'#000'
+            ));
+        }
+    ?>
+</div>
 
+<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('VidID')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->VidID), array('view', 'id'=>$data->VidID)); ?>
 	<br />
@@ -30,19 +43,8 @@
 	<?php echo CHtml::encode($data->ChannelID); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('longLocation')); ?>:</b>
-	<?php echo CHtml::encode($data->longLocation); ?>
-	<br />
-
-	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('latLocation')); ?>:</b>
-	<?php echo CHtml::encode($data->latLocation); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Time_stp')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Added')); ?>:</b>
 	<?php echo CHtml::encode($data->Time_stp); ?>
-	<br />
+	<br /> */
+?>
 
-	*/ ?>
-
-</div>

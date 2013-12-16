@@ -40,7 +40,7 @@
         $this->widget('application.extensions.gmap.GMap', array(
             'id' => 'gmap',//id of the <div> container created
             'key' => 'AIzaSyALxT1YDH6ZWyI3oqWxCLDIhWTqMTUgsaQ', //goole API key, should be obtained for each site,it's free
-            //'label' => 'ULB', //text written in the text bubble
+            'label' => ' ', //text written in the text bubble
             'address' => array(
                 'address' => 'ULB',//address of the place
                 'city' => 'Bruxelles', //city
@@ -120,11 +120,11 @@
 
 <script>
     $('#clickMe').click(function(){
+
         var m = new GMap("gmap", $('#Jqcalendar_Location').val());
-       // m.setAddress($('#Jqcalendar_Location').val());
-        //m.setLabel('hehezr');
         m.show();
-       // alert("hello");
+
+
     });
 
 </script>

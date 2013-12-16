@@ -6,10 +6,8 @@
  * The followings are the available columns in table 'Channel':
  * @property integer $ChannelID
  * @property string $Description
- * @property string $longLocation
- * @property string $latLocation
  * @property string $Time_stp
- *
+ * @property string $Location
  * The followings are the available model relations:
  * @property User $channel
  * @property User[] $users
@@ -34,13 +32,12 @@ class Channel extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			// time stamp not required array('Time_stp', 'required'),
-            array('longLocation', 'required'),
-            array('latLocation', 'required'),
+            array('Location', 'required'),
 			array('Description', 'length', 'max'=>200),
-			array('longLocation, latLocation', 'length', 'max'=>18),
+			array('Location', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ChannelID, Description, longLocation, latLocation, Time_stp', 'safe', 'on'=>'search'),
+			array('ChannelID,  Location, Description', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,8 +63,7 @@ class Channel extends CActiveRecord
 		return array(
 			'ChannelID' => 'Channel',
 			'Description' => 'Description',
-			'longLocation' => 'Long Location',
-			'latLocation' => 'Lat Location',
+			'Location' => 'Location',
 			'Time_stp' => 'Time Stp',
 		);
 	}
@@ -91,9 +87,8 @@ class Channel extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ChannelID',$this->ChannelID);
+        $criteria->compare('Location',$this->Location,true);
 		$criteria->compare('Description',$this->Description,true);
-		$criteria->compare('longLocation',$this->longLocation,true);
-		$criteria->compare('latLocation',$this->latLocation,true);
 		//$criteria->compare('Time_stp',$this->Time_stp,true);
 
 		return new CActiveDataProvider($this, array(
