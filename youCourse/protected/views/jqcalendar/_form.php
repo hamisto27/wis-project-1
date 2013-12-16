@@ -22,8 +22,7 @@
 	<div class="row">
 		<?php //echo $form->labelEx($model,'user_id'); ?>
 		<?php //echo $form->textField($model,'user_id'); ?>
-		<?php //echo $form->error($model,'user_id'); ?>
-        <?php $id = Yii::app()->User->id; echo $id; ?>
+		<?php //echo $form->error($model,'user_id');?>
 	</div>
 
 	<div class="row">
@@ -59,15 +58,31 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'StartTime'); ?>
-		<?php echo $form->textField($model,'StartTime'); ?>
-		<?php echo $form->error($model,'StartTime'); ?>
+		<?php //echo $form->textField($model,'StartTime'); ?>
+		<?php //echo $form->error($model,'StartTime'); ?>
 	</div>
+
+    <div class="row">
+        <?php $this->widget('ext.my97DatePicker.JMy97DatePicker',array(
+            'name'=>CHtml::activeName($model,'StartTime'),
+            'value'=>$model->StartTime,
+            'options'=>array('dateFmt'=>'yyyy-MM-dd HH:mm:ss'),
+        ));?>
+    </div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'EndTime'); ?>
-		<?php echo $form->textField($model,'EndTime'); ?>
-		<?php echo $form->error($model,'EndTime'); ?>
+		<?php //echo $form->textField($model,'EndTime'); ?>
+		<?php //echo $form->error($model,'EndTime'); ?>
 	</div>
+
+    <div class="row">
+        <?php $this->widget('ext.my97DatePicker.JMy97DatePicker',array(
+            'name'=>CHtml::activeName($model,'EndTime'),
+            'value'=>$model->EndTime,
+            'options'=>array('dateFmt'=>'yyyy-MM-dd HH:mm:ss'),
+        ));?>
+    </div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'IsAllDayEvent'); ?>
@@ -79,10 +94,12 @@
 		<?php echo $form->labelEx($model,'Color'); ?>
 		<?php //echo $form->textField($model,'Color',array('size'=>60,'maxlength'=>200)); ?>
 		<?php //echo $form->error($model,'Color'); ?>
+        <?php echo $form->dropDownList($model,'Color',array('(0,0,255)' => 'Blue', 'Red' => 'Red'),
+            array('empty' => '(Select a color)'));?>
 
-        <?php echo CHtml::dropDownList('Color', $model,
-            array('B' => 'Blue', 'R' => 'Red'),
-            array('empty' => '(Select a color)')); ?>
+        <?php //echo CHtml::dropDownList('Color', $model,
+            //array('Blue' => 'Blue', 'Red' => 'Red'),
+            //array('empty' => '(Select a color)')); ?>
 
 	</div>
 
@@ -92,13 +109,6 @@
 		<?php //echo $form->error($model,'RecurringRule'); ?>
 	</div>
 
-    <div class="row">
-        <?php $this->widget('ext.my97DatePicker.JMy97DatePicker',array(
-        'name'=>CHtml::activeName($model,'StartTime'),
-        'value'=>$model->StartTime,
-        'options'=>array('dateFmt'=>'dd-MM-yyyy  HH:mm'),
-        ));?>
-    </div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
