@@ -23,6 +23,7 @@
 		<?php //echo $form->labelEx($model,'user_id'); ?>
 		<?php //echo $form->textField($model,'user_id'); ?>
 		<?php //echo $form->error($model,'user_id'); ?>
+        <?php $id = Yii::app()->User->id; echo $id; ?>
 	</div>
 
 	<div class="row">
@@ -76,8 +77,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Color'); ?>
-		<?php echo $form->textField($model,'Color',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'Color'); ?>
+		<?php //echo $form->textField($model,'Color',array('size'=>60,'maxlength'=>200)); ?>
+		<?php //echo $form->error($model,'Color'); ?>
+
+        <?php echo CHtml::dropDownList('Color', $model,
+            array('B' => 'Blue', 'R' => 'Red'),
+            array('empty' => '(Select a color)')); ?>
+
 	</div>
 
 	<div class="row">
