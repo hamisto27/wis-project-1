@@ -13,10 +13,10 @@
     <![endif]-->
     <?php Yii::app()->bootstrap->register(); ?>
     <?php // Include the client scripts
-        $baseUrl = Yii::app()->baseUrl;
+    $baseUrl = Yii::app()->baseUrl;
 
-        $cs = Yii::app()->getClientScript();
-        $cs->registerScriptFile($baseUrl.'/js/ajaxScript.js');
+    $cs = Yii::app()->getClientScript();
+    $cs->registerScriptFile($baseUrl.'/js/ajaxScript.js');
     ?>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
@@ -45,20 +45,18 @@
             )
         ));*/ ?>
         <?php $this->widget('bootstrap.widgets.TbNavBar', array(
-                'brandLabel'=> CHtml::image("images/logo_mohamed.png", "YouCourse"),
-                'display'=>null,
-                'items'=>array(
+            'brandLabel'=> CHtml::image("images/logo_mohamed.png", "YouCourse"),
+            'display'=>null,
+            'items'=>array(
                 array(
                     'class'=>'bootstrap.widgets.TbNav',
                     'items'=>array(
                         array('label'=>'Home', 'icon'=>TbHtml::ICON_HOME, 'url'=>array('/site/index')),
                         array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
                         array('label'=>'Contact', 'url'=>array('/site/contact')),
-                        TbHtml::navbarSearchForm(Yii::app()->createUrl('/video/SearchBar'),
-                            'post', array('inputOptions' => array('name' => 'Video[Name]',
-                            'class' => 'search-query span2',  'placeholder' =>Yii::t('app','Search')))),
+                        TbHtml::navbarSearchForm('#'),
                         TbHtml::button('Search', array(
-                                'icon'=>TbHtml::ICON_SEARCH))
+                            'icon'=>TbHtml::ICON_SEARCH))
                     ),
                 ),
                 array(
@@ -69,7 +67,7 @@
                             array('label'=>Yii::app()->getModule('user')->t("Profile"), 'url'=>Yii::app()->getModule('user')->profileUrl, 'visible'=>!Yii::app()->user->isGuest),
                             TbHtml::menuDivider(),
                             array('label' => 'Channel', 'url' => Yii::app()->baseUrl.'/index.php?r=channel/myChannel&id='.Yii::app()->user->id,'visible'=>!Yii::app()->user->isGuest),
-                            array('label' => 'Upload Video', 'url' => '#', 'visible'=>!Yii::app()->user->isGuest),
+                            array('label' => 'Manage Channels', 'url' => Yii::app()->baseUrl.'/index.php?r=channel/admin', 'visible'=> Yii::app()->getModule('user')->isAdmin()),
                             TbHtml::menuDivider(),
                             array('label' => 'My Subscriptions', 'url' => '#','visible'=>!Yii::app()->user->isGuest),
                             array('label' => 'History', 'url' => '#', 'visible'=>!Yii::app()->user->isGuest)),
