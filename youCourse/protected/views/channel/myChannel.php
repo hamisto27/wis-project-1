@@ -22,7 +22,7 @@ echo TbHtml::breadcrumbs(array(
 $htmlHTML = $controller_video -> renderPartial('_form',array('model'=>Video::model()), true);
 
 // modal for delete channel
- $this->widget('bootstrap.widgets.TbModal', array(
+$this->widget('bootstrap.widgets.TbModal', array(
     'id' => 'deleteModal',
     'header' => 'Delete Channel',
     'content' => '<p>Are you sure you want to delete this Channel?</p>',
@@ -68,19 +68,19 @@ $this->widget('bootstrap.widgets.TbModal', array(
 
 // page title
 echo  TbHtml::pageHeader('My Own Channel', 'on YouCourse'), TbHtml::pills(array(
-        array('label'=>'My Channel', 'url'=> array('channel/myChannel','id'=>Yii::app()->user->id), 'active' => true),
-        array('label'=>'Update Channel', 'url'=>array('update','id'=>Yii::app()->user->id)),
-        array('label'=>'Delete Channel', 'url'=>'#', 'data-toggle' => 'modal', 'data-target' => '#deleteModal'),
-      )/*array('span' => 4)*/),TbHtml::buttonDropdown('Upload', array(
-                array('label' => 'YouTube', 'url'=>'#', 'data-toggle' => 'modal', 'data-target' => '#uploadModal'),)
-                ,array('icon' => 'align-left'));
+    array('label'=>'My Channel', 'url'=> array('channel/myChannel','id'=>Yii::app()->user->id), 'active' => true),
+    array('label'=>'Update Channel', 'url'=>array('update','id'=>Yii::app()->user->id)),
+    array('label'=>'Delete Channel', 'url'=>'#', 'data-toggle' => 'modal', 'data-target' => '#deleteModal'),
+)/*array('span' => 4)*/),TbHtml::buttonDropdown('Upload', array(
+        array('label' => 'YouTube', 'url'=>'#', 'data-toggle' => 'modal', 'data-target' => '#uploadModal'),)
+    ,array('icon' => 'align-left'));
 
 ?>
-<div class="my-channel-videos" style="margin-top:20px;">
-<?php
-    $controller_video -> actionIndexByChannel(Yii::app()->user->id);
-?>
-</div>
+    <div class="my-channel-videos" style="margin-top:20px;">
+        <?php
+        $controller_video -> actionIndexByChannel(Yii::app()->user->id);
+        ?>
+    </div>
 <?php
 //end widget
 $this->endWidget();
