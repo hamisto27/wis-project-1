@@ -14,7 +14,7 @@
     <li class="span3" data-id="" data-content="" data-descrption="">
         <div class="thumbnail">
             <div class="caption">
-                <h5><?echo CHtml::link($data->Name, $this->createAbsoluteUrl('video/view',array('id'=>$data->VidID))); ?></h5>
+                <h5><?php echo CHtml::link($data->Name, $this->createAbsoluteUrl('video/view',array('id'=>$data->VidID))); ?></h5>
                 <?php
                 //get ID from youtube url
                 parse_str( parse_url($data->Content, PHP_URL_QUERY ), $my_array_of_vars );
