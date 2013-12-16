@@ -87,11 +87,18 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'RecurringRule'); ?>
-		<?php echo $form->textField($model,'RecurringRule',array('size'=>60,'maxlength'=>500)); ?>
-		<?php echo $form->error($model,'RecurringRule'); ?>
+		<?php //echo $form->labelEx($model,'RecurringRule'); ?>
+		<?php //echo $form->textField($model,'RecurringRule',array('size'=>60,'maxlength'=>500)); ?>
+		<?php //echo $form->error($model,'RecurringRule'); ?>
 	</div>
 
+    <div class="row">
+        <?php $this->widget('ext.my97DatePicker.JMy97DatePicker',array(
+        'name'=>CHtml::activeName($model,'StartTime'),
+        'value'=>$model->StartTime,
+        'options'=>array('dateFmt'=>'dd-MM-yyyy  HH:mm'),
+        ));?>
+    </div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
