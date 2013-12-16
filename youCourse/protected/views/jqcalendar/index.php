@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Jqcalendars</h1>
+<h1>Events</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
