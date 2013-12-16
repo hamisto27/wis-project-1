@@ -23,8 +23,7 @@
 		<?php //echo $form->labelEx($model,'user_id'); ?>
 		<?php //echo $form->textField($model,'user_id'); ?>
 		<?php //echo $form->error($model,'user_id'); ?>
-        <?php $id = Yii::app()->User->id; echo $id; ?>
-	</div>
+        <?php $model->user_id = Yii::app()->User->id; ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Subject'); ?>
