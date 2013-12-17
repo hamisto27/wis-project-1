@@ -13,13 +13,26 @@ class VideoController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	public function filters()
+	/*public function filters()
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
+
 		);
-	}
+	}*/
+
+    public function filters()
+    {
+        return array(
+            'accessControl', // perform access control for CRUD operations
+            array(
+                'ext.starship.RestfullYii.filters.ERestFilter + REST.GET',
+                //'accessControl', // perform access control for CRUD operations
+                //'postOnly + delete', // we only allow deletion via POST request
+            ),
+        );
+    }
 
 	/**
 	 * Specifies the access control rules.
@@ -29,6 +42,9 @@ class VideoController extends Controller
 	public function accessRules()
 	{
 		return array(
+            array('allow', 'actions'=>array('REST.GET', 'REST.PUT', 'REST.POST', 'REST.DELETE'),
+                'users'=>array('*'),
+            ),
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
@@ -238,6 +254,13 @@ class VideoController extends Controller
 			'model'=>$model,
 		));
 	}
+
+    public function actions()
+    {
+        return array(
+            'REST.'=>'ext.starship.RestfullYii.actions.ERestActionProvider',
+        );
+    }
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

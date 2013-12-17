@@ -68,9 +68,9 @@ return array(
 
         'urlManager'=>array(
             'urlFormat'=>'path',
-            /*'rules'=>require(
+            'rules'=>require(
                     dirname(__FILE__).'/../extensions/starship/restfullyii/config/routes.php'
-                ),*/
+                ),
         ),//*/
 
         'user'=>array(
