@@ -13,15 +13,6 @@ class VideoController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	/*public function filters()
-	{
-		return array(
-			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
-
-		);
-	}*/
-
     public function filters()
     {
         return array(
@@ -46,7 +37,7 @@ class VideoController extends Controller
                 'users'=>array('*'),
             ),
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','searchvideo'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -97,6 +88,65 @@ class VideoController extends Controller
 		));
 
 	}
+
+    /**
+     * search video using search-bar
+     */
+    public function actionSearchvideo()
+    {
+
+
+
+        if(isset($_POST['Video']))
+        {
+
+            $search = explode(" ",$_POST['Video']['Name']);
+
+            $criteria = new CDbCriteria();
+            foreach ($search as $var){
+                $criteria->compare('Name', $var, true, 'OR');
+            }
+
+            $dataProvider =new CActiveDataProvider('Video', array(
+                    'criteria'=>$criteria,
+                )
+            );
+
+            $dataProvider->setPagination(false);
+            $item_count = Video::model()->count($criteria);
+
+            $this->render('searchvideo',array(
+                'videos_searched' =>  $dataProvider,
+                'number_videos' => $item_count,
+                'word_searched' => $_POST['Video']['Name']
+            ));
+
+        }
+
+
+        //search video of the same channel
+
+        /*$criteria = new CDbCriteria;
+
+        $criteria->condition = "ChannelID=:col_val AND VidID!=:col_val2";
+        $criteria->params = array(':col_val' => $model->ChannelID, ':col_val2' => $id);
+        $criteria->limit = 6;
+
+        $dataProvider =new CActiveDataProvider('Video', array(
+                'criteria'=>$criteria,
+            )
+        );
+        $dataProvider->setPagination(false);
+
+        $item_count = Video::model()->count($criteria);
+
+        $this->render('view',array(
+            'model'=>$this->loadModel($id),
+            'videos_channel' =>  $dataProvider,
+            'number_videos' => $item_count
+        ));*/
+
+    }
 
     /**
      * Displays a particular model in modal dialog.
@@ -159,7 +209,7 @@ class VideoController extends Controller
 		{
 			$model->attributes=$_POST['Video'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->VidID));
+				$this->redirect($this->createAbsoluteUrl('channel/channel',array('id'=>$model->ChannelID)));
 		}
 
 		$this->render('update',array(
@@ -254,13 +304,6 @@ class VideoController extends Controller
 			'model'=>$model,
 		));
 	}
-
-    public function actions()
-    {
-        return array(
-            'REST.'=>'ext.starship.RestfullYii.actions.ERestActionProvider',
-        );
-    }
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

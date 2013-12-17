@@ -1,71 +1,47 @@
 <?php
-/* @var $this SiteController */
-
-$this->pageTitle=Yii::app()->name;
-?>
-<?php
-/*->widget('application.extensions.gmap.GMap', array(
-    'id' => 'gmap',//id of the <div> container created
-    'key' => 'AIzaSyDQZz8Dkue5YeD8CTt5V63_gGevsduHJ2E', //goole API key, should be obtained for each site,it's free
-    'label' => 'place', //text written in the text bubble
-    'address' => array(
-        'address' => '1600 Amphitheatre Pky',//address of the place
-        'city' => 'Mountain View', //city
-        'state' => 'CA',//state
-        //'country' => 'USA'  - country
-        //'zip' => 'XXXXX' - zip or postal code
-    )
-));*/
-
-
-
-//$this->widget('ext.Yiitube', array('player' => 'vimeo', 'v' => '80168379', 'size' => 'small'));
-//$this->widget('ext.Yiitube', array('v' => 'fYa0y4ETFVo', 'size' => 'small'));
-
-/*$this->widget('ext.Yiippod.Yiippod', array(
-    'video'=>"http://vimeo.com/62075663",
-    'id' => 'yiippodplayer',
-    'width'=>640,
-    'height'=>480,
-    'bgcolor'=>'#000'
-));*/
+/**
+ * Created by PhpStorm.
+ * User: mohamed chajii
+ * Date: 17/12/13
+ * Time: 06:28
+ */
 
 include 'info_video.php';
 ?>
-<h2>Welcome to <?php echo CHtml::image(Yii::app()->getBaseUrl()."/images/logo_mohamed.png", "YouCourse",  array(
-            'width' => '110px',
-            'height' => '30px',
-        )); ?>
-</h2>
-<div class="home-page-videos">
-    <?php
-    $count_row = 0;
-    foreach($models as $model){
-
-        $cut_name = $model->Name;
-        if(strlen($cut_name) > 20){
-            $cut_name = (substr($cut_name, 0, 19)).'...';
+<div class="videos-searched">
+<?php echo "<p>Search Results for: '".TbHtml::i($word_searched)."'</p>";
+$count_row = 0;
+$pos = "";
+foreach($videos_searched->getData() as $model){
+    $cut_name = $model->Name;
+        if(strlen($cut_name) > 100){
+            $cut_name = (substr($cut_name, 0, 99)).'...';
 
         }
         if($count_row == 0){
-            echo '<hr><ul class="thumbnails">';
+            echo "<hr><ul class='thumbnails'>";
         }
         if(strpos($model->Content, "youtube.com")){
 
             $thumb = get_youtube_video_image($model->Content);
+            if($count_row == 0){
+                $pos = "left";
+            }
+            else{
+                $pos = "right";
+            }
             $box_video = '<a class="thumbnail" href="'.$this->createAbsoluteUrl('video/view',array('id'=>$model->VidID)).'">
                                     <img alt="" src="'.$thumb.'">
                                   </a>';
-            echo' <li class="span2">
-                            <p><p>
+            echo'<div class="'.$pos.'" style="width:50%;"><li style="margin-right:20px;" class="span2">
+                            <p></p>
                             '.$box_video.'
-                            <blockquote class="pull-right">
-                            <a href="'.$this->createAbsoluteUrl('video/view',array('id'=>$model->VidID)).'"><p style:"font-size:12px;">'.TbHtml::tooltip($cut_name, '#', $model->Name).'</p></a>
-                            <small>
-                                views '.$model->Views.'
-                            </small>
-                            </blockquote>
+
                           </li>';
+
+            echo '<p></p> <a href="'.$this->createAbsoluteUrl('video/view',array('id'=>$model->VidID)).'"><p style:"font-size:12px;">'.TbHtml::tooltip($cut_name, $this->createAbsoluteUrl('video/view',array('id'=>$model->VidID)), $model->Name).'</p></a>';
+            echo '<blockquote><p>'.$model->Description.'</p><small style="margin-left:0px;" class="span3">Uploaded on: <cite >'.$model->Time_stp.'</cite></small>'.TbHtml::button('Visit Channel', array('data-id' => $model->ChannelID,'class'=> 'open-searched-channel')).'</blockquote>';
+            echo '</div>';
         }
         //'.TbHtml::popover("Description","", "'.$model->Description.'", array(
         //                    "class" => "link",)).'
@@ -105,12 +81,23 @@ include 'info_video.php';
         }
         $count_row ++;
 
-        if($count_row == 6){
+        if($count_row == 2){
             $count_row = 0;
             echo '</ul>';
         }
 
-
-    }
-    ?>
+}
+?>
 </div>
+<script>
+
+    $(document).ready(function(){
+        $( ".open-searched-channel" ).live( "click", function() {
+            var id = $(this).attr('data-id');
+            window.location.replace('<?php echo Yii::app()->baseUrl.'/index.php/channel/channel/id/'; ?>' + id);
+
+        });
+    });
+
+
+</script>

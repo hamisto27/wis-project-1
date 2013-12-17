@@ -11,6 +11,7 @@
  * @property integer $Views
  * @property integer $ChannelID
  * @property string $Time_stp
+ * @property string $slideshare
  *
  * The followings are the available model relations:
  * @property User[] $users
@@ -40,9 +41,10 @@ class Video extends CActiveRecord
 			array('Content', 'length', 'max'=>50),
 			array('Description', 'length', 'max'=>1000),
 			array('Name', 'length', 'max'=>200),
+            array('slideshare', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('VidID, Content, Description, Name, Views, ChannelID, Time_stp', 'safe', 'on'=>'search'),
+			array('VidID, Content, Description, Name, Views, ChannelID, Time_stp, slideshare', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,7 +57,7 @@ class Video extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'users' => array(self::MANY_MANY, 'User', 'Likes(VidID, id)'),
-			//'comments' => array(self::HAS_MANY, 'Comment', 'VidID'),
+			'comments' => array(self::HAS_MANY, 'Comment', 'VidID'),
 			'channel' => array(self::BELONGS_TO, 'Channel', 'ChannelID'),
 		);
 	}
@@ -73,6 +75,7 @@ class Video extends CActiveRecord
 			'Views' => 'Views',
 			'ChannelID' => 'Channel',
 			'Time_stp' => 'Time Stp',
+            'slideshare' => 'slideshare',
 		);
 	}
 
@@ -100,6 +103,7 @@ class Video extends CActiveRecord
 		$criteria->compare('Name',$this->Name,true);
 		$criteria->compare('Views',$this->Views);
 		$criteria->compare('ChannelID',$this->ChannelID);
+        $criteria->compare('slideshare',$this->slideshare);
 		//$criteria->compare('longLocation',$this->longLocation,true);
 		//$criteria->compare('latLocation',$this->latLocation,true);
 		//$criteria->compare('Time_stp',$this->Time_stp,true);

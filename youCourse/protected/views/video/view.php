@@ -14,6 +14,7 @@ $time = $datetime->format('H:i:s');
 ?>
 
 <div class="video_page">
+<h2><?php echo $model->Name ?></h2>
 <?php if(strpos($model->Content, "youtube.com")){
 
     $this->widget('ext.Yiippod.Yiippod', array(
@@ -33,7 +34,7 @@ $time = $datetime->format('H:i:s');
             <h3 class="popover-title"><b>Uploaded</b></h3>
             <div class="popover-content"><b>Date:</b> <?php echo $date ?> <br> <b>Time:</b> <?php echo $time ?></div>
         </div> */
-        echo $model->slideshare;
+
         if($model->slideshare != ""){
 
             $json = @file_get_contents('http://www.slideshare.net/api/oembed/2?url='.urlencode($model->slideshare).'&format=json');
@@ -47,6 +48,12 @@ $time = $datetime->format('H:i:s');
                 $html = $decode['html'];
                 echo '<div>'.$html.'</div>';
             }
+            ?>
+            <div class="description-popup in">
+                <h3 class="popover-title"><b>Uploaded</b></h3>
+                <div class="popover-content"><b>Date:</b> <?php echo $date ?> <br> <b>Time:</b> <?php echo $time ?></div>
+            </div>
+            <?php
 
         }
         else{?>

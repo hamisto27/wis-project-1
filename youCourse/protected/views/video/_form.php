@@ -25,12 +25,12 @@
             <?php echo $form->labelEx($model,"Content"); ?>
         </div>
         <?php echo $form->textField($model,"Content", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
-        <span id="help-content" class="help-inline" style="color:#b94a48; display:none;">Invalid youtube URL format!</span>
+        <span id="help-content" class="help-inline" style="color:#b94a48; display:none;">Invalid youtube or vimeo URL!</span>
 
         <div class="row">
             <?php echo $form->labelEx($model,"Name"); ?>
         </div>
-        <?php echo $form->textField($model,"Name", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
+        <?php echo $form->textField($model,"Name", array("size" => TbHtml::INPUT_SIZE_XLARGE,'class' => 'name-video')); ?>
 
         <div class="row">
             <?php echo $form->labelEx($model,"slideshare"); ?>
@@ -56,60 +56,218 @@
     function send()
     {
         var content = $('#Video_Content').val();
-        var name = $('#Video_Name').val();
+        var name = $('.name-video').val();
         var description = $('#Video_Description').val();
         var slideshare = $('#Video_slideshare').val();
-        var matches = content.match(/watch\?v=([a-zA-Z0-9\-_]+)/);
-        if(content == "" || name == "" || !matches){
-            if(content == "" && name == ""){
-                $('#Video_Name').addClass('error');
+        var matches_youtube = content.match(/watch\?v=([a-zA-Z0-9\-_]+)/);
+        var matches_vimeo = content.match(/^http:\/\/(www\.)?vimeo\.com\/(clip:)?(\d+).*$/);// vimeo regex
+        var matches=""
+        if(matches_youtube || matches_vimeo){
+            if(matches_youtube)
+                matches="youtube";
+            else
+                matches="vimeo";
+        }
+        else{
+            matches="";
+        }
+        if(content == "" || name == "" || matches == "" || (slideshare != "" && slideshare.indexOf('slideshare.net') == -1)){
+
+            if(content == "" && name == ""  && (slideshare != "" && slideshare.indexOf('slideshare.net') == -1)){
+
+                $('.name-video').addClass('error');
                 $("label[for=Video_Name]").addClass('error required');
 
                 $('#Video_Content').addClass('error');
                 $("label[for=Video_Content]").addClass('error required');
+                $('#help-content').fadeOut('200');
+
+                $('#Video_slideshare').addClass('error');
+                $("label[for=Video_slideshare]").addClass('error required');
+                $('#help-slideshare').fadeIn('200');
+
+
+
+
             }
-            else if(content == "" ){
+            else if(content != "" && name == "" && matches == "" && (slideshare != "" && slideshare.indexOf('slideshare.net') == -1)){
+
+
+                $('.name-video').addClass('error');
+                $("label[for=Video_Name]").addClass('error required');
+
                 $('#Video_Content').addClass('error');
                 $("label[for=Video_Content]").addClass('error required');
+                $('#help-content').fadeIn('200');
 
-                $('#Video_Name').removeClass('error');
+                $('#Video_slideshare').addClass('error');
+                $("label[for=Video_slideshare]").addClass('error required');
+                $('#help-slideshare').fadeIn('200');
+
+            }
+            else if(content == "" && name != "" && (slideshare != "" && slideshare.indexOf('slideshare.net') == -1)){
+
+
+                $('.name-video').removeClass('error');
                 $("label[for=Video_Name]").removeClass('error required');
+
+                $('#Video_Content').addClass('error');
+                $("label[for=Video_Content]").addClass('error required');
+                $('#help-content').fadeOut('200');
+
+                $('#Video_slideshare').addClass('error');
+                $("label[for=Video_slideshare]").addClass('error required');
+                $('#help-slideshare').fadeIn('200');
             }
-            else{
-
-                if(!matches && name == ""){
-                    $('#Video_Content').addClass('error');
-                    $("label[for=Video_Content]").addClass('error required');
-                    $('#help-content').fadeIn('200');
-
-                    $('#Video_Name').addClass('error');
-                    $("label[for=Video_Name]").addClass('error required');
+            else if(content != "" && name == "" && matches != "" && (slideshare != "" && slideshare.indexOf('slideshare.net') == -1)){
+                $('.name-video').addClass('error');
+                $("label[for=Video_Name]").addClass('error required');
 
 
-                }
-                else{
-                    if(!matches){
-                        $('#Video_Content').addClass('error');
-                        $("label[for=Video_Content]").addClass('error required');
-                        $('#help-content').fadeIn('200');
+                $('#Video_Content').removeClass('error');
+                $("label[for=Video_Content]").removeClass('error required');
+                $('#help-content').fadeOut('200');
 
-                        $('#Video_Name').removeClass('error');
-                        $("label[for=Video_Name]").removeClass('error required');
-                    }
-                    else{
-                        $('#Video_Content').removeClass('error');
-                        $("label[for=Video_Content]").removeClass('error required');
-                        $('#help-content').fadeOut('100');
+                $('#Video_slideshare').addClass('error');
+                $("label[for=Video_slideshare]").addClass('error required');
+                $('#help-slideshare').fadeIn('200');
 
-                        $('#Video_Name').addClass('error');
-                        $("label[for=Video_Name]").addClass('error required');
 
-                    }
-                }
             }
+
+            else if(content == "" && name == "" && (slideshare == "" || slideshare.indexOf('slideshare.net') != -1)){
+                $('.name-video').addClass('error');
+                $("label[for=Video_Name]").addClass('error required');
+
+
+                $('#Video_Content').addClass('error');
+                $("label[for=Video_Content]").addClass('error required');
+                $('#help-content').fadeOut('200');
+
+                $('#Video_slideshare').removeClass('error');
+                $("label[for=Video_slideshare]").removeClass('error required');
+                $('#help-slideshare').fadeOut('200');
+
+
+            }
+
+            else if(content != "" && name != "" && matches == "" && (slideshare != "" && slideshare.indexOf('slideshare.net') == -1)){
+                $('.name-video').removeClass('error');
+                $("label[for=Video_Name]").removeClass('error required');
+
+
+                $('#Video_Content').addClass('error');
+                $("label[for=Video_Content]").addClass('error required');
+                $('#help-content').fadeIn('200');
+
+                $('#Video_slideshare').addClass('error');
+                $("label[for=Video_slideshare]").addClass('error required');
+                $('#help-slideshare').fadeIn('200');
+
+
+            }
+
+            else if(content != "" && name == "" && matches != "" && (slideshare == "" || slideshare.indexOf('slideshare.net') != -1)){
+                $('.name-video').addClass('error');
+                $("label[for=Video_Name]").addClass('error required');
+
+
+                $('#Video_Content').removeClass('error');
+                $("label[for=Video_Content]").removeClass('error required');
+                $('#help-content').fadeOut('200');
+
+                $('#Video_slideshare').removeClass('error');
+                $("label[for=Video_slideshare]").removeClass('error required');
+                $('#help-slideshare').fadeOut('200');
+
+
+            }
+
+            else if(content != "" && name == "" && matches != "" && (slideshare != "" && slideshare.indexOf('slideshare.net') == -1)){
+
+                $('.name-video').addClass('error');
+                $("label[for=Video_Name]").addClass('error required');
+
+                $('#Video_Content').removeClass('error');
+                $("label[for=Video_Content]").removeClass('error required');
+                $('#help-content').fadeOut('200');
+
+                $('#Video_slideshare').addClass('error');
+                $("label[for=Video_slideshare]").addClass('error required');
+                $('#help-slideshare').fadeIn('200');
+
+
+
+            }
+            else if(content != "" && name == "" && matches == "" && (slideshare == "" || slideshare.indexOf('slideshare.net') != -1)){
+
+                $('.name-video').addClass('error');
+                $("label[for=Video_Name]").addClass('error required');
+
+
+                $('#Video_Content').addClass('error');
+                $("label[for=Video_Content]").addClass('error required');
+                $('#help-content').fadeIn('200');
+
+                $('#Video_slideshare').removeClass('error');
+                $("label[for=Video_slideshare]").removeClass('error required');
+                $('#help-slideshare').fadeOut('200');
+
+
+
+            }
+            else if(content != "" && name != "" && matches != "" && (slideshare != "" && slideshare.indexOf('slideshare.net') == -1)){
+
+                $('.name-video').removeClass('error');
+                $("label[for=Video_Name]").removeClass('error required');
+
+                $('#Video_Content').removeClass('error');
+                $("label[for=Video_Content]").removeClass('error required');
+                $('#help-content').fadeOut('200');
+
+                $('#Video_slideshare').addClass('error');
+                $("label[for=Video_slideshare]").addClass('error required');
+                $('#help-slideshare').fadeIn('200');
+
+
+
+            }
+            else if(content != "" && name != "" && matches == "" && (slideshare == "" || slideshare.indexOf('slideshare.net') == -1)){
+
+                $('.name-video').removeClass('error');
+                $("label[for=Video_Name]").removeClass('error required');
+
+                $('#Video_Content').addClass('error');
+                $("label[for=Video_Content]").addClass('error required');
+                $('#help-content').fadeIn('200');
+
+                $('#Video_slideshare').removeClass('error');
+                $("label[for=Video_slideshare]").removeClass('error required');
+                $('#help-slideshare').fadeOut('200');
+
+
+
+            }
+            else if(content == "" && name != "" && (slideshare == "" || slideshare.indexOf('slideshare.net') != -1)){
+
+                $('.name-video').removeClass('error');
+                $("label[for=Video_Name]").removeClass('error required');
+
+                $('#Video_Content').addClass('error');
+                $("label[for=Video_Content]").addClass('error required');
+                $('#help-content').fadeOut('200');
+
+                $('#Video_slideshare').removeClass('error');
+                $("label[for=Video_slideshare]").removeClass('error required');
+                $('#help-slideshare').fadeOut('200');
+
+
+
+            }
+
         }
 
-        else if (slideshare.indexOf('slideshare.net') == -1){
+        /*else if (slideshare.indexOf('slideshare.net') == -1){
             $('#Video_slideshare').addClass('error');
             $("label[for=Video_slideshare]").addClass('error required');
             $('#help-slideshare').fadeIn('200');
@@ -120,18 +278,18 @@
 
             $('#Video_Name').removeClass('error');
             $("label[for=Video_Name]").removeClass('error required');
-        }
+        }*/
 
         else{
             $('#Video_Content').removeClass('error');
             $("label[for=Video_Content]").removeClass('error required');
             $('#help-content').fadeOut('100');
 
-            $('#Video_slideshare').addClass('error');
-            $("label[for=Video_slideshare]").addClass('error required');
-            $('#help-slideshare').fadeIn('200');
+            $('#Video_slideshare').removeClass('error');
+            $("label[for=Video_slideshare]").removeClass('error required');
+            $('#help-slideshare').fadeOut('200');
 
-            $('#Video_Name').removeClass('error');
+            $('.name-video').removeClass('error');
             $("label[for=Video_Name]").removeClass('error required');
 
             var sendInfo = {

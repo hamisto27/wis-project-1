@@ -8,6 +8,7 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+
 .clearfix {
   *zoom: 1;
 }
@@ -6201,4 +6202,8 @@ a.badge:focus {
     .navbar-search .search-query {
 
     }
+}
+
+.slideshareModal{
+    width: 460px;
 }

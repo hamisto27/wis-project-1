@@ -2,11 +2,12 @@
 /* @var $this VideoController */
 /* @var $model Video */
 
-$this->breadcrumbs=array(
-	'Videos'=>array('index'),
-	$model->Name=>array('view','id'=>$model->VidID),
-	'Update',
-);
+echo TbHtml::breadcrumbs(array(
+    'Home'=> Yii::app()->baseUrl.'/index.php',
+    'Channel'=>array('channel', 'id'=>$model->ChannelID),
+     $model->Name=>array('view','id'=>$model->VidID),
+    'Update',
+));
 
 $this->menu=array(
 	array('label'=>'List Video', 'url'=>array('index')),
@@ -16,6 +17,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Video <?php echo $model->VidID; ?></h1>
+<h1>Update Video <?php echo TbHtml::i("'".$model->Name."'"); ?></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('update_form', array('model'=>$model)); ?>

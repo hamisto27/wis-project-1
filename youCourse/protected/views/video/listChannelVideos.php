@@ -8,15 +8,24 @@
 /* @var $this VideoController */
 /* @var $dataProvider CActiveDataProvider */
 ?>
+
 <ul class="thumbnails span">
     <?php foreach($dataProvider->getData() as $data) { ?>
+
     <li class="span3" data-id="" data-content="" data-descrption="">
         <div class="thumbnail">
             <div class="caption">
-                <h5><?php echo CHtml::link($data->Name, $this->createAbsoluteUrl('video/view',array('id'=>$data->VidID))); ?></h5>
+                <?php
+                $cut_name = $data->Name;
+                if(strlen($cut_name) > 30){
+                $cut_name = (substr($cut_name, 0, 29)).'...';
+                }
+                ?>
+                <p><h5><?php echo '<a href="'.$this->createAbsoluteUrl('video/view',array('id'=>$data->VidID)).'">'.TbHtml::tooltip($cut_name,$this->createAbsoluteUrl('video/view',array('id'=>$data->VidID)),$data->Name).'</a>'?></h5><a href="<?php echo $this->createAbsoluteUrl('video/update',array('id'=>$data->VidID)); ?>">Update<i class="icon-edit"></i></a></p>
                 <?php
                 //get ID from youtube url
                 parse_str( parse_url($data->Content, PHP_URL_QUERY ), $my_array_of_vars );
+
 
                 $this->widget('ext.youtube.JYoutube', array(
                     'id'=>'youtube_'.$data->VidID,
@@ -32,9 +41,34 @@
                     'data-name' => $data->Name,'color' => TbHtml::BUTTON_COLOR_PRIMARY));
 
                 if(Yii::app()->getModule('user')->isAdmin() || $id_channel == Yii::app()->user->id){
-                 echo TbHtml::button('Delete', array('data-id' => $data->VidID, 'data-name' => $data->Name, 'class' => 'delete-video')); }
+                 echo '&nbsp;&nbsp;'.TbHtml::button('Delete', array('data-id' => $data->VidID, 'data-name' => $data->Name, 'class' => 'delete-video')); }
                 ?>
-                <span class="badge badge-success" style="float:right;">views<?php echo ' '.$data->Views; ?></span>
+                <!--<span class="badge badge-success" style="float:right;">views<?php //echo ' '.$data->Views; ?></span>-->
+                <?php if($data->slideshare!=null){
+                     echo '<a class="right" data-url="'.$data->slideshare.'" data-id="'.$data->VidID.'" href="#" id="slideshare-modal-link">Slideshare</a>';
+                    $json = @file_get_contents('http://www.slideshare.net/api/oembed/2?url='.urlencode($data->slideshare).'&format=json');
+                    $decode = json_decode($json, true);
+                    $html="";
+                    if ($decode == null || !$decode) {
+                        $error = true;
+                        //error control here
+                    } else {
+                        $thumb = $decode['thumbnail'];
+                        $html = $decode['html'];
+                    }
+                     $this->widget('bootstrap.widgets.TbModal', array(
+                        'id' => 'slideshareModal_'.$data->VidID,
+                        'header' => 'Slides',
+                        'content' => $html,
+                        'footer' => array(
+                            TbHtml::button('Close', array('data-dismiss' => 'modal')),
+                        ),
+
+                    ));
+                }
+                else
+                     echo '<p class="right" style="color:#b94a48;">No Slideshare!</p>';
+                ?>
             </div>
         </div>
      </li>
@@ -45,8 +79,22 @@
 
 
 
+        $( "a#slideshare-modal-link" ).live( "click", function(event) {
+
+            event.preventDefault();
+            //alert("hello");
+            var id = $(this).attr('data-id');
+            $('#slideshareModal_' + id).modal({
+                refresh: true
+            });
+            $("#slideshareModal_" + id).addClass('slideshareModal');
+            $("#slideshareModal_" + id + " .modal-body").load(function() {
+                $("#slideshareModal_" + id).modal("show");
+            });
+
+        });
         //remove data from modal when is hidden
-        $( "div.my-channel-videos .btn-primary" ).live( "click", function() {
+        $( "div.my-channel-videos .btn-primary").live( "click", function() {
             $('#watchModal').modal({
                 refresh: true
             });

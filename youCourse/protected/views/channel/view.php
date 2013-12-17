@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Channel #<?php echo $model->Channel=; ?></h1>
+<h1>View Channel #<?php echo $model->ChannelID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

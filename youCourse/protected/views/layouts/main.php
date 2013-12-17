@@ -39,7 +39,7 @@
             )
         ));*/ ?>
         <?php $this->widget('bootstrap.widgets.TbNavBar', array(
-            'brandLabel'=> CHtml::image("images/logo_mohamed.png", "YouCourse"),
+            'brandLabel'=> CHtml::image(Yii::app()->getBaseUrl()."/images/logo_mohamed.png", "YouCourse"),
             'display'=>null,
             'items'=>array(
                 array(
@@ -63,8 +63,8 @@
                             array('label' => 'Channel', 'url' => Yii::app()->baseUrl.'/index.php/channel/myChannel/id/'.Yii::app()->user->id,'visible'=>!Yii::app()->user->isGuest),
                             array('label' => 'Manage Channels', 'url' => Yii::app()->baseUrl.'/index.php/channel/admin', 'visible'=> Yii::app()->getModule('user')->isAdmin()),
                             TbHtml::menuDivider(),
-                            array('label' => 'My Subscriptions', 'url' => '#','visible'=>!Yii::app()->user->isGuest),
-                            array('label' => 'History', 'url' => '#', 'visible'=>!Yii::app()->user->isGuest),
+                            //array('label' => 'My Subscriptions', 'url' => '#','visible'=>!Yii::app()->user->isGuest),
+                            //array('label' => 'History', 'url' => '#', 'visible'=>!Yii::app()->user->isGuest),
                             TbHtml::menuDivider(),
                             array('label' => 'Calendar', 'url' => Yii::app()->baseUrl.'/index.php/wdcalendar','visible'=>!Yii::app()->user->isGuest),
                             array('label' => 'Manage Events', 'url' => Yii::app()->baseUrl.'/index.php/jqcalendar', 'visible'=> !Yii::app()->user->isGuest)),
