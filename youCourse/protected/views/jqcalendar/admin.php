@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Jqcalendar', 'url'=>array('index')),
-	array('label'=>'Create Jqcalendar', 'url'=>array('create')),
+	array('label'=>'List Events', 'url'=>array('index')),
+	array('label'=>'Create Events', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

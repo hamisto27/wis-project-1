@@ -7004,3 +7004,281 @@ Stack trace:
 REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
 HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar
 ---
+2013/12/17 09:48:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar
+---
+2013/12/17 09:48:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/admin
+---
+2013/12/17 09:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/17 09:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/site/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/site/index
+---
+2013/12/17 09:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/wdcalendar
+---
+2013/12/17 09:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar
+---
+2013/12/17 09:50:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/admin
+---
+2013/12/17 09:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/index
+---
+2013/12/17 09:51:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/logo_mohamed.png".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/logo_moh...')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar
+---
+2013/12/17 09:51:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/admin
+---
+2013/12/17 09:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php(89): JqcalendarController->loadModel('images')
+#1 [internal function]: JqcalendarController->actionUpdate('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(JqcalendarController), Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(JqcalendarController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/upda...')
+#14 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/update/id/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/update/id/3
+---
+2013/12/17 09:51:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php(55): JqcalendarController->loadModel('images')
+#1 [internal function]: JqcalendarController->actionView('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(JqcalendarController), Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(JqcalendarController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/view...')
+#14 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/view/id/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/view/id/3
+---
+2013/12/17 09:52:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php(55): JqcalendarController->loadModel('images')
+#1 [internal function]: JqcalendarController->actionView('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(JqcalendarController), Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(JqcalendarController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/view...')
+#14 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/view/id/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/view/id/3
+---
+2013/12/17 09:52:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php(55): JqcalendarController->loadModel('images')
+#1 [internal function]: JqcalendarController->actionView('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(JqcalendarController), Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(JqcalendarController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/view...')
+#14 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/view/id/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/view/id/3
+---
+2013/12/17 09:53:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php(55): JqcalendarController->loadModel('images')
+#1 [internal function]: JqcalendarController->actionView('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(JqcalendarController), Array)
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(JqcalendarController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/view...')
+#14 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/view/id/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/view/id/3
+---
+2013/12/17 09:53:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/index
+---
+2013/12/17 09:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/admin
+---
+2013/12/17 09:56:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/admin
+---
+2013/12/17 09:56:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/admin
+---
+2013/12/17 09:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/admin
+---
+2013/12/17 09:56:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\wis-project\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/imag...')
+#3 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/wis-project/youCourse/index.php/jqcalendar/images/logo_mohamed.png
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php/jqcalendar/index
+---
