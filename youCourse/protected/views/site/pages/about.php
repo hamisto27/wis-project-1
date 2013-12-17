@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 ?>
 <?php $this->widget('bootstrap.widgets.TbHeroUnit', array(
     'heading' => 'About',
-    'content' => '<p>This is a simple web application have built for the cours of Web Information Systems. Our names are Aurelien Plisnier, Jorge Garcia and Mohamed Chajii.</p>'
+    'content' => '<p>This is a simple web application we built for the course of Web Information Systems. Our names are Aurelien Plisnier, Jorge Garcia and Mohamed Chajii.</p>'
         . TbHtml::button('Developers click here to have access to our API', array('color' =>TbHtml::BUTTON_COLOR_PRIMARY, 'size' => TbHtml::BUTTON_SIZE_LARGE,'data-toggle' => 'modal','data-target' => '#myModal')),
 )); ?>
 

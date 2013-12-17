@@ -5,6 +5,9 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+
+
+
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
     'name'=>'My Web Application',
@@ -40,6 +43,7 @@ return array(
         ),
 
         'api'=>array( ),
+
 
         //user extension
         'user'=>array(
@@ -142,5 +146,13 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+
+        'RestfullYii' => [
+            'req.auth.user'=>function($application_id, $username, $password) {
+                    return true;
+                },
+        ],
 	),
 );
+
+
