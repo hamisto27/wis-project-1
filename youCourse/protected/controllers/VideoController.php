@@ -89,6 +89,13 @@ class VideoController extends Controller
 
 	}
 
+    public function actions()
+    {
+        return array(
+            'REST.'=>'ext.starship.RestfullYii.actions.ERestActionProvider',
+        );
+    }
+
     /**
      * search video using search-bar
      */
