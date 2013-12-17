@@ -25,12 +25,18 @@
             <?php echo $form->labelEx($model,"Content"); ?>
         </div>
         <?php echo $form->textField($model,"Content", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
-        <span class="help-inline" style="color:#b94a48; display:none;">Invalid youtube URL format!</span>
+        <span id="help-content" class="help-inline" style="color:#b94a48; display:none;">Invalid youtube URL format!</span>
 
         <div class="row">
             <?php echo $form->labelEx($model,"Name"); ?>
         </div>
         <?php echo $form->textField($model,"Name", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
+
+        <div class="row">
+            <?php echo $form->labelEx($model,"slideshare"); ?>
+        </div>
+        <?php echo $form->textField($model,"slideshare", array("size" => TbHtml::INPUT_SIZE_XLARGE)); ?>
+        <span id="help-slideshare" class="help-inline" style="color:#b94a48; display:none;">Invalid slideshare URL format!</span>
 
         <div class="row">
             <?php echo $form->labelEx($model,"Description"); ?>
@@ -52,6 +58,7 @@
         var content = $('#Video_Content').val();
         var name = $('#Video_Name').val();
         var description = $('#Video_Description').val();
+        var slideshare = $('#Video_slideshare').val();
         var matches = content.match(/watch\?v=([a-zA-Z0-9\-_]+)/);
         if(content == "" || name == "" || !matches){
             if(content == "" && name == ""){
@@ -73,7 +80,7 @@
                 if(!matches && name == ""){
                     $('#Video_Content').addClass('error');
                     $("label[for=Video_Content]").addClass('error required');
-                    $('.help-inline').fadeIn('200');
+                    $('#help-content').fadeIn('200');
 
                     $('#Video_Name').addClass('error');
                     $("label[for=Video_Name]").addClass('error required');
@@ -84,7 +91,7 @@
                     if(!matches){
                         $('#Video_Content').addClass('error');
                         $("label[for=Video_Content]").addClass('error required');
-                        $('.help-inline').fadeIn('200');
+                        $('#help-content').fadeIn('200');
 
                         $('#Video_Name').removeClass('error');
                         $("label[for=Video_Name]").removeClass('error required');
@@ -92,7 +99,7 @@
                     else{
                         $('#Video_Content').removeClass('error');
                         $("label[for=Video_Content]").removeClass('error required');
-                        $('.help-inline').fadeOut('100');
+                        $('#help-content').fadeOut('100');
 
                         $('#Video_Name').addClass('error');
                         $("label[for=Video_Name]").addClass('error required');
@@ -101,10 +108,28 @@
                 }
             }
         }
+
+        else if (slideshare.indexOf('slideshare.net') == -1){
+            $('#Video_slideshare').addClass('error');
+            $("label[for=Video_slideshare]").addClass('error required');
+            $('#help-slideshare').fadeIn('200');
+
+            $('#Video_Content').removeClass('error');
+            $("label[for=Video_Content]").removeClass('error required');
+            $('#help-content').fadeOut('100');
+
+            $('#Video_Name').removeClass('error');
+            $("label[for=Video_Name]").removeClass('error required');
+        }
+
         else{
             $('#Video_Content').removeClass('error');
             $("label[for=Video_Content]").removeClass('error required');
-            $('.help-inline').fadeOut('100');
+            $('#help-content').fadeOut('100');
+
+            $('#Video_slideshare').addClass('error');
+            $("label[for=Video_slideshare]").addClass('error required');
+            $('#help-slideshare').fadeIn('200');
 
             $('#Video_Name').removeClass('error');
             $("label[for=Video_Name]").removeClass('error required');
@@ -112,7 +137,8 @@
             var sendInfo = {
                 Content: content,
                 Name: name,
-                Description: description
+                Description: description,
+                slideshare: slideshare
             };
 
            $.ajax({

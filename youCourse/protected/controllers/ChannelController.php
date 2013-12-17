@@ -33,7 +33,7 @@ class ChannelController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','Channel'),
 				'users'=>array('*'),
 			),
             array('allow',  // allow all users to perform 'index' and 'view' actions
@@ -85,6 +85,40 @@ class ChannelController extends Controller
             ));
         }
     }
+    public function actionChannel($id)
+    {
+
+        $model = $this->loadModelmyChannel($id);
+
+        if($id == Yii::app()->user->id){
+            if($model == null){
+                $this->actionCreate();
+            }
+            else{
+                $this->render('channel',array(
+                    'model'=>$model,
+                ));
+            }
+        }
+        else{
+            $criteria = new CDbCriteria;
+
+            $criteria->condition = "id=:col_val";
+            $criteria->params = array(':col_val' => $model->ChannelID);
+            $criteria->limit = 1;
+
+            $dataProvider =new CActiveDataProvider('User', array(
+                    'criteria'=>$criteria,
+                )
+            );
+            $dataProvider->setPagination(false);
+                $this->render('channel',array(
+                    'model'=>$model,
+                    'owner_channel'=>$dataProvider,
+
+            ));
+        }
+    }
 
     // action for save video from youtube.
 
@@ -119,7 +153,7 @@ class ChannelController extends Controller
             $model->ChannelID = Yii::app()->user->id;
 			if($model->save())
 				//$this->redirect(array('view','id'=>$model->ChannelID));
-                $this->redirect(array('myChannel','id'=>$model->ChannelID));
+                $this->redirect(array('channel','id'=>$model->ChannelID));
 		}
 
 		$this->render('create',array(

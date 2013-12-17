@@ -12,12 +12,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
     <![endif]-->
     <?php Yii::app()->bootstrap->register(); ?>
-    <?php // Include the client scripts
-    $baseUrl = Yii::app()->baseUrl;
-
-    $cs = Yii::app()->getClientScript();
-    $cs->registerScriptFile($baseUrl.'/js/ajaxScript.js');
-    ?>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
@@ -66,14 +60,14 @@
                         array('label' => 'Actions','icon'=>TbHtml::ICON_LIST,'visible'=> !Yii::app()->user->isGuest, 'items' => array(
                             array('label'=>Yii::app()->getModule('user')->t("Profile"), 'url'=>Yii::app()->getModule('user')->profileUrl, 'visible'=>!Yii::app()->user->isGuest),
                             TbHtml::menuDivider(),
-                            array('label' => 'Channel', 'url' => Yii::app()->baseUrl.'/index.php?r=channel/myChannel&id='.Yii::app()->user->id,'visible'=>!Yii::app()->user->isGuest),
-                            array('label' => 'Manage Channels', 'url' => Yii::app()->baseUrl.'/index.php?r=channel/admin', 'visible'=> Yii::app()->getModule('user')->isAdmin()),
+                            array('label' => 'Channel', 'url' => Yii::app()->baseUrl.'/index.php/channel/myChannel/id/'.Yii::app()->user->id,'visible'=>!Yii::app()->user->isGuest),
+                            array('label' => 'Manage Channels', 'url' => Yii::app()->baseUrl.'/index.php/channel/admin', 'visible'=> Yii::app()->getModule('user')->isAdmin()),
                             TbHtml::menuDivider(),
                             array('label' => 'My Subscriptions', 'url' => '#','visible'=>!Yii::app()->user->isGuest),
                             array('label' => 'History', 'url' => '#', 'visible'=>!Yii::app()->user->isGuest),
                             TbHtml::menuDivider(),
-                            array('label' => 'Calendar', 'url' => Yii::app()->baseUrl.'/index.php?r=wdcalendar','visible'=>!Yii::app()->user->isGuest),
-                            array('label' => 'Manage Events', 'url' => Yii::app()->baseUrl.'/index.php?r=jqcalendar', 'visible'=> !Yii::app()->user->isGuest)),
+                            array('label' => 'Calendar', 'url' => Yii::app()->baseUrl.'/index.php/wdcalendar','visible'=>!Yii::app()->user->isGuest),
+                            array('label' => 'Manage Events', 'url' => Yii::app()->baseUrl.'/index.php/jqcalendar', 'visible'=> !Yii::app()->user->isGuest)),
                         ),
                         array('label'=>'Logout ('.Yii::app()->user->name.')','icon'=>TbHtml::ICON_USER, 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>Yii::app()->getModule('user')->t("Login"), 'icon'=>TbHtml::ICON_USER, 'url'=>Yii::app()->getModule('user')->loginUrl, 'visible'=>Yii::app()->user->isGuest),

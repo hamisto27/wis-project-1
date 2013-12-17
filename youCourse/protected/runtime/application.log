@@ -5110,360 +5110,177 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/wis-project-1/youCourse/index.php/?r=api/model=user&key=cGFzczE=&id=2
 ---
-2013/12/16 16:03:21 [error] [exception.CException] exception 'CException' with message 'Alias "ext.my97DatePicker.JMy97DatePicker" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\wis-project-1\yii\framework\YiiBase.php:322
+2013/12/16 17:09:53 [error] [php] Undefined index: city (C:\xampp\htdocs\wis-project\youCourse\protected\extensions\gmap\GMap.php:69)
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.my97DatePic...', true)
-#1 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(JqcalendarController), 'ext.my97DatePic...', Array)
-#2 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.my97DatePic...', Array)
-#3 C:\wamp\www\wis-project-1\youCourse\protected\views\jqcalendar\_form.php(70): CBaseController->widget('ext.my97DatePic...', Array)
-#4 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\wis...')
-#5 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\wis...', Array, true)
-#6 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\wis...', Array, true)
-#7 C:\wamp\www\wis-project-1\youCourse\protected\views\jqcalendar\create.php(18): CController->renderPartial('_form', Array)
-#8 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\wis...')
-#9 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\wis...', Array, true)
-#10 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\wis...', Array, true)
-#11 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
-#12 C:\wamp\www\wis-project-1\youCourse\protected\controllers\JqcalendarController.php(79): CController->render('create', Array)
-#13 C:\wamp\www\wis-project-1\yii\framework\web\actions\CInlineAction.php(49): JqcalendarController->actionCreate()
-#14 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#15 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
-#16 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
-#17 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#18 C:\wamp\www\wis-project-1\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#19 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#20 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(291): CFilterChain->run()
-#21 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#22 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('create')
-#23 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/crea...')
-#24 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#25 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
-#26 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php?r=jqcalendar/create
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php?r=jqcalendar
----
-2013/12/16 16:03:37 [error] [exception.CException] exception 'CException' with message 'Alias "ext.my97DatePicker.JMy97DatePicker" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\wis-project-1\yii\framework\YiiBase.php:322
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(172): JqcalendarController->createWidget()
+#2 C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\_view.php(44): JqcalendarController->widget()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(130): require()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(95): JqcalendarController->renderInternal()
+#5 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CListView.php(291): JqcalendarController->renderFile()
+#6 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#7 unknown(0): CListView->renderSection()
+#8 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#9 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#10 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(173): CListView->run()
+#11 C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\index.php(20): JqcalendarController->widget()
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(95): JqcalendarController->renderInternal()
+#14 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(869): JqcalendarController->renderFile()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(782): JqcalendarController->renderPartial()
+#16 C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php(128): JqcalendarController->render()
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): JqcalendarController->actionIndex()
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): JqcalendarController->runAction()
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): JqcalendarController->filterAccessControl()
+#23 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): JqcalendarController->runActionWithFilters()
+#26 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): JqcalendarController->run()
+#27 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php?r=jqcalendar
+in C:\xampp\htdocs\wis-project\youCourse\protected\extensions\gmap\GMap.php (69)
+in C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\_view.php (44)
+in C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\index.php (20)
+2013/12/16 17:10:27 [error] [php] Undefined index: city (C:\xampp\htdocs\wis-project\youCourse\protected\extensions\gmap\GMap.php:69)
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.my97DatePic...', true)
-#1 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(JqcalendarController), 'ext.my97DatePic...', Array)
-#2 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.my97DatePic...', Array)
-#3 C:\wamp\www\wis-project-1\youCourse\protected\views\jqcalendar\_form.php(70): CBaseController->widget('ext.my97DatePic...', Array)
-#4 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\wis...')
-#5 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\wis...', Array, true)
-#6 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\wis...', Array, true)
-#7 C:\wamp\www\wis-project-1\youCourse\protected\views\jqcalendar\create.php(18): CController->renderPartial('_form', Array)
-#8 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\wis...')
-#9 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\wis...', Array, true)
-#10 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\wis...', Array, true)
-#11 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
-#12 C:\wamp\www\wis-project-1\youCourse\protected\controllers\JqcalendarController.php(79): CController->render('create', Array)
-#13 C:\wamp\www\wis-project-1\yii\framework\web\actions\CInlineAction.php(49): JqcalendarController->actionCreate()
-#14 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#15 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
-#16 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
-#17 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#18 C:\wamp\www\wis-project-1\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#19 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#20 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(291): CFilterChain->run()
-#21 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#22 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('create')
-#23 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/crea...')
-#24 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#25 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
-#26 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php?r=jqcalendar/create
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php?r=jqcalendar
----
-2013/12/16 16:04:03 [error] [exception.CException] exception 'CException' with message 'Alias "ext.my97DatePicker.JMy97DatePicker" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\wis-project-1\yii\framework\YiiBase.php:322
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#1 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(172): JqcalendarController->createWidget()
+#2 C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\_view.php(44): JqcalendarController->widget()
+#3 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(130): require()
+#4 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(95): JqcalendarController->renderInternal()
+#5 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CListView.php(291): JqcalendarController->renderFile()
+#6 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#7 unknown(0): CListView->renderSection()
+#8 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#9 C:\xampp\htdocs\wis-project\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#10 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(173): CListView->run()
+#11 C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\index.php(20): JqcalendarController->widget()
+#12 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\wis-project\yii\framework\web\CBaseController.php(95): JqcalendarController->renderInternal()
+#14 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(869): JqcalendarController->renderFile()
+#15 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(782): JqcalendarController->renderPartial()
+#16 C:\xampp\htdocs\wis-project\youCourse\protected\controllers\JqcalendarController.php(128): JqcalendarController->render()
+#17 C:\xampp\htdocs\wis-project\yii\framework\web\actions\CInlineAction.php(49): JqcalendarController->actionIndex()
+#18 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(133): JqcalendarController->runAction()
+#20 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CInlineFilter.php(58): JqcalendarController->filterAccessControl()
+#23 C:\xampp\htdocs\wis-project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\htdocs\wis-project\yii\framework\web\CController.php(265): JqcalendarController->runActionWithFilters()
+#26 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(282): JqcalendarController->run()
+#27 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project/youCourse/index.php?r=jqcalendar
+in C:\xampp\htdocs\wis-project\youCourse\protected\extensions\gmap\GMap.php (69)
+in C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\_view.php (44)
+in C:\xampp\htdocs\wis-project\youCourse\protected\views\jqcalendar\index.php (20)
+2013/12/16 17:21:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.my97DatePic...', true)
-#1 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(JqcalendarController), 'ext.my97DatePic...', Array)
-#2 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.my97DatePic...', Array)
-#3 C:\wamp\www\wis-project-1\youCourse\protected\views\jqcalendar\_form.php(70): CBaseController->widget('ext.my97DatePic...', Array)
-#4 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\wis...')
-#5 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\wis...', Array, true)
-#6 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\wis...', Array, true)
-#7 C:\wamp\www\wis-project-1\youCourse\protected\views\jqcalendar\create.php(18): CController->renderPartial('_form', Array)
-#8 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\wis...')
-#9 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\wis...', Array, true)
-#10 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\wis...', Array, true)
-#11 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
-#12 C:\wamp\www\wis-project-1\youCourse\protected\controllers\JqcalendarController.php(79): CController->render('create', Array)
-#13 C:\wamp\www\wis-project-1\yii\framework\web\actions\CInlineAction.php(49): JqcalendarController->actionCreate()
-#14 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#15 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
-#16 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
-#17 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#18 C:\wamp\www\wis-project-1\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#19 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#20 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(291): CFilterChain->run()
-#21 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#22 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('create')
-#23 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/crea...')
-#24 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#25 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
-#26 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php?r=jqcalendar/create
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php?r=jqcalendar
----
-2013/12/16 16:06:08 [error] [exception.CException] exception 'CException' with message 'Alias "ext.my97DatePicker.JMy97DatePicker" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\wis-project-1\yii\framework\YiiBase.php:322
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.my97DatePic...', true)
-#1 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(JqcalendarController), 'ext.my97DatePic...', Array)
-#2 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.my97DatePic...', Array)
-#3 C:\wamp\www\wis-project-1\youCourse\protected\views\jqcalendar\_form.php(70): CBaseController->widget('ext.my97DatePic...', Array)
-#4 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\wis...')
-#5 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\wis...', Array, true)
-#6 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\wis...', Array, true)
-#7 C:\wamp\www\wis-project-1\youCourse\protected\views\jqcalendar\create.php(18): CController->renderPartial('_form', Array)
-#8 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\wis...')
-#9 C:\wamp\www\wis-project-1\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\wis...', Array, true)
-#10 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\wis...', Array, true)
-#11 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
-#12 C:\wamp\www\wis-project-1\youCourse\protected\controllers\JqcalendarController.php(79): CController->render('create', Array)
-#13 C:\wamp\www\wis-project-1\yii\framework\web\actions\CInlineAction.php(49): JqcalendarController->actionCreate()
-#14 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#15 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
-#16 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
-#17 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#18 C:\wamp\www\wis-project-1\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#19 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#20 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(291): CFilterChain->run()
-#21 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#22 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('create')
-#23 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jqcalendar/crea...')
-#24 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#25 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
-#26 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php?r=jqcalendar/create
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php?r=jqcalendar
----
-2013/12/16 16:09:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/user
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 16:54:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+2013/12/16 17:21:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/REST.GE...')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/default/test
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 16:54:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+2013/12/16 17:21:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
-#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
-#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/default/ima...')
-#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
-#5 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/default/images/logo_mohamed.png
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/default/test
----
-2013/12/16 16:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api//REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api//REST.GET')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api//REST.GET
+REQUEST_URI=/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 16:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api//images/logo_mohamed.png".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+2013/12/16 17:21:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api//images/log...')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api//images/logo_mohamed.png
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api//REST.GET
+REQUEST_URI=/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 16:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+2013/12/16 17:22:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/REST.GE...')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/default/test
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 16:56:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\wis-project-1\yii\framework\web\CController.php:483
+2013/12/16 17:22:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(270): CController->missingAction('images')
-#1 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): CController->run('images')
-#2 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/default/ima...')
-#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#4 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
-#5 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/default/images/logo_mohamed.png
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/default/test
----
-2013/12/16 16:57:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "REST/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('REST/REST.GET')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/REST
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 16:57:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/images/logo_mohamed.png".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+2013/12/16 17:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/images/logo...')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/images/logo_mohamed.png
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/REST
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 16:57:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/REST.GET/user".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+2013/12/16 17:31:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/REST.GET/us...')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/REST.GET/user
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 16:57:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/REST.GET/images/logo_mohamed.png".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+2013/12/16 17:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/REST.GET/im...')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/REST.GET/images/logo_mohamed.png
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/REST.GET/user
+REQUEST_URI=/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 16:59:20 [error] [php] include(Comment.php): failed to open stream: No such file or directory (C:\wamp\www\wis-project-1\yii\framework\YiiBase.php:427)
+2013/12/16 17:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 unknown(0): spl_autoload_call()
-#1 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php(574): call_user_func()
-#2 unknown(0): VideoController->{closure}()
-#3 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
-#4 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
-#5 unknown(0): ERestBehavior->emitRest()
-#6 C:\wamp\www\wis-project-1\yii\framework\base\CComponent.php(261): call_user_func_array()
-#7 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(104): VideoController->__call()
-#8 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(104): VideoController->emitRest()
-#9 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(34): EActionRestGET->getRelations()
-#10 unknown(0): EActionRestGET->run()
-#11 C:\wamp\www\wis-project-1\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
-#12 C:\wamp\www\wis-project-1\yii\framework\web\actions\CAction.php(74): EActionRestGET->runWithParamsInternal()
-#13 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): EActionRestGET->runWithParams()
-#14 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(133): VideoController->runAction()
-#15 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(62): CFilterChain->run()
-#16 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilter.php(38): ERestFilter->preFilter()
-#17 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(130): ERestFilter->filter()
-#18 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
-#19 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
-#20 C:\wamp\www\wis-project-1\yii\framework\web\filters\CInlineFilter.php(58): VideoController->filterAccessControl()
-#21 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
-#22 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(291): CFilterChain->run()
-#23 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): VideoController->runActionWithFilters()
-#24 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): VideoController->run()
-#25 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#26 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#27 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/video/
-in C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php (574)
-in C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
-in C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php (109)
-2013/12/16 17:02:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/user/
+REQUEST_URI=/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api/model=user&key=cGFzczINCg==&id=1
 ---
-2013/12/16 17:02:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/images/logo_mohamed.png".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+2013/12/16 18:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/images...')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/user/images/logo_mohamed.png
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user/
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczE=&id=1
 ---
-2013/12/16 17:02:12 [error] [php] include(Comment.php): failed to open stream: No such file or directory (C:\wamp\www\wis-project-1\yii\framework\YiiBase.php:427)
+2013/12/16 18:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api?model=user".' in C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php:286
 Stack trace:
-#0 unknown(0): spl_autoload_call()
-#1 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php(574): call_user_func()
-#2 unknown(0): VideoController->{closure}()
-#3 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
-#4 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
-#5 unknown(0): ERestBehavior->emitRest()
-#6 C:\wamp\www\wis-project-1\yii\framework\base\CComponent.php(261): call_user_func_array()
-#7 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(104): VideoController->__call()
-#8 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(104): VideoController->emitRest()
-#9 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(34): EActionRestGET->getRelations()
-#10 unknown(0): EActionRestGET->run()
-#11 C:\wamp\www\wis-project-1\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
-#12 C:\wamp\www\wis-project-1\yii\framework\web\actions\CAction.php(74): EActionRestGET->runWithParamsInternal()
-#13 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(308): EActionRestGET->runWithParams()
-#14 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(133): VideoController->runAction()
-#15 C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(62): CFilterChain->run()
-#16 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilter.php(38): ERestFilter->preFilter()
-#17 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(130): ERestFilter->filter()
-#18 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
-#19 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
-#20 C:\wamp\www\wis-project-1\yii\framework\web\filters\CInlineFilter.php(58): VideoController->filterAccessControl()
-#21 C:\wamp\www\wis-project-1\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
-#22 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(291): CFilterChain->run()
-#23 C:\wamp\www\wis-project-1\yii\framework\web\CController.php(265): VideoController->runActionWithFilters()
-#24 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(282): VideoController->run()
-#25 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#26 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#27 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/video/
-in C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php (574)
-in C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
-in C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php (109)
-2013/12/16 17:14:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#0 C:\xampp\htdocs\wis-project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api?model=user')
+#1 C:\xampp\htdocs\wis-project\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\wis-project\youCourse\index.php(20): CApplication->run()
 #3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/user/
+REQUEST_URI=/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczE=&id=1
+HTTP_REFERER=http://localhost:81/wis-project/youCourse/index.php?r=api?model=user&key=cGFzczE=&id=1
 ---
-2013/12/16 17:14:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/images/logo_mohamed.png".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/images...')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
-#3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/user/images/logo_mohamed.png
-HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user/
----
-2013/12/16 17:19:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/video/".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/video/')
-#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
-#3 {main}
-REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/video/
----
-2013/12/16 17:20:58 [error] [php] trim() expects parameter 1 to be string, array given (C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php:658)
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php(226): CUrlManager->createUrlRule()
-#1 C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
-#2 C:\wamp\www\wis-project-1\yii\framework\base\CModule.php(387): CUrlManager->init()
-#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(522): CWebApplication->getComponent()
-#4 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(140): CWebApplication->getUrlManager()
-#5 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#6 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
-REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/video/
-in C:\wamp\www\wis-project-1\youCourse\index.php (20)
-2013/12/16 17:21:06 [error] [php] trim() expects parameter 1 to be string, array given (C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php:658)
-Stack trace:
-#0 C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php(226): CUrlManager->createUrlRule()
-#1 C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
-#2 C:\wamp\www\wis-project-1\yii\framework\base\CModule.php(387): CUrlManager->init()
-#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(522): CWebApplication->getComponent()
-#4 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(140): CWebApplication->getUrlManager()
-#5 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#6 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
-REQUEST_URI=/wis-project-1/youCourse/index.php/api/video/
-in C:\wamp\www\wis-project-1\youCourse\index.php (20)
