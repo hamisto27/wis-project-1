@@ -5420,3 +5420,50 @@ REQUEST_URI=/wis-project-1/youCourse/index.php/api/video/
 in C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php (574)
 in C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
 in C:\wamp\www\wis-project-1\youCourse\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php (109)
+2013/12/16 17:14:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/REST.GET".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/REST.GET')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/user/
+---
+2013/12/16 17:14:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/user/images/logo_mohamed.png".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/user/images...')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/user/images/logo_mohamed.png
+HTTP_REFERER=http://localhost/wis-project-1/youCourse/index.php/api/user/
+---
+2013/12/16 17:19:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/video/".' in C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/video/')
+#1 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wis-project-1\youCourse\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/video/
+---
+2013/12/16 17:20:58 [error] [php] trim() expects parameter 1 to be string, array given (C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php:658)
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php(226): CUrlManager->createUrlRule()
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#2 C:\wamp\www\wis-project-1\yii\framework\base\CModule.php(387): CUrlManager->init()
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(522): CWebApplication->getComponent()
+#4 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(140): CWebApplication->getUrlManager()
+#5 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project-1/youCourse/index.php?r=api/video/
+in C:\wamp\www\wis-project-1\youCourse\index.php (20)
+2013/12/16 17:21:06 [error] [php] trim() expects parameter 1 to be string, array given (C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php:658)
+Stack trace:
+#0 C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php(226): CUrlManager->createUrlRule()
+#1 C:\wamp\www\wis-project-1\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#2 C:\wamp\www\wis-project-1\yii\framework\base\CModule.php(387): CUrlManager->init()
+#3 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(522): CWebApplication->getComponent()
+#4 C:\wamp\www\wis-project-1\yii\framework\web\CWebApplication.php(140): CWebApplication->getUrlManager()
+#5 C:\wamp\www\wis-project-1\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\wis-project-1\youCourse\index.php(20): CWebApplication->run()
+REQUEST_URI=/wis-project-1/youCourse/index.php/api/video/
+in C:\wamp\www\wis-project-1\youCourse\index.php (20)
