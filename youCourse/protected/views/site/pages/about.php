@@ -6,7 +6,19 @@ $this->breadcrumbs=array(
 	'About',
 );
 ?>
-<h1>About</h1>
+<?php $this->widget('bootstrap.widgets.TbHeroUnit', array(
+    'heading' => 'About',
+    'content' => '<p>This is a simple web application have built for the cours of Web Information Systems. Our names are Aurelien Plisnier, Jorge Garcia and Mohamed Chajii.</p>'
+        . TbHtml::button('Developers click here to have access to our API', array('color' =>TbHtml::BUTTON_COLOR_PRIMARY, 'size' => TbHtml::BUTTON_SIZE_LARGE,'data-toggle' => 'modal','data-target' => '#myModal')),
+)); ?>
 
-<p>This is a "static" page. You may change the content of this page
-by updating the file <code><?php echo __FILE__; ?></code>.</p>
+<?php $this->widget('bootstrap.widgets.TbModal', array(
+    'id' => 'myModal',
+    'header' => 'Developers',
+    'content' => '<p>Developers can access information from our database by using our REST based API returning a json. The adrress to access this json is <a href="youcourse/index.php/api/video/">youcourse/index.php/api/video/</a> for example</p>',
+    'footer' => array(
+        TbHtml::button('Ok', array('data-dismiss' => 'modal', 'color' => TbHtml::BUTTON_COLOR_PRIMARY)),
+        TbHtml::button('Close', array('data-dismiss' => 'modal')),
+    ),
+)); ?>
+

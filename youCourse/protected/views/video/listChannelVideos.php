@@ -7,7 +7,6 @@
  */
 /* @var $this VideoController */
 /* @var $dataProvider CActiveDataProvider */
-
 ?>
 <ul class="thumbnails span">
     <?php foreach($dataProvider->getData() as $data) { ?>
@@ -20,25 +19,27 @@
                 parse_str( parse_url($data->Content, PHP_URL_QUERY ), $my_array_of_vars );
 
                 $this->widget('ext.youtube.JYoutube', array(
-                      'id'=>'youtube_'.$data->VidID,
-                      'type'=>'image',
-                      'width'=>'242',
-                      'height'=>'183',
-                      'enableImageClickEvent'=>true,
-                      'youtubeId'=>$my_array_of_vars['v'],
+                    'id'=>'youtube_'.$data->VidID,
+                    'type'=>'image',
+                    'width'=>'242',
+                    'height'=>'183',
+                    'enableImageClickEvent'=>true,
+                    'youtubeId'=>$my_array_of_vars['v'],
                 )); ?>
                 <br>
                 <br>
                 <?php echo TbHtml::button('Watch', array('data-id' => $data->VidID, 'data-youtubeId' => $my_array_of_vars['v'],
-                                                         'data-name' => $data->Name,'color' => TbHtml::BUTTON_COLOR_PRIMARY)); ?>
-                <?php echo TbHtml::button('Delete', array('data-id' => $data->VidID, 'data-name' => $data->Name, 'class' => 'delete-video'));   ?>
+                    'data-name' => $data->Name,'color' => TbHtml::BUTTON_COLOR_PRIMARY));
+
+                if(Yii::app()->getModule('user')->isAdmin() || $id_channel == Yii::app()->user->id){
+                 echo TbHtml::button('Delete', array('data-id' => $data->VidID, 'data-name' => $data->Name, 'class' => 'delete-video')); }
+                ?>
                 <span class="badge badge-success" style="float:right;">views<?php echo ' '.$data->Views; ?></span>
             </div>
         </div>
      </li>
     <?php } ?>
 </ul>
-
 <script type="text/javascript">
     $(document).ready(function(){
 
